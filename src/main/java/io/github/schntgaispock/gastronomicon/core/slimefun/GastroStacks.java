@@ -2187,7 +2187,7 @@ public class GastroStacks {
     public static final FoodItemStack WHISKEY = new FoodItemStackBuilder()
         .id("GN_WHISKEY")
         .material(Material.POTION)
-        .name("Whiskey")
+        .name("威士忌")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 120, 4),
