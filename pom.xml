@@ -159,5 +159,12 @@
             <version>2.13.3</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>GuizhanLibPlugin</artifactId>
+            <version>1.2.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

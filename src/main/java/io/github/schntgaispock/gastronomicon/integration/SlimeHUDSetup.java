@@ -25,9 +25,9 @@ public class SlimeHUDSetup {
             final BlockMenu menu = BlockStorage.getInventory(request.getLocation());
             if (menu == null) return "";
             final ItemStack item = menu.getItemInSlot(15);
-            if (item == null) return "No android";
+            if (item == null) return "没有机器人";
             final SlimefunItem sfItem = SlimefunItem.getByItem(item);
-            if (sfItem == null || !sfItem.getId().equals("GN_CHEF_ANDROID")) return "No android";
+            if (sfItem == null || !sfItem.getId().equals("GN_CHEF_ANDROID")) return "没有机器人";
             final List<String> lore = item.getLore();
             if (lore == null || lore.size() < 1) return "";
             return "&7| " + lore.get(0);
@@ -35,7 +35,7 @@ public class SlimeHUDSetup {
 
         // Fishing Net
         SlimeHUD.getHudController().registerCustomHandler(FishingNet.class, request -> {
-            return ((FishingNet) request.getSlimefunItem()).getMachineProcessor().getOperation(request.getLocation()) == null ? "&7| Not in water" : "";
+            return ((FishingNet) request.getSlimefunItem()).getMachineProcessor().getOperation(request.getLocation()) == null ? "&7| 不在水中" : "";
         });
 
         // Fermenter

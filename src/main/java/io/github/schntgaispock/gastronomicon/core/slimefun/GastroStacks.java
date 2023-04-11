@@ -47,154 +47,150 @@ public class GastroStacks {
 
     public static final ItemStack GUIDE_ITEM_TOOLS = new CustomItemStack(
         Material.IRON_HOE,
-        GastroTheme.TOOL.getColor() + "Tools");
+        GastroTheme.TOOL.getColor() + "工具");
 
     public static final ItemStack GUIDE_ITEM_BASIC_MACHINES = new CustomItemStack(
         Material.CRAFTING_TABLE,
-        GastroTheme.MECHANICAL.getColor() + "Basic Machines");
+        GastroTheme.MECHANICAL.getColor() + "基础机器");
 
     public static final ItemStack GUIDE_ITEM_ELECTRIC_MACHINES = new CustomItemStack(
         Material.FURNACE,
-        GastroTheme.ELECTRIC.getColor() + "Electric Machines");
+        GastroTheme.ELECTRIC.getColor() + "电力机器");
 
     public static final ItemStack GUIDE_ITEM_RAW_INGREDIENTS = new CustomItemStack(
         Material.SUGAR,
-        GastroTheme.INGREDIENT.getColor() + "Raw Ingredients");
+        GastroTheme.INGREDIENT.getColor() + "原料");
 
     public static final ItemStack GUIDE_ITEM_FOOD = new CustomItemStack(
         Material.COOKED_BEEF,
-        GastroTheme.REGULAR_FOOD.getColor() + "Food");
+        GastroTheme.REGULAR_FOOD.getColor() + "食物");
 
     public static final ItemStack GUIDE_ITEM_MAIN = new CustomItemStack(
         Material.COOKED_BEEF,
-        GastroTheme.PERFECT_FOOD.getColor() + "Gastronomicon");
+        GastroTheme.PERFECT_FOOD.getColor() + "美食家");
 
     public static final ItemStack GUIDE_RECIPE_BREAK = new CustomItemStack(
         Material.IRON_HOE,
-        "&bBreaking Blocks",
-        "&7This item is obtained by",
-        "&7breaking the displayed",
-        "&7blocks.");
+        "&b破坏方块",
+        "&7破坏指定的方块",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_HARVEST = new CustomItemStack(
         Material.GRASS,
-        "&bHarvesting Crops",
-        "&7This item is obtained by",
-        "&7harvesting the displayed",
-        "&7crops.");
+        "&b收获作物",
+        "&7收获指定的作物",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_KILL = new CustomItemStack(
         Material.IRON_SWORD,
-        "&bKilling Mobs",
-        "&7This item is obtained by",
-        "&7killing the displayed",
-        "&7mobs.");
+        "&b击杀生物",
+        "&7击杀指定的生物",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_TRAP = new CustomItemStack(
         Material.COBWEB,
-        "&bTrapping",
-        "&7This item is obtained by",
-        "&7catching it in the displayed",
-        "&7trap.");
+        "&b陷阱",
+        "&7通过指定的陷阱抓捕",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_CULINARY_WORKBENCH = new CustomItemStack(
         Material.CRAFTING_TABLE,
-        "&bCulinary Workbench",
-        "&7Craft this item as shown in a",
-        "&7Culinary Workbench with the tool(s)",
-        "&7listed below.");
+        "&b烹饪工作台",
+        "&7在烹饪工作台中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_MULTI_STOVE = new CustomItemStack(
         Material.BLAST_FURNACE,
-        "&bMulti-Stove",
-        "&7Craft this item as shown in a",
-        "&7Multi-Stove with the tool(s)",
-        "&7listed below.");
+        "&b多用炉",
+        "&7在多用炉中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_REFRIDGERATOR = new CustomItemStack(
         Material.IRON_BLOCK,
-        "&bRefridgerator",
-        "&7Craft this item as shown in a",
-        "&7Refridgerator with the tool(s)",
-        "&7listed below.");
+        "&b冰箱",
+        "&7在冰箱中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_MILL = new CustomItemStack(
         Material.CAULDRON,
-        "&bMill",
-        "&7Craft this item as shown in a",
-        "&7Grain Mill with the tool(s)",
-        "&7listed below.");
+        "&b磨坊",
+        "&7在磨坊中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_FERMENTER = new CustomItemStack(
         Material.BARREL,
-        "&bFermenter",
-        "&7Craft this item as shown in a",
-        "&7Fermenter with the tool(s)",
-        "&7listed below.");
+        "&b发酵罐",
+        "&7在发酵罐中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_TOOLS_REQUIRED = new CustomItemStack(
         Material.BLACK_STAINED_GLASS_PANE,
-        ChatColor.of("#999999") + "Tools Required");
+        ChatColor.of("#999999") + "所需工具");
 
     public static final ItemStack GUIDE_CONTAINER_REQUIRED = new CustomItemStack(
         Material.PURPLE_STAINED_GLASS_PANE,
-        "&5Container Required");
+        "&5所需容器");
 
     public static final ItemStack GUIDE_NONE = new CustomItemStack(
         Material.BARRIER,
-        "&cNone");
+        "&c无");
 
     public static final ItemStack GUIDE_KILL_GOAT = new CustomItemStack(
         Material.GOAT_SPAWN_EGG,
-        "&fGoat");
+        "&f羊");
 
     public static final ItemStack GUIDE_KILL_SALMON = new CustomItemStack(
         Material.SALMON_SPAWN_EGG,
-        "&fSalmon");
+        "&f鲑鱼");
 
     public static final ItemStack GUIDE_KILL_GUARDIAN = new CustomItemStack(
         Material.GUARDIAN_SPAWN_EGG,
-        "&fGuardian");
+        "&f守卫者");
 
     public static final ItemStack GUIDE_KILL_SQUID = new CustomItemStack(
         Material.SQUID_SPAWN_EGG,
-        "&fSquid");
+        "&f鱿鱼");
 
     // ---- Menu Only ----
 
     public static final ItemStack MENU_BACKGROUND_ITEM = new CustomItemStack(Material.GRAY_STAINED_GLASS_PANE, "");
     public static final ItemStack MENU_INGREDIENT_BORDER = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-        "&9Ingredients");
+        "&9原料");
     public static final ItemStack MENU_CONTAINER_BORDER = new CustomItemStack(Material.PURPLE_STAINED_GLASS_PANE,
-        "&5Container");
+        "&5容器");
     public static final ItemStack MENU_TOOL_BORDER = new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE,
-        ChatColor.of("#999999") + "Tools");
+        ChatColor.of("#999999") + "工具");
     public static final ItemStack MENU_OUTPUT_BORDER = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-        "&6Output");
+        "&6输出");
     public static final ItemStack MENU_CRAFT_BUTTON = new CustomItemStack(Material.LIME_STAINED_GLASS_PANE,
-        "&aClick to craft");
+        "&a点击合成");
     public static final ItemStack MENU_PROGRESS_BAR = new ItemStack(Material.FLINT_AND_STEEL);
     public static final ItemStack MENU_FOOD_BORDER = new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE,
-        "&fFood Slot", "", "&7Place food in the slot below");
+        "&f食物栏", "", "&7在下方放入食物");
     public static final ItemStack MENU_TRAIN_BUTTON = new CustomItemStack(Material.LIME_STAINED_GLASS_PANE,
-        "&aClick to train");
+        "&a点击训练");
     public static final ItemStack MENU_INPUT_BORDER = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-        "&9Input");
+        "&9输入");
     public static final ItemStack MENU_ANDROID_BORDER = new CustomItemStack(Material.LIGHT_BLUE_STAINED_GLASS_PANE,
-        GastroTheme.ELECTRIC.getColor() + "Chef Android");
+        GastroTheme.ELECTRIC.getColor() + "厨师机器人");
     public static final ItemStack MENU_NOT_ENOUGH_ENERGY = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNot enough energy");
+        "&c能量不足");
     public static final ItemStack MENU_NO_ANDROID = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNo android detected");
+        "&c没有机器人");
     public static final ItemStack MENU_INCORRECT_RECIPE = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cIncorrect recipe");
+        "&c配方错误");
     public static final ItemStack MENU_NOT_WATERLOGGED = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNot in water");
+        "&c不在水中");
 
     // ---- Dummy ----
 
     public static final ItemStack DUMMY_FISHING_NET = new CustomItemStack(Material.IRON_BARS,
-        GastroTheme.ELECTRIC.getColor() + "Fishing Net");
+        GastroTheme.ELECTRIC.getColor() + "捕鱼网");
 
     // ---- Tools ----
 
@@ -206,43 +202,43 @@ public class GastroStacks {
         GastroTheme.WORKSTATION_TOOL,
         "GN_KITCHEN_KNIFE",
         Material.IRON_SWORD,
-        "Kitchen Knife").addFlags(ItemFlag.HIDE_ATTRIBUTES);
+        "厨房刀").addFlags(ItemFlag.HIDE_ATTRIBUTES);
 
     public static final SlimefunItemStack ROLLING_PIN = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_ROLLING_PIN",
         Material.STICK,
-        "Rolling Pin");
+        "擀面杖");
 
     public static final SlimefunItemStack BLENDER = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_BLENDER",
         Material.BUCKET,
-        "Blender");
+        "搅拌机");
 
     public static final SlimefunItemStack MORTAR_AND_PESTLE = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_MORTAR_AND_PESTLE",
         Material.BOWL,
-        "Mortar and Pestle");
+        "研磨研钵");
 
     public static final SlimefunItemStack PEELER = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_PEELER",
         Material.IRON_HOE,
-        "Peeler").addFlags(ItemFlag.HIDE_ATTRIBUTES);
+        "剥皮器").addFlags(ItemFlag.HIDE_ATTRIBUTES);
 
     public static final SlimefunItemStack WHISK = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_WHISK",
         Material.IRON_SHOVEL,
-        "Whisk").addFlags(ItemFlag.HIDE_ATTRIBUTES);
+        "打蛋器").addFlags(ItemFlag.HIDE_ATTRIBUTES);
 
     public static final SlimefunItemStack DISTILLATION_CHAMBER = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_DISTILLATION_CHAMBER",
         Material.CAULDRON,
-        "Distillation Chamber");
+        "蒸馏仓");
 
     // Enhanced Oven
 
@@ -250,19 +246,19 @@ public class GastroStacks {
         GastroTheme.WORKSTATION_TOOL,
         "GN_BAKING_TRAY",
         Material.LIGHT_GRAY_CARPET,
-        "Baking Tray");
+        "烘焙盘");
 
     public static final SlimefunItemStack FRYING_PAN = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_FRYING_PAN",
         Material.GRAY_CARPET,
-        "Frying Pan");
+        "煎锅");
 
     public static final SlimefunItemStack STEEL_POT = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_STEEL_POT",
         Material.CAULDRON,
-        "Steel Pot");
+        "钢锅");
 
     // -- Containers --
 
@@ -270,7 +266,7 @@ public class GastroStacks {
         GastroTheme.WORKSTATION_TOOL,
         "GN_STEEL_BOWL",
         Material.BUCKET,
-        "Steel Bowl");
+        "钢碗");
 
     // -- Traps --
 
@@ -278,25 +274,25 @@ public class GastroStacks {
         GastroTheme.TRAP,
         "GN_STEEL_WIRE",
         Material.STRING,
-        "Steel Wire");
+        "钢丝");
 
     public static final SlimefunItemStack STEEL_SPRING = ThemedItemStack.of(
         GastroTheme.TRAP,
         "GN_STEEL_SPRING",
         Material.STRING,
-        "Steel Spring");
+        "钢制弹簧");
 
     public static final SlimefunItemStack CRAB_TRAP = ThemedItemStack.of(
         GastroTheme.TRAP,
         "GN_CRAB_TRAP",
         Material.OAK_TRAPDOOR,
-        "Crab Trap");
+        "捕蟹器");
 
     public static final SlimefunItemStack HUNTING_TRAP = ThemedItemStack.of(
         GastroTheme.TRAP,
         "GN_HUNTING_TRAP",
         Material.IRON_TRAPDOOR,
-        "Hunting Trap");
+        "捕猎器");
 
     // -- Other --
 
@@ -304,7 +300,7 @@ public class GastroStacks {
         GastroTheme.TOOL,
         "GN_CHEFS_HAT",
         Material.LEATHER_HELMET,
-        "Chef's Hat");
+        "厨师帽");
     static {
         final LeatherArmorMeta meta = (LeatherArmorMeta) CHEFS_HAT.getItemMeta();
         meta.setColor(Color.WHITE);
@@ -315,19 +311,19 @@ public class GastroStacks {
         GastroTheme.TOOL,
         "GN_WOODEN_SICKLE",
         Material.WOODEN_HOE,
-        "Wooden Sickle");
+        "木镰刀");
 
     public static final SlimefunItemStack STEEL_SICKLE = ThemedItemStack.of(
         GastroTheme.TOOL,
         "GN_STEEL_SICKLE",
         Material.IRON_HOE,
-        "Steel Sickle");
+        "钢镰刀");
 
     public static final SlimefunItemStack REINFORCED_SICKLE = ThemedItemStack.of(
         GastroTheme.TOOL,
         "GN_REINFORCED_SICKLE",
         Material.NETHERITE_HOE,
-        "Reinforced Sickle");
+        "强化合金镰刀");
 
     // ---- Basic Machines ----
 
@@ -335,88 +331,90 @@ public class GastroStacks {
         GastroTheme.MECHANICAL,
         "GN_CULINARY_WORKBENCH",
         Material.CRAFTING_TABLE,
-        "Culinary Workbench");
+        "烹饪工作台");
 
     public static final SlimefunItemStack MULTI_STOVE = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_MULTI_STOVE",
         Material.BLAST_FURNACE,
-        "Multi-Stove",
+        "多用炉",
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(64, "/Craft"));
+        LoreBuilder.power(64, " 每次合成"));
 
     public static final SlimefunItemStack REFRIDGERATOR = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_REFRIDGERATOR",
         Material.IRON_BLOCK,
-        "Refridgerator",
+        "冰箱",
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(64, "/Craft"));
+        LoreBuilder.power(64, " 每次合成"));
 
     public static final SlimefunItemStack MILL = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_MILL",
         Material.CAULDRON,
-        "Grain Mill");
+        "磨坊");
 
     public static final SlimefunItemStack FERMENTER = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_FERMENTER",
         Material.BARREL,
-        "Fermenter",
-        "&eShift + Right-click &pwith a water",
-        "bucket or water bottle to refill",
-        StringUtil.waterUsed(2000, " Buffer"),
-        StringUtil.waterUsed(125, "/Craft"));
+        "发酵罐",
+        "&7使用水桶或水瓶",
+        "&eShift + 右键点击",
+        "&7来填充",
+        StringUtil.waterUsed(2000, " 可存储"),
+        StringUtil.waterUsed(125, " 每次合成"));
 
     public static final SlimefunItemStack LARGE_FERMENTER = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_LARGE_FERMENTER",
         Material.BARREL,
-        "Large Fermenter",
-        "&eShift + Right-click &7with a water",
-        "bucket or water bottle to refill",
-        StringUtil.waterUsed(16000, " Buffer"),
-        StringUtil.waterUsed(125, "/Craft"));
+        "大发酵罐",
+        "&7使用水桶或水瓶",
+        "&eShift + 右键点击",
+        "&7来填充",
+        StringUtil.waterUsed(16000, " 可存储"),
+        StringUtil.waterUsed(125, " 每次合成"));
 
     public static final SlimefunItemStack CHEF_ANDROID = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_CHEF_ANDROID",
         HeadTexture.PROGRAMMABLE_ANDROID_BUTCHER.getTexture(),
-        "Chef Android");
+        "厨师机器人");
 
     public static final SlimefunItemStack CHEF_ANDROID_TRAINER = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_CHEF_ANDROID_TRAINER",
         Material.SMITHING_TABLE,
-        "Chef Android Trainer");
+        "厨师机器人训练装置");
 
     public static final SlimefunItemStack FISHING_NET_I = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_FISHING_NET_I",
         Material.IRON_BARS,
-        "Fishing Net",
+        "捕鱼网",
         LoreBuilder.speed(1));
 
     public static final SlimefunItemStack FISHING_NET_II = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_FISHING_NET_II",
         Material.IRON_BARS,
-        "Fishing Net &7- &eII",
+        "捕鱼网 &7- &eII",
         LoreBuilder.speed(2));
 
     public static final SlimefunItemStack FISHING_NET_III = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_FISHING_NET_III",
         Material.IRON_BARS,
-        "Fishing Net &7- &eIII",
+        "捕鱼网 &7- &eIII",
         LoreBuilder.speed(4));
 
     public static final SlimefunItemStack ELECTRIC_KITCHEN_I = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_ELECTRIC_KITCHEN_I",
         Material.FURNACE,
-        "Electric Kitchen",
+        "电动厨房",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(256),
         LoreBuilder.powerPerSecond(16),
@@ -426,7 +424,7 @@ public class GastroStacks {
         GastroTheme.ELECTRIC,
         "GN_ELECTRIC_KITCHEN_II",
         Material.FURNACE,
-        "Electric Kitchen &7- &eII  ",
+        "电动厨房 &7- &eII  ",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(1024),
         LoreBuilder.powerPerSecond(64),
@@ -436,7 +434,7 @@ public class GastroStacks {
         GastroTheme.ELECTRIC,
         "GN_ELECTRIC_KITCHEN_III",
         Material.FURNACE,
-        "Electric Kitchen &7- &eIII",
+        "电动厨房 &7- &eIII",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(4096),
         LoreBuilder.powerPerSecond(256),
@@ -449,52 +447,52 @@ public class GastroStacks {
     public static final SlimefunItemStack RICE = ThemedItemStack.ingredient(
         "GN_RICE",
         Material.PUMPKIN_SEEDS,
-        "Rice");
+        "大米");
 
     public static final SlimefunItemStack QUINOA = ThemedItemStack.ingredient(
         "GN_QUINOA",
         Material.PUMPKIN_SEEDS,
-        "Quinoa");
+        "藜麦");
 
     public static final SlimefunItemStack OATS = ThemedItemStack.ingredient(
         "GN_OATS",
         Material.BEETROOT_SEEDS,
-        "Oats");
+        "燕麦");
 
     public static final SlimefunItemStack SOYBEANS = ThemedItemStack.ingredient(
         "GN_SOYBEANS",
         Material.BEETROOT_SEEDS,
-        "Soybeans");
+        "大豆");
 
     public static final SlimefunItemStack BARLEY = ThemedItemStack.ingredient(
         "GN_BARLEY",
         Material.WHEAT,
-        "Barley");
+        "大麦");
 
     public static final SlimefunItemStack BARLEY_SEEDS = ThemedItemStack.ingredient(
         "GN_BARLEY_SEEDS",
         Material.WHEAT_SEEDS,
-        "Barley Seeds");
+        "大麦种子");
 
     public static final SlimefunItemStack RYE = ThemedItemStack.ingredient(
         "GN_RYE",
         Material.WHEAT,
-        "Rye");
+        "黑麦");
 
     public static final SlimefunItemStack RYE_SEEDS = ThemedItemStack.ingredient(
         "GN_RYE_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "Rye Seeds");
+        "黑麦种子");
 
     public static final SlimefunItemStack SORGHUM = ThemedItemStack.ingredient(
         "GN_SORGHUM",
         Material.WHEAT,
-        "Sorghum");
+        "高粱");
 
     public static final SlimefunItemStack SORGHUM_SEEDS = ThemedItemStack.ingredient(
         "GN_SORGHUM_SEEDS",
         Material.BEETROOT_SEEDS,
-        "Sorghum Seeds");
+        "高粱种子");
 
     public static final SlimefunItemStack TURNIP = ThemedItemStack.ingredient(
         "GN_TURNIP",
