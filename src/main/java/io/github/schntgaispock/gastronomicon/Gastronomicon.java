@@ -38,7 +38,7 @@ public class Gastronomicon extends AbstractAddon {
     private AddonConfig customFood;
 
     public Gastronomicon() {
-        super("SchnTgaiSpock", "Gastronomicon", "master", "options.auto-update");
+        super("SlimefunGuguProject", "Gastronomicon", "master", "options.auto-update");
     }
 
     @Override
