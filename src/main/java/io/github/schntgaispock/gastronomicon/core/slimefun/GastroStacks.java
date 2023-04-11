@@ -1172,7 +1172,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_PESTO_PASTA = new FoodItemStackBuilder()
         .id("GN_CHICKEN_PESTO_PASTA")
         .texture(HeadTextures.PASTA_GREEN)
-        .name("Chicken Pesto Pasta")
+        .name("鸡肉香蒜酱意面")
         .hunger(14)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.WEAKNESS))
         .build();
@@ -1180,14 +1180,14 @@ public class GastroStacks {
     public static final FoodItemStack SQUID_INK_PASTA = new FoodItemStackBuilder()
         .id("GN_SQUID_INK_PASTA")
         .texture(HeadTextures.PASTA_BLACK)
-        .name("Squid Ink Pasta")
+        .name("鱿鱼汁意面")
         .hunger(14)
         .build();
 
     public static final FoodItemStack GLOWING_SQUID_INK_PASTA = new FoodItemStackBuilder()
         .id("GN_GLOWING_SQUID_INK_PASTA")
         .texture(HeadTextures.PASTA_BLACK)
-        .name("Glowing Squid Ink Pasta")
+        .name("发光鱿鱼汁意面")
         .hunger(14)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.GLOWING, 120, 0))
         .build();
@@ -1195,7 +1195,7 @@ public class GastroStacks {
     public static final FoodItemStack TUNA_CASSEROLE = new FoodItemStackBuilder()
         .id("GN_TUNA_CASSEROLE")
         .texture(HeadTextures.PASTA_GREEN)
-        .name("Tuna Casserole")
+        .name("金枪鱼砂锅")
         .hunger(14, 1)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 20, 1))
         .build();
@@ -1203,7 +1203,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_RAVIOLI = new FoodItemStackBuilder()
         .id("GN_CHICKEN_RAVIOLI")
         .texture(HeadTextures.PASTA_RED)
-        .name("Chicken Ravioli")
+        .name("鸡肉馅意大利饺子")
         .hunger(12)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.WEAKNESS))
         .build();
@@ -1211,7 +1211,7 @@ public class GastroStacks {
     public static final FoodItemStack MUSHROOM_RAVIOLI = new FoodItemStackBuilder()
         .id("GN_MUSHROOM_RAVIOLI")
         .texture(HeadTextures.PASTA_RED)
-        .name("Mushroom Ravioli")
+        .name("蘑菇馅意大利饺子")
         .hunger(12)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.WEAKNESS))
         .build();
@@ -1221,7 +1221,7 @@ public class GastroStacks {
     public static final FoodItemStack OATMEAL = new FoodItemStackBuilder()
         .id("GN_OATMEAL")
         .texture(HeadTextures.PORRIDGE)
-        .name("Oatmeal")
+        .name("燕麦片")
         .hunger(10, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1231,7 +1231,7 @@ public class GastroStacks {
     public static final FoodItemStack BARLEY_PORRIDGE = new FoodItemStackBuilder()
         .id("GN_BARLEY_PORRIDGE")
         .texture(HeadTextures.PORRIDGE)
-        .name("Barley Porridge")
+        .name("大麦粥")
         .hunger(10, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1241,7 +1241,7 @@ public class GastroStacks {
     public static final FoodItemStack CONGEE = new FoodItemStackBuilder()
         .id("GN_CONGEE")
         .texture(HeadTextures.PORRIDGE)
-        .name("Congee")
+        .name("粥")
         .hunger(10, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1251,7 +1251,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Soup")
+        .name("鸡汤")
         .hunger(12, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1261,7 +1261,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_AND_QUINOA_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_AND_QUINOA_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken And Quinoa Soup")
+        .name("鸡肉和藜麦汤")
         .hunger(14, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1271,7 +1271,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_NOODLE_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_NOODLE_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Noodle Soup")
+        .name("鸡肉面汤")
         .hunger(14, 1.75)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1282,7 +1282,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_NOODLE_SOUP_WITH_BOK_HOY = new FoodItemStackBuilder()
         .id("GN_CHICKEN_NOODLE_SOUP_WITH_BOK_CHOY")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Noodle Soup w/ Bok Choy")
+        .name("白菜鸡肉面汤")
         .hunger(16, 1.75)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1293,7 +1293,7 @@ public class GastroStacks {
     public static final FoodItemStack SPLIT_PEA_SOUP = new FoodItemStackBuilder()
         .id("GN_SPLIT_PEA_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Split Pea Soup")
+        .name("豌豆汤")
         .hunger(10, 1.75)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.CONFUSION))
         .build();
@@ -1301,7 +1301,7 @@ public class GastroStacks {
     public static final FoodItemStack HAM_AND_SPLIT_PEA_SOUP = new FoodItemStackBuilder()
         .id("GN_HAM_AND_SPLIT_PEA_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Ham and Split Pea Soup")
+        .name("火腿豌豆汤")
         .hunger(14, 1.75)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.CONFUSION))
         .build();
@@ -1309,7 +1309,7 @@ public class GastroStacks {
     public static final FoodItemStack LENTIL_SOUP = new FoodItemStackBuilder()
         .id("GN_LENTIL_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Lentil Soup")
+        .name("扁豆汤")
         .hunger(10, 1.75)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.SATURATION, 5))
         .build();
@@ -1317,7 +1317,7 @@ public class GastroStacks {
     public static final FoodItemStack BEEF_AND_LENTIL_SOUP = new FoodItemStackBuilder()
         .id("GN_BEEF_AND_LENTIL_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Beef and Lentil Soup")
+        .name("牛肉扁豆汤")
         .hunger(14, 1.75)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.SATURATION, 10, 1))
         .build();
@@ -1325,7 +1325,7 @@ public class GastroStacks {
     public static final FoodItemStack CARROT_SOUP = new FoodItemStackBuilder()
         .id("GN_CARROT_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Carrot Soup")
+        .name("胡萝卜汤")
         .hunger(12, 1.75)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.BLINDNESS))
         .build();
@@ -1333,7 +1333,7 @@ public class GastroStacks {
     public static final FoodItemStack MUSHROOM_BARLEY_SOUP = new FoodItemStackBuilder()
         .id("GN_MUSHROOM_BARLEY_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Mushroom Barley Soup")
+        .name("蘑菇大麦汤")
         .hunger(12, 2)
         .effects(FoodEffect.warm(70))
         .build();
@@ -1341,7 +1341,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_BARLEY_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_BARLEY_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Barley Soup")
+        .name("鸡肉大麦汤")
         .hunger(14, 2)
         .effects(FoodEffect.warm(70))
         .build();
@@ -1349,7 +1349,7 @@ public class GastroStacks {
     public static final FoodItemStack BEEF_BARLEY_SOUP = new FoodItemStackBuilder()
         .id("GN_BEEF_BARLEY_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Beef Barley Soup")
+        .name("牛肉大麦汤")
         .hunger(14, 2)
         .effects(FoodEffect.warm(70))
         .build();
@@ -1357,7 +1357,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_MUSHROOM_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_MUSHROOM_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Mushroom Soup")
+        .name("奶油蘑菇汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1365,7 +1365,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_BROCCOLI_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_BROCCOLI_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Celery Soup")
+        .name("奶油芹菜汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1373,7 +1373,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_ASPARAGUS_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_ASPARAGUS_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Asparagus Soup")
+        .name("奶油芦笋汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1381,7 +1381,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_CAULIFLOWER_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_CAULIFLOWER_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Cauliflower Soup")
+        .name("奶油花椰菜汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1389,7 +1389,7 @@ public class GastroStacks {
     public static final FoodItemStack MISO_SOUP = new FoodItemStackBuilder()
         .id("GN_MISO_SOUP")
         .texture(HeadTextures.MISO_SOUP)
-        .name("Miso Soup")
+        .name("味噌汤")
         .hunger(7, 1.75)
         .effects(FoodEffect.warm(50))
         .build();
@@ -1397,7 +1397,7 @@ public class GastroStacks {
     public static final FoodItemStack GUARDIAN_FIN_SOUP = new FoodItemStackBuilder()
         .id("GN_GUARDIAN_FIN_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Guardian Fin Soup")
+        .name("守护者翅汤")
         .hunger(12, 1.75)
         .effects(FoodEffect.warm(50))
         .build();
@@ -1405,35 +1405,35 @@ public class GastroStacks {
     public static final FoodItemStack BROCCOLI_CHOWDER = new FoodItemStackBuilder()
         .id("GN_BROCCOLI_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Broccoli Chowder")
+        .name("西兰花浓汤")
         .hunger(10, 1.75)
         .build();
 
     public static final FoodItemStack SALMON_CHOWDER = new FoodItemStackBuilder()
         .id("GN_SALMON_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Salmon Chowder")
+        .name("鲑鱼浓汤")
         .hunger(12, 1.75)
         .build();
 
     public static final FoodItemStack POTATO_CHOWDER = new FoodItemStackBuilder()
         .id("GN_POTATO_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Potato Chowder")
+        .name("土豆浓汤")
         .hunger(10, 1.75)
         .build();
 
     public static final FoodItemStack CORN_CHOWDER = new FoodItemStackBuilder()
         .id("GN_CORN_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Corn Chowder")
+        .name("玉米浓汤")
         .hunger(10, 1.75)
         .build();
 
     public static final FoodItemStack BEEF_STEW = new FoodItemStackBuilder()
         .id("GN_BEEF_STEW")
         .texture(HeadTextures.STEW)
-        .name("Beef Stew")
+        .name("炖牛肉")
         .hunger(16, 1.75)
         .effects(FoodEffect.warm(140))
         .build();
@@ -1441,7 +1441,7 @@ public class GastroStacks {
     public static final FoodItemStack CLAM_STEW = new FoodItemStackBuilder()
         .id("GN_CLAM_STEW")
         .texture(HeadTextures.STEW)
-        .name("Clam Stew")
+        .name("炖蛤蜊")
         .hunger(14, 1.75)
         .effects(FoodEffect.warm(50))
         .build();
@@ -1449,7 +1449,7 @@ public class GastroStacks {
     public static final FoodItemStack CRAB_HOTPOT = new FoodItemStackBuilder()
         .id("GN_CRAB_HOTPOT")
         .texture(HeadTextures.STEW)
-        .name("Crab Hotpot")
+        .name("蟹肉火锅")
         .hunger(17, 1.75)
         .effects(FoodEffect.warm(140))
         .build();
@@ -1459,35 +1459,35 @@ public class GastroStacks {
     public static final FoodItemStack BBQ_STEAK = new FoodItemStackBuilder()
         .id("GN_BBQ_STEAK")
         .material(Material.COOKED_BEEF)
-        .name("BBQ Steak")
+        .name("烤牛排")
         .hunger(9, 1.5)
         .build();
 
     public static final FoodItemStack BBQ_PORK = new FoodItemStackBuilder()
         .id("GN_BBQ_PORK")
         .material(Material.COOKED_PORKCHOP)
-        .name("BBQ Pork")
+        .name("烤猪排")
         .hunger(9, 1.5)
         .build();
 
     public static final FoodItemStack BBQ_CHICKEN = new FoodItemStackBuilder()
         .id("GN_BBQ_CHICKEN")
         .material(Material.COOKED_CHICKEN)
-        .name("BBQ Chicken")
+        .name("烤鸡排")
         .hunger(7, 1.5)
         .build();
 
     public static final FoodItemStack BBQ_MUTTON = new FoodItemStackBuilder()
         .id("GN_BBQ_MUTTON")
         .material(Material.COOKED_MUTTON)
-        .name("BBQ Mutton")
+        .name("烤羊排")
         .hunger(7, 1.5)
         .build();
 
     public static final FoodItemStack BUTTER_CHICKEN = new FoodItemStackBuilder()
         .id("GN_BUTTER_CHICKEN")
         .texture(HeadTextures.STEW)
-        .name("Butter Chicken")
+        .name("印度牛油鸡")
         .hunger(7)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 30))
         .build();
@@ -1497,7 +1497,7 @@ public class GastroStacks {
     public static final FoodItemStack BUTTER_CHICKEN_WITH_NAAN_BREAD = new FoodItemStackBuilder()
         .id("GN_BUTTER_CHICKEN_WITH_NAAN_BREAD")
         .texture(HeadTextures.STEW)
-        .name("Butter Chicken With Naan Bread")
+        .name("印度牛油鸡配大蒜烤饼")
         .hunger(12)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 30, 1))
         .build();
@@ -1505,14 +1505,14 @@ public class GastroStacks {
     public static final FoodItemStack SHRIMP_FRIED_RICE = new FoodItemStackBuilder()
         .id("GN_SHRIMP_FRIED_RICE")
         .texture(HeadTextures.RICE_PINK)
-        .name("Shrimp Fried Rice")
+        .name("虾炒饭")
         .hunger(10)
         .build();
 
     public static final FoodItemStack CURRY_RICE = new FoodItemStackBuilder()
         .id("GN_CURRY_RICE")
         .texture(HeadTextures.RICE_BROWN)
-        .name("Curry Rice")
+        .name("咖哩饭")
         .hunger(10)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 30))
         .build();
@@ -1520,7 +1520,7 @@ public class GastroStacks {
     public static final FoodItemStack RICE_OMELETTE = new FoodItemStackBuilder()
         .id("GN_RICE_OMELETTE")
         .texture(HeadTextures.RICE_YELLOW)
-        .name("Rice Omelette")
+        .name("蛋包饭")
         .hunger(8)
         .effects(FoodEffect.heal(1))
         .build();
@@ -1528,7 +1528,7 @@ public class GastroStacks {
     public static final FoodItemStack RICE_BALL = new FoodItemStackBuilder()
         .id("GN_RICE_BALL")
         .texture(HeadTextures.RICE_BALL)
-        .name("Rice Ball")
+        .name("饭团")
         .hunger(4)
         .build();
 
@@ -1537,7 +1537,7 @@ public class GastroStacks {
     public static final FoodItemStack BEEF_UDON = new FoodItemStackBuilder()
         .id("GN_BEEF_UDON")
         .texture(HeadTextures.UDON)
-        .name("Beef Udon")
+        .name("牛肉乌冬面")
         .hunger(13)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1545,7 +1545,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_UDON = new FoodItemStackBuilder()
         .id("GN_CHICKEN_UDON")
         .texture(HeadTextures.UDON)
-        .name("Chicken Udon")
+        .name("鸡肉乌冬面")
         .hunger(11)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1553,7 +1553,7 @@ public class GastroStacks {
     public static final FoodItemStack VEGETABLE_UDON = new FoodItemStackBuilder()
         .id("GN_VEGETABLE_UDON")
         .texture(HeadTextures.UDON)
-        .name("Vegetable Udon")
+        .name("蔬菜乌冬面")
         .hunger(11)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1561,63 +1561,63 @@ public class GastroStacks {
     public static final FoodItemStack STIR_FRY_NOODLES = new FoodItemStackBuilder()
         .id("GN_STIR_FRY_NOODLES")
         .texture(HeadTextures.NOODLES)
-        .name("Stir-fry Noodles")
+        .name("炒面")
         .hunger(10)
         .build();
 
     public static final FoodItemStack SHRIMP_DUMPLINGS = new FoodItemStackBuilder()
         .id("GN_SHRIMP_DUMPLINGS")
         .texture(HeadTextures.DUMPLINGS)
-        .name("Shrimp Dumplings")
+        .name("虾饺")
         .hunger(5)
         .build();
 
     public static final FoodItemStack CHICKEN_POTSTICKERS = new FoodItemStackBuilder()
         .id("GN_CHICKEN_POTSTICKERS")
         .material(Material.COOKED_PORKCHOP)
-        .name("Chicken Potstickers")
+        .name("鸡肉锅贴")
         .hunger(9)
         .build();
 
     public static final FoodItemStack BEEF_POTSTICKERS = new FoodItemStackBuilder()
         .id("GN_BEEF_POTSTICKERS")
         .material(Material.COOKED_PORKCHOP)
-        .name("Beef Potstickers")
+        .name("牛肉锅贴")
         .hunger(11)
         .build();
 
     public static final FoodItemStack PIEROGIES = new FoodItemStackBuilder()
         .id("GN_PIEROGIES")
         .material(Material.COOKED_PORKCHOP)
-        .name("Pierogies")
+        .name("波兰饺子")
         .hunger(9)
         .build();
 
     public static final FoodItemStack BACON_PIEROGIES = new FoodItemStackBuilder()
         .id("GN_BACON_PIEROGIES")
         .material(Material.COOKED_PORKCHOP)
-        .name("Bacon Pierogies")
+        .name("培根波兰饺子")
         .hunger(10)
         .build();
 
     public static final FoodItemStack CUSTARD_BUNS = new FoodItemStackBuilder()
         .id("GN_CUSTARD_BUNS")
         .texture(HeadTextures.DUMPLINGS)
-        .name("Custard Buns")
+        .name("奶黄包")
         .hunger(7)
         .build();
 
     public static final FoodItemStack RED_BEAN_BUNS = new FoodItemStackBuilder()
         .id("GN_RED_BEAN_BUNS")
         .texture(HeadTextures.DUMPLINGS)
-        .name("Red Bean Buns")
+        .name("豆沙包")
         .hunger(7)
         .build();
 
     public static final FoodItemStack TAIYAKI = new FoodItemStackBuilder()
         .id("GN_TAIYAKI")
         .material(Material.COD)
-        .name("Taiyaki")
+        .name("鲷鱼烧")
         .hunger(6)
         .build();
 
@@ -1626,56 +1626,56 @@ public class GastroStacks {
     public static final FoodItemStack TEMPURA_SHRIMP_ROLL = new FoodItemStackBuilder()
         .id("GN_TEMPURA_SHRIMP_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("Tempura Shrimp Roll")
+        .name("天妇罗虾卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack DYNAMITE_ROLL = new FoodItemStackBuilder()
         .id("GN_DYNAMITE_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("Dynamite Roll")
+        .name("世纪卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack KAPPA_ROLL = new FoodItemStackBuilder()
         .id("GN_KAPPA_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("Kappa Roll")
+        .name("黄瓜卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack CALIFORNIA_ROLL = new FoodItemStackBuilder()
         .id("GN_CALIFORNIA_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("California Roll")
+        .name("加州卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack SALMON_ROE_SUSHI_ROLL = new FoodItemStackBuilder()
         .id("GN_SALMON_ROE_SUSHI_ROLL")
         .texture(HeadTextures.IKURA_ROLL)
-        .name("Salmon Roe Sushi Roll")
+        .name("鲑鱼籽寿司卷")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack RED_BEAN_GLUTINOUS_RICE_BALLS = new FoodItemStackBuilder()
         .id("GN_RED_BEAN_GLUTINOUS_RICE_BALLS")
         .texture(HeadTextures.GLUTINOUS_RICE_BALLS)
-        .name("Red Bean Glutinous Rice Balls")
+        .name("红豆沙汤圆")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack PEANUT_GLUTINOUS_RICE_BALLS = new FoodItemStackBuilder()
         .id("GN_PEANUT_GLUTINOUS_RICE_BALLS")
         .texture(HeadTextures.GLUTINOUS_RICE_BALLS)
-        .name("Peanut Glutinous Rice Balls")
+        .name("花生汤圆")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack SESAME_GLUTINOUS_RICE_BALLS = new FoodItemStackBuilder()
         .id("GN_SESAME_GLUTINOUS_RICE_BALLS")
         .texture(HeadTextures.GLUTINOUS_RICE_BALLS)
-        .name("Sesame Glutinous Rice Balls")
+        .name("黑芝麻汤圆")
         .hunger(7, 0.75)
         .build();
 
@@ -1684,35 +1684,35 @@ public class GastroStacks {
     public static final FoodItemStack MASHED_POTATOES = new FoodItemStackBuilder()
         .id("GN_MASHED_POTATOES")
         .material(Material.BAKED_POTATO)
-        .name("Mashed Potatoes")
+        .name("土豆泥")
         .hunger(5, 1)
         .build();
 
     public static final FoodItemStack MASHED_TURNIPS = new FoodItemStackBuilder()
         .id("GN_MASHED_TURNIPS")
         .material(Material.FERMENTED_SPIDER_EYE)
-        .name("Mashed Turnips")
+        .name("芜菁泥")
         .hunger(5, 1)
         .build();
 
     public static final FoodItemStack FISH_AND_CHIPS = new FoodItemStackBuilder()
         .id("GN_FISH_AND_CHIPS")
         .material(Material.COOKED_COD)
-        .name("Fish and Chips")
+        .name("炸鱼薯条")
         .hunger(10, 0.75)
         .build();
 
     public static final FoodItemStack TURKEY_ROAST = new FoodItemStackBuilder()
         .id("GN_TURKEY_ROAST")
         .material(Material.COOKED_CHICKEN)
-        .name("Turkey Roast")
+        .name("烤火鸡")
         .hunger(12, 0.75)
         .build();
 
     public static final FoodItemStack CHOCOLATE_TRUFFLE = new FoodItemStackBuilder()
         .id("GN_CHOCOLATE_TRUFFLE")
         .material(Material.BROWN_MUSHROOM)
-        .name("Chocolate Truffle")
+        .name("松露巧克力")
         .hunger(5, 0.75)
         .build();
 
@@ -1721,28 +1721,28 @@ public class GastroStacks {
     public static final FoodItemStack DOUBLE_CHOCOLATE_MUFFIN = new FoodItemStackBuilder()
         .id("GN_DOUBLE_CHOCOLATE_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Double Chocolate Muffin")
+        .name("双层巧克力松饼")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack CARROT_MUFFIN = new FoodItemStackBuilder()
         .id("GN_CARROT_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Carrot Muffin")
+        .name("胡萝卜松饼")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack CRANBERRY_MUFFIN = new FoodItemStackBuilder()
         .id("GN_CRANBERRY_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Cranberry Muffin")
+        .name("蔓越莓松饼")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack RAISIN_MUFFIN = new FoodItemStackBuilder()
         .id("GN_RAISIN_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Raisin Muffin")
+        .name("葡萄干松饼")
         .hunger(4, 0.75)
         .build();
 
@@ -1751,133 +1751,133 @@ public class GastroStacks {
     public static final FoodItemStack VANILLA_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_VANILLA_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_WHITE)
-        .name("Vanilla Ice Cream")
+        .name("香草冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CHOCOLATE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CHOCOLATE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_BROWN)
-        .name("Chocolate Ice Cream")
+        .name("巧克力冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack MINT_CHOCOLATE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_MINT_CHOCOLATE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_GREEN)
-        .name("Mint Ice Cream")
+        .name("薄荷冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack COOKIE_DOUGH_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_COOKIE_DOUGH_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Cookie Dough Ice Cream")
+        .name("曲奇冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack PEANUT_BUTTER_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_PEANUT_BUTTER_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Peanut Butter Ice Cream")
+        .name("花生酱冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack RED_BEAN_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_RED_BEAN_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Red Bean Ice Cream")
+        .name("红豆冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack GREEN_TEA_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_GREEN_TEA_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_GREEN)
-        .name("Green Tea Ice Cream")
+        .name("绿茶冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Strawberry Ice Cream")
+        .name("草莓冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack BLUEBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_BLUEBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_BLUE)
-        .name("Blueberry Ice Cream")
+        .name("蓝莓冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CRANBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CRANBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Cranberry Ice Cream")
+        .name("蔓越莓冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack COWBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_COWBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Cowberry Ice Cream")
+        .name("越橘冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack COCONUT_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_COCONUT_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_WHITE)
-        .name("Coconut Ice Cream")
+        .name("椰子冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CHERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CHERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_PINK)
-        .name("Cherry Ice Cream")
+        .name("樱桃冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack RASPBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_RASPBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_PINK)
-        .name("Raspberry Ice Cream")
+        .name("覆盆子冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CARAMEL_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CARAMEL_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_BROWN)
-        .name("Caramel Ice Cream")
+        .name("焦糖冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack ORANGE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_ORANGE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Orange Ice Cream")
+        .name("橙子冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack PEACH_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_PEACH_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Peach Ice Cream")
+        .name("蜜桃冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack PINEAPPLE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_PINEAPPLE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_YELLOW)
-        .name("Pineapple Ice Cream")
+        .name("菠萝冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CHORUS_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CHORUS_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_PURPLE)
-        .name("Chorus Ice Cream")
+        .name("紫颂果冰淇淋")
         .hunger(3, 0.75)
         .effects(FoodEffect.teleport(5))
         .build();
@@ -1885,28 +1885,28 @@ public class GastroStacks {
     public static final FoodItemStack SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_SHAVED_ICE")
         .texture(HeadTextures.SHAVED_ICE)
-        .name("Shaved Ice")
+        .name("刨冰")
         .hunger(2, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_SHAVED_ICE")
         .texture(HeadTextures.STRAWBERRY_SHAVED_ICE)
-        .name("Strawberry Shaved Ice")
+        .name("草莓刨冰")
         .hunger(2, 0.75)
         .build();
 
     public static final FoodItemStack BANANA_SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_BANANA_SHAVED_ICE")
         .texture(HeadTextures.LEMON_SHAVED_ICE)
-        .name("Banana Shaved Ice")
+        .name("香蕉刨冰")
         .hunger(2, 0.75)
         .build();
 
     public static final FoodItemStack LEMON_SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_LEMON_SHAVED_ICE")
         .texture(HeadTextures.LEMON_SHAVED_ICE)
-        .name("Lemon Shaved Ice")
+        .name("柠檬刨冰")
         .hunger(2, 0.75)
         .build();
 
@@ -1915,49 +1915,49 @@ public class GastroStacks {
     public static final FoodItemStack CANDY_APPLE = new FoodItemStackBuilder()
         .id("GN_CANDY_APPLE")
         .texture(HeadTextures.CANDY_APPLE)
-        .name("Candy Apple")
+        .name("苹果糖")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack DONUT = new FoodItemStackBuilder()
         .id("GN_DONUT")
         .texture(HeadTextures.DONUT_PINK)
-        .name("Donut")
+        .name("甜甜圈")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack HONEY_DIP_DONUT = new FoodItemStackBuilder()
         .id("GN_HONEY_DIP_DONUT")
         .texture(HeadTextures.DONUT_GOLD)
-        .name("Honey Dip Donut")
+        .name("蜂蜜甜甜圈")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack GOLDEN_CHOCOLATE_DONUT = new FoodItemStackBuilder()
         .id("GN_GOLDEN_CHOCOLATE_DONUT")
         .texture(HeadTextures.DONUT_BROWN)
-        .name("Golden Chocolate Donut")
+        .name("黄金巧克力甜甜圈")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_CHEESECAKE = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_CHEESECAKE")
         .texture(HeadTextures.CHEESECAKE)
-        .name("Strawberry Cheesecake")
+        .name("草莓芝士蛋糕")
         .hunger(8, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_CUPCAKE = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_CUPCAKE")
         .texture(HeadTextures.CUPCAKE)
-        .name("Strawberry Cupcake")
+        .name("草莓杯蛋糕")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack LEMON_TART = new FoodItemStackBuilder()
         .id("GN_LEMON_TART")
         .material(Material.PUMPKIN_PIE)
-        .name("Lemon Tart")
+        .name("柠檬蛋挞")
         .hunger(6, 0.5)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.SPEED, 120))
         .build();
@@ -1965,7 +1965,7 @@ public class GastroStacks {
     public static final FoodItemStack CHORUS_PIE = new FoodItemStackBuilder()
         .id("GN_CHORUS_PIE")
         .material(Material.PUMPKIN_PIE)
-        .name("Chorus Pie")
+        .name("紫颂果派")
         .hunger(8, 0.5)
         .effects(FoodEffect.teleport(5))
         .build();
@@ -1973,14 +1973,14 @@ public class GastroStacks {
     public static final FoodItemStack POPPED_SORGHUM = new FoodItemStackBuilder()
         .id("GN_POPPED_SORGHUM")
         .texture(HeadTextures.POPPED_SORGHUM)
-        .name("Popped Sorghum")
+        .name("爆高粱")
         .hunger(2, 0.5)
         .build();
 
     public static final FoodItemStack ENCHANTED_GOLDEN_CARROT = new FoodItemStackBuilder()
         .id("GN_ENCHANTED_GOLDEN_CARROT")
         .material(Material.GOLDEN_CARROT)
-        .name("Enchanted Golden Carrot")
+        .name("附魔金萝卜")
         .hunger(8, 0.5)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.DARKNESS),
@@ -1995,7 +1995,7 @@ public class GastroStacks {
     public static final FoodItemStack ENCHANTED_GLISTERING_MELON_SLICE = new FoodItemStackBuilder()
         .id("GN_ENCHANTED_GLISTERING_MELON_SLICE")
         .material(Material.GLISTERING_MELON_SLICE)
-        .name("Enchanted Glistering Melon Slice")
+        .name("附魔闪烁的西瓜片")
         .hunger(4, 0.5)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.WITHER),
@@ -2012,7 +2012,7 @@ public class GastroStacks {
     public static final FoodItemStack V7 = new FoodItemStackBuilder()
         .id("GN_V7")
         .texture(HeadTexture.FILLED_CAN.getTexture())
-        .name("V7")
+        .name("蔬菜7件套")
         .hunger(6, 0.75)
         .effects(
             FoodEffect.positivePotionEffect(PotionEffectType.REGENERATION, 20, 2))
@@ -2021,7 +2021,7 @@ public class GastroStacks {
     public static final FoodItemStack BUBBLE_MILK_TEA = new FoodItemStackBuilder()
         .id("GN_BUBBLE_MILK_TEA")
         .material(Material.POTION)
-        .name("Bubble Milk Tea")
+        .name("珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2035,7 +2035,7 @@ public class GastroStacks {
     public static final FoodItemStack CANTALOUPE_BUBBLE_TEA = new FoodItemStackBuilder()
         .id("GN_CANTALOUPE_BUBBLE_TEA")
         .material(Material.POTION)
-        .name("Cantaloupe Bubble Tea")
+        .name("哈密瓜珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2049,7 +2049,7 @@ public class GastroStacks {
     public static final FoodItemStack HONEYDEW_MELON_BUBBLE_TEA = new FoodItemStackBuilder()
         .id("GN_HONEYDEW_MELON_BUBBLE_TEA")
         .material(Material.POTION)
-        .name("Honeydew Melon Bubble Tea")
+        .name("蜜瓜珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2063,7 +2063,7 @@ public class GastroStacks {
     public static final FoodItemStack APPLE_BUBBLE_TEA = new FoodItemStackBuilder()
         .id("GN_APPLE_BUBBLE_TEA")
         .material(Material.POTION)
-        .name("Apple Bubble Tea")
+        .name("苹果珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2079,7 +2079,7 @@ public class GastroStacks {
     public static final FoodItemStack RED_WINE = new FoodItemStackBuilder()
         .id("GN_RED_WINE")
         .material(Material.POTION)
-        .name("Red Wine")
+        .name("红酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2097,7 +2097,7 @@ public class GastroStacks {
     public static final FoodItemStack BEER = new FoodItemStackBuilder()
         .id("GN_BEER")
         .material(Material.POTION)
-        .name("Beer")
+        .name("啤酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2115,7 +2115,7 @@ public class GastroStacks {
     public static final FoodItemStack APPLE_CIDER = new FoodItemStackBuilder()
         .id("GN_APPLE_CIDER")
         .material(Material.POTION)
-        .name("Apple Cider")
+        .name("苹果酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2133,7 +2133,7 @@ public class GastroStacks {
     public static final FoodItemStack RICE_WINE = new FoodItemStackBuilder()
         .id("GN_RICE_WINE")
         .material(Material.POTION)
-        .name("Rice Wine")
+        .name("米酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2151,7 +2151,7 @@ public class GastroStacks {
     public static final FoodItemStack VODKA = new FoodItemStackBuilder()
         .id("GN_VODKA")
         .material(Material.POTION)
-        .name("Vodka")
+        .name("伏特加")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 120, 4),
@@ -2169,7 +2169,7 @@ public class GastroStacks {
     public static final FoodItemStack RUM = new FoodItemStackBuilder()
         .id("GN_RUM")
         .material(Material.POTION)
-        .name("Rum")
+        .name("朗姆酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 120, 4),
