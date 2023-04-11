@@ -91,18 +91,18 @@ public class ChefAndroidTrainer extends MenuBlock {
 
             final ItemStack foodItem = menu.getItemInSlot(FOOD_SLOT);
             if (foodItem == null) {
-                Gastronomicon.sendMessage(player, "&ePlease place a valid food item in the middle slot");
+                Gastronomicon.sendMessage(player, "&e需要在中间的栏位放置有效的食物");
                 return false;
             }
 
             if (menu.getItemInSlot(getOutputSlots()[0]) != null) {
-                Gastronomicon.sendMessage(player, "The output slot is full!");
+                Gastronomicon.sendMessage(player, "输出空间已满!");
                 return false;
             }
 
             final SlimefunItem sfItem = SlimefunItem.getByItem(foodItem);
             if (sfItem == null) {
-                Gastronomicon.sendMessage(player, "&ePlease place a valid food item in the middle slot");
+                Gastronomicon.sendMessage(player, "&e需要在中间的栏位放置有效的食物");
                 return false;
             } else if (sfItem instanceof final SimpleGastroFood food) {
                 final String name;
@@ -112,7 +112,7 @@ public class ChefAndroidTrainer extends MenuBlock {
                         id = food.getId().replace("GN_PERFECT_", "GN_");
                         final SlimefunItem regularItem = SlimefunItem.getById(id);
                         if (regularItem == null) {
-                            Gastronomicon.sendMessage(player, "&ePlease place a valid food item in the middle slot");
+                            Gastronomicon.sendMessage(player, "&e需要在中间的栏位放置有效的食物");
                             return false;
                         }
                         name = regularItem.getItemName();
@@ -126,7 +126,7 @@ public class ChefAndroidTrainer extends MenuBlock {
                     final int threshold = Gastronomicon.config().getInt("proficiency-threshold");
 
                     if (proficiency < threshold) {
-                        Gastronomicon.sendMessage(player, "&eYou are not proficient enough in this recipe! Required: " + proficiency + "/" + threshold);
+                        Gastronomicon.sendMessage(player, "&e你对这道食物还不够熟练! 需要: " + proficiency + "/" + threshold);
                         return false;
                     }
                 } else {
