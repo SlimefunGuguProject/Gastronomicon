@@ -16,6 +16,7 @@ depend:
   - Slimefun
 
 softdepend:
+  - GuizhanLibPlugin
   - SlimeHUD
   - ExoticGarden
   - DynaTech # For automation

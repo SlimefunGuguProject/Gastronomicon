@@ -41,7 +41,7 @@ public final class TreeStructure {
             }
         }
 
-        Gastronomicon.info("Loaded all trees");
+        Gastronomicon.info("已加载所有树木结构");
     }
 
     private final int[][][] blocks;

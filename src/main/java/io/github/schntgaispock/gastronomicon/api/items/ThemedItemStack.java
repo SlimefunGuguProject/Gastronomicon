@@ -30,7 +30,7 @@ public class ThemedItemStack extends SlimefunItemStack {
 
     public @Nonnull String getDisplayName() {
         String name = getDisplayName();
-        return (name == null) ? "NO NAME GIVEN" : name;
+        return (name == null) ? "名称丢失" : name;
     }
 
     @ParametersAreNonnullByDefault

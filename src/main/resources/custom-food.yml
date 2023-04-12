@@ -1,52 +1,50 @@
-### Define custom food in this file
+### 自定义食物
 #
-# Format:
+# 格式:
 # FOOD_ID
 #   - name: str
-#   - (OPTIONAL) lore: [list: str]
+#   - (可选) lore: [list: str]
 #   - hunger: int
-#   - saturation-ratio: double (OR) - saturation: int
-#   - material: MATERIAL (OR) - texture: TEXTURE
+#   - saturation-ratio: double (或) - saturation: int
+#   - material: MATERIAL (或) - texture: TEXTURE
 #   - effects:
 #     - EFFECT_TYPE: [parameters]
 #   - recipe: {...}
 #
-# Where,
-#   FOOD_ID is any string in SCREAMING_SNAKE_CASE, and must not already be in use.
-#     Gastronomicon will append `GN_` to the beginning when registering the item.
-#   MATERIAL is a valid Material name,
-#   TEXTURE is a valid base64 texture string
+# 以上配置中,
+#   FOOD_ID 为食物的ID，只能由大写字母、数字与下划线组成，且不能与现有的物品重复。
+#     美食家会在注册物品时，在ID前添加 `GN_` 前缀。
+#   MATERIAL 必须是有效的原版物品ID,
+#   TEXTURE 必须是base64格式的头颅材质
 #     (see https://bukkit.org/threads/create-your-own-custom-head-texture.424286/),
-#   and EFFECT_TYPE is one of the ids described below.
-# The recipe format will be specified after.
+#   EFFECT_TYPE 必须为下方提到的食物效果类型
+# 配方格式会在稍后讲述
 #
-# Note that `saturation-ratio` and `saturation` are mutually exclusive and so are
-#   `material` and `texture`.
+# 需要注意， `saturation-ratio` 与 `saturation` 只能存在1个。
+#       同样 `material` 与 `texture` 也只能存在1个。
 #
-# Effect types:
-#   heal [amount: int]: Heal [amount] HP. (amount > 0)
-#   positive-potion-effect [type: POTION_EFFECT_TYPE] [int seconds] [int amplifier]: 
-#     Gives the player the specified effect.
-#   negative-potion-effect [type: POTION_EFFECT_TYPE] [int seconds] [int amplifier]: 
-#     Gives the player the specified effect.
-#   remove-potion-effect [type: POTION_EFFECT_TYPE]: Removes the specified effect
-#   clear-potion-effects: Clear all potion effects
-#   xp [amount: int]: Gives the player [amount] xp
-#   item [material: MATERIAL] [amount: int]: Gives the player the specified item
-#   slimefun-item: [id: str] [amount: int]: Gives the player the specified Slimefun item
-#   air [amount: int]: Refills the player's air by [amount]
-#   warm [amount: int]: Reduces the player's freeze ticks by [amount]
-#   teleport [radius: int]: Teleports the player randomly within [radius] blocks
-#   move [vx: double] [vy: double] [vz: double] [description: str]: Launch the player
-#     in direction of [vx vy vz]^T
-#   extinguish: Extinguishes the player
+# 食物效果类型:
+#   heal [amount: int]: 治疗 [amount] 血量. (amount > 0)
+#   positive-potion-effect [type: 药水效果类型] [int 持续时间] [int 等级]:
+#     给予玩家指定的正面效果
+#   negative-potion-effect [type: 药水效果类型] [int 持续时间] [int 等级]:
+#     给予玩家指定的负面效果
+#   remove-potion-effect [type: 药水效果类型]: 移除指定的效果
+#   clear-potion-effects: 清除所有药水效果
+#   xp [amount: int]: 给玩家 [amount] 点经验值
+#   item [material: MATERIAL] [amount: int]: 给玩家原版物品
+#   slimefun-item: [id: str] [amount: int]: 给玩家粘液科技物品
+#   air [amount: int]: 恢复玩家 [amount] 点空气
+#   warm [amount: int]: 减少玩家 [amount] MC刻冰冻时间
+#   teleport [radius: int]: 在附近 [radius] 格范围内，随机传送玩家
+#   move [vx: double] [vy: double] [vz: double] [description: str]: 将玩家向指定方向发射 [vx vy vz]^T
+#   extinguish: 灭火
 # 
-# It is not possible to define custom effects types in this file; in order to
-# create food with custom effects, you must add it in a plugin.
-# See https://github.com/SchnTgaiSpock/Gastronomicon/wiki/CustomFood on how to do so.
+# 无法通过文件定义其他的食物效果类型。如果你需要添加其他类型，你需要编写插件自己实现。
+# 可查看Wiki了解更多 https://github.com/SchnTgaiSpock/Gastronomicon/wiki/CustomFood
 #
-# Recipe format:
-# - shape: SHAPED / SHAPELESS
+# 配方格式:
+# - shape: SHAPED 有序 / SHAPELESS 无序
 # - workbench: CULINARY_WORKBENCH / MULTI_STOVE / REFRIDGERATOR / GRAIN_MILL / FERMENTER
 # - ingredients: [list: MATERIAL / SLIMEFUN_ID]
 # - (OPTIONAL) tools: [list: str]
@@ -54,7 +52,7 @@
 # (Workbench-specific parameters:)
 # - temperature: HIGH / MEDIUM / LOW (for Multi-Stove, defaults to MEDIUM)
 #
-# Example:
+# 例子:
 # GN_BAKED_BEANS_AND_TOAST:
 #   - name: Baked Beans and Toast
 #   - hunger: 8

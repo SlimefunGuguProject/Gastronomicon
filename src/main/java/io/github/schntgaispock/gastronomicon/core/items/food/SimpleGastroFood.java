@@ -99,7 +99,7 @@ public class SimpleGastroFood extends UnplaceableItem implements RecipeDisplayIt
     @Override
     @Nonnull
     public String getRecipeSectionLabel(@Nonnull Player p) {
-        return StringUtil.formatColors("&7Tools/Container Required:");
+        return StringUtil.formatColors("&7制作物品所需的工具与容器:");
     }
 
     @Override

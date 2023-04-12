@@ -47,154 +47,150 @@ public class GastroStacks {
 
     public static final ItemStack GUIDE_ITEM_TOOLS = new CustomItemStack(
         Material.IRON_HOE,
-        GastroTheme.TOOL.getColor() + "Tools");
+        GastroTheme.TOOL.getColor() + "工具");
 
     public static final ItemStack GUIDE_ITEM_BASIC_MACHINES = new CustomItemStack(
         Material.CRAFTING_TABLE,
-        GastroTheme.MECHANICAL.getColor() + "Basic Machines");
+        GastroTheme.MECHANICAL.getColor() + "基础机器");
 
     public static final ItemStack GUIDE_ITEM_ELECTRIC_MACHINES = new CustomItemStack(
         Material.FURNACE,
-        GastroTheme.ELECTRIC.getColor() + "Electric Machines");
+        GastroTheme.ELECTRIC.getColor() + "电力机器");
 
     public static final ItemStack GUIDE_ITEM_RAW_INGREDIENTS = new CustomItemStack(
         Material.SUGAR,
-        GastroTheme.INGREDIENT.getColor() + "Raw Ingredients");
+        GastroTheme.INGREDIENT.getColor() + "原料");
 
     public static final ItemStack GUIDE_ITEM_FOOD = new CustomItemStack(
         Material.COOKED_BEEF,
-        GastroTheme.REGULAR_FOOD.getColor() + "Food");
+        GastroTheme.REGULAR_FOOD.getColor() + "食物");
 
     public static final ItemStack GUIDE_ITEM_MAIN = new CustomItemStack(
         Material.COOKED_BEEF,
-        GastroTheme.PERFECT_FOOD.getColor() + "Gastronomicon");
+        GastroTheme.PERFECT_FOOD.getColor() + "美食家");
 
     public static final ItemStack GUIDE_RECIPE_BREAK = new CustomItemStack(
         Material.IRON_HOE,
-        "&bBreaking Blocks",
-        "&7This item is obtained by",
-        "&7breaking the displayed",
-        "&7blocks.");
+        "&b破坏方块",
+        "&7破坏指定的方块",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_HARVEST = new CustomItemStack(
         Material.GRASS,
-        "&bHarvesting Crops",
-        "&7This item is obtained by",
-        "&7harvesting the displayed",
-        "&7crops.");
+        "&b收获作物",
+        "&7收获指定的作物",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_KILL = new CustomItemStack(
         Material.IRON_SWORD,
-        "&bKilling Mobs",
-        "&7This item is obtained by",
-        "&7killing the displayed",
-        "&7mobs.");
+        "&b击杀生物",
+        "&7击杀指定的生物",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_TRAP = new CustomItemStack(
         Material.COBWEB,
-        "&bTrapping",
-        "&7This item is obtained by",
-        "&7catching it in the displayed",
-        "&7trap.");
+        "&b陷阱",
+        "&7通过指定的陷阱抓捕",
+        "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_CULINARY_WORKBENCH = new CustomItemStack(
         Material.CRAFTING_TABLE,
-        "&bCulinary Workbench",
-        "&7Craft this item as shown in a",
-        "&7Culinary Workbench with the tool(s)",
-        "&7listed below.");
+        "&b烹饪工作台",
+        "&7在烹饪工作台中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_MULTI_STOVE = new CustomItemStack(
         Material.BLAST_FURNACE,
-        "&bMulti-Stove",
-        "&7Craft this item as shown in a",
-        "&7Multi-Stove with the tool(s)",
-        "&7listed below.");
+        "&b多用炉",
+        "&7在多用炉中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_REFRIDGERATOR = new CustomItemStack(
         Material.IRON_BLOCK,
-        "&bRefridgerator",
-        "&7Craft this item as shown in a",
-        "&7Refridgerator with the tool(s)",
-        "&7listed below.");
+        "&b冰箱",
+        "&7在冰箱中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_MILL = new CustomItemStack(
         Material.CAULDRON,
-        "&bMill",
-        "&7Craft this item as shown in a",
-        "&7Grain Mill with the tool(s)",
-        "&7listed below.");
+        "&b磨坊",
+        "&7在磨坊中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_RECIPE_FERMENTER = new CustomItemStack(
         Material.BARREL,
-        "&bFermenter",
-        "&7Craft this item as shown in a",
-        "&7Fermenter with the tool(s)",
-        "&7listed below.");
+        "&b发酵罐",
+        "&7在发酵罐中",
+        "&7放入指定的工具与容器",
+        "&7来制作该物品");
 
     public static final ItemStack GUIDE_TOOLS_REQUIRED = new CustomItemStack(
         Material.BLACK_STAINED_GLASS_PANE,
-        ChatColor.of("#999999") + "Tools Required");
+        ChatColor.of("#999999") + "所需工具");
 
     public static final ItemStack GUIDE_CONTAINER_REQUIRED = new CustomItemStack(
         Material.PURPLE_STAINED_GLASS_PANE,
-        "&5Container Required");
+        "&5所需容器");
 
     public static final ItemStack GUIDE_NONE = new CustomItemStack(
         Material.BARRIER,
-        "&cNone");
+        "&c无");
 
     public static final ItemStack GUIDE_KILL_GOAT = new CustomItemStack(
         Material.GOAT_SPAWN_EGG,
-        "&fGoat");
+        "&f山羊");
 
     public static final ItemStack GUIDE_KILL_SALMON = new CustomItemStack(
         Material.SALMON_SPAWN_EGG,
-        "&fSalmon");
+        "&f鲑鱼");
 
     public static final ItemStack GUIDE_KILL_GUARDIAN = new CustomItemStack(
         Material.GUARDIAN_SPAWN_EGG,
-        "&fGuardian");
+        "&f守卫者");
 
     public static final ItemStack GUIDE_KILL_SQUID = new CustomItemStack(
         Material.SQUID_SPAWN_EGG,
-        "&fSquid");
+        "&f鱿鱼");
 
     // ---- Menu Only ----
 
     public static final ItemStack MENU_BACKGROUND_ITEM = new CustomItemStack(Material.GRAY_STAINED_GLASS_PANE, "");
     public static final ItemStack MENU_INGREDIENT_BORDER = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-        "&9Ingredients");
+        "&9原料");
     public static final ItemStack MENU_CONTAINER_BORDER = new CustomItemStack(Material.PURPLE_STAINED_GLASS_PANE,
-        "&5Container");
+        "&5容器");
     public static final ItemStack MENU_TOOL_BORDER = new CustomItemStack(Material.BLACK_STAINED_GLASS_PANE,
-        ChatColor.of("#999999") + "Tools");
+        ChatColor.of("#999999") + "工具");
     public static final ItemStack MENU_OUTPUT_BORDER = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-        "&6Output");
+        "&6输出");
     public static final ItemStack MENU_CRAFT_BUTTON = new CustomItemStack(Material.LIME_STAINED_GLASS_PANE,
-        "&aClick to craft");
+        "&a点击合成");
     public static final ItemStack MENU_PROGRESS_BAR = new ItemStack(Material.FLINT_AND_STEEL);
     public static final ItemStack MENU_FOOD_BORDER = new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE,
-        "&fFood Slot", "", "&7Place food in the slot below");
+        "&f食物栏", "", "&7在下方放入食物");
     public static final ItemStack MENU_TRAIN_BUTTON = new CustomItemStack(Material.LIME_STAINED_GLASS_PANE,
-        "&aClick to train");
+        "&a点击训练");
     public static final ItemStack MENU_INPUT_BORDER = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-        "&9Input");
+        "&9输入");
     public static final ItemStack MENU_ANDROID_BORDER = new CustomItemStack(Material.LIGHT_BLUE_STAINED_GLASS_PANE,
-        GastroTheme.ELECTRIC.getColor() + "Chef Android");
+        GastroTheme.ELECTRIC.getColor() + "厨师机器人");
     public static final ItemStack MENU_NOT_ENOUGH_ENERGY = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNot enough energy");
+        "&c能量不足");
     public static final ItemStack MENU_NO_ANDROID = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNo android detected");
+        "&c没有机器人");
     public static final ItemStack MENU_INCORRECT_RECIPE = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cIncorrect recipe");
+        "&c配方错误");
     public static final ItemStack MENU_NOT_WATERLOGGED = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNot in water");
+        "&c不在水中");
 
     // ---- Dummy ----
 
     public static final ItemStack DUMMY_FISHING_NET = new CustomItemStack(Material.IRON_BARS,
-        GastroTheme.ELECTRIC.getColor() + "Fishing Net");
+        GastroTheme.ELECTRIC.getColor() + "捕鱼网");
 
     // ---- Tools ----
 
@@ -206,43 +202,43 @@ public class GastroStacks {
         GastroTheme.WORKSTATION_TOOL,
         "GN_KITCHEN_KNIFE",
         Material.IRON_SWORD,
-        "Kitchen Knife").addFlags(ItemFlag.HIDE_ATTRIBUTES);
+        "厨房刀").addFlags(ItemFlag.HIDE_ATTRIBUTES);
 
     public static final SlimefunItemStack ROLLING_PIN = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_ROLLING_PIN",
         Material.STICK,
-        "Rolling Pin");
+        "擀面杖");
 
     public static final SlimefunItemStack BLENDER = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_BLENDER",
         Material.BUCKET,
-        "Blender");
+        "搅拌机");
 
     public static final SlimefunItemStack MORTAR_AND_PESTLE = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_MORTAR_AND_PESTLE",
         Material.BOWL,
-        "Mortar and Pestle");
+        "研磨研钵");
 
     public static final SlimefunItemStack PEELER = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_PEELER",
         Material.IRON_HOE,
-        "Peeler").addFlags(ItemFlag.HIDE_ATTRIBUTES);
+        "剥皮器").addFlags(ItemFlag.HIDE_ATTRIBUTES);
 
     public static final SlimefunItemStack WHISK = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_WHISK",
         Material.IRON_SHOVEL,
-        "Whisk").addFlags(ItemFlag.HIDE_ATTRIBUTES);
+        "打蛋器").addFlags(ItemFlag.HIDE_ATTRIBUTES);
 
     public static final SlimefunItemStack DISTILLATION_CHAMBER = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_DISTILLATION_CHAMBER",
         Material.CAULDRON,
-        "Distillation Chamber");
+        "蒸馏仓");
 
     // Enhanced Oven
 
@@ -250,19 +246,19 @@ public class GastroStacks {
         GastroTheme.WORKSTATION_TOOL,
         "GN_BAKING_TRAY",
         Material.LIGHT_GRAY_CARPET,
-        "Baking Tray");
+        "烘焙盘");
 
     public static final SlimefunItemStack FRYING_PAN = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_FRYING_PAN",
         Material.GRAY_CARPET,
-        "Frying Pan");
+        "煎锅");
 
     public static final SlimefunItemStack STEEL_POT = ThemedItemStack.of(
         GastroTheme.WORKSTATION_TOOL,
         "GN_STEEL_POT",
         Material.CAULDRON,
-        "Steel Pot");
+        "钢锅");
 
     // -- Containers --
 
@@ -270,7 +266,7 @@ public class GastroStacks {
         GastroTheme.WORKSTATION_TOOL,
         "GN_STEEL_BOWL",
         Material.BUCKET,
-        "Steel Bowl");
+        "钢碗");
 
     // -- Traps --
 
@@ -278,25 +274,25 @@ public class GastroStacks {
         GastroTheme.TRAP,
         "GN_STEEL_WIRE",
         Material.STRING,
-        "Steel Wire");
+        "钢丝");
 
     public static final SlimefunItemStack STEEL_SPRING = ThemedItemStack.of(
         GastroTheme.TRAP,
         "GN_STEEL_SPRING",
         Material.STRING,
-        "Steel Spring");
+        "钢制弹簧");
 
     public static final SlimefunItemStack CRAB_TRAP = ThemedItemStack.of(
         GastroTheme.TRAP,
         "GN_CRAB_TRAP",
         Material.OAK_TRAPDOOR,
-        "Crab Trap");
+        "捕蟹器");
 
     public static final SlimefunItemStack HUNTING_TRAP = ThemedItemStack.of(
         GastroTheme.TRAP,
         "GN_HUNTING_TRAP",
         Material.IRON_TRAPDOOR,
-        "Hunting Trap");
+        "捕猎器");
 
     // -- Other --
 
@@ -304,7 +300,7 @@ public class GastroStacks {
         GastroTheme.TOOL,
         "GN_CHEFS_HAT",
         Material.LEATHER_HELMET,
-        "Chef's Hat");
+        "厨师帽");
     static {
         final LeatherArmorMeta meta = (LeatherArmorMeta) CHEFS_HAT.getItemMeta();
         meta.setColor(Color.WHITE);
@@ -315,19 +311,19 @@ public class GastroStacks {
         GastroTheme.TOOL,
         "GN_WOODEN_SICKLE",
         Material.WOODEN_HOE,
-        "Wooden Sickle");
+        "木镰刀");
 
     public static final SlimefunItemStack STEEL_SICKLE = ThemedItemStack.of(
         GastroTheme.TOOL,
         "GN_STEEL_SICKLE",
         Material.IRON_HOE,
-        "Steel Sickle");
+        "钢镰刀");
 
     public static final SlimefunItemStack REINFORCED_SICKLE = ThemedItemStack.of(
         GastroTheme.TOOL,
         "GN_REINFORCED_SICKLE",
         Material.NETHERITE_HOE,
-        "Reinforced Sickle");
+        "强化合金镰刀");
 
     // ---- Basic Machines ----
 
@@ -335,88 +331,90 @@ public class GastroStacks {
         GastroTheme.MECHANICAL,
         "GN_CULINARY_WORKBENCH",
         Material.CRAFTING_TABLE,
-        "Culinary Workbench");
+        "烹饪工作台");
 
     public static final SlimefunItemStack MULTI_STOVE = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_MULTI_STOVE",
         Material.BLAST_FURNACE,
-        "Multi-Stove",
+        "多用炉",
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(64, "/Craft"));
+        LoreBuilder.power(64, " 每次合成"));
 
     public static final SlimefunItemStack REFRIDGERATOR = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_REFRIDGERATOR",
         Material.IRON_BLOCK,
-        "Refridgerator",
+        "冰箱",
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(64, "/Craft"));
+        LoreBuilder.power(64, " 每次合成"));
 
     public static final SlimefunItemStack MILL = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_MILL",
         Material.CAULDRON,
-        "Grain Mill");
+        "磨坊");
 
     public static final SlimefunItemStack FERMENTER = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_FERMENTER",
         Material.BARREL,
-        "Fermenter",
-        "&eShift + Right-click &pwith a water",
-        "bucket or water bottle to refill",
-        StringUtil.waterUsed(2000, " Buffer"),
-        StringUtil.waterUsed(125, "/Craft"));
+        "发酵罐",
+        "&7使用水桶或水瓶",
+        "&eShift + 右键点击",
+        "&7来填充",
+        StringUtil.waterUsed(2000, " 可存储"),
+        StringUtil.waterUsed(125, " 每次合成"));
 
     public static final SlimefunItemStack LARGE_FERMENTER = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_LARGE_FERMENTER",
         Material.BARREL,
-        "Large Fermenter",
-        "&eShift + Right-click &7with a water",
-        "bucket or water bottle to refill",
-        StringUtil.waterUsed(16000, " Buffer"),
-        StringUtil.waterUsed(125, "/Craft"));
+        "大发酵罐",
+        "&7使用水桶或水瓶",
+        "&eShift + 右键点击",
+        "&7来填充",
+        StringUtil.waterUsed(16000, " 可存储"),
+        StringUtil.waterUsed(125, " 每次合成"));
 
     public static final SlimefunItemStack CHEF_ANDROID = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_CHEF_ANDROID",
         HeadTexture.PROGRAMMABLE_ANDROID_BUTCHER.getTexture(),
-        "Chef Android");
+        "厨师机器人");
 
     public static final SlimefunItemStack CHEF_ANDROID_TRAINER = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_CHEF_ANDROID_TRAINER",
         Material.SMITHING_TABLE,
-        "Chef Android Trainer");
+        "厨师机器人训练装置");
 
     public static final SlimefunItemStack FISHING_NET_I = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_FISHING_NET_I",
         Material.IRON_BARS,
-        "Fishing Net",
+        "捕鱼网",
         LoreBuilder.speed(1));
 
     public static final SlimefunItemStack FISHING_NET_II = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_FISHING_NET_II",
         Material.IRON_BARS,
-        "Fishing Net &7- &eII",
+        "捕鱼网 &7- &eII",
         LoreBuilder.speed(2));
 
     public static final SlimefunItemStack FISHING_NET_III = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_FISHING_NET_III",
         Material.IRON_BARS,
-        "Fishing Net &7- &eIII",
+        "捕鱼网 &7- &eIII",
         LoreBuilder.speed(4));
 
     public static final SlimefunItemStack ELECTRIC_KITCHEN_I = ThemedItemStack.of(
         GastroTheme.ELECTRIC,
         "GN_ELECTRIC_KITCHEN_I",
         Material.FURNACE,
-        "Electric Kitchen",
+        "电动厨房",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(256),
         LoreBuilder.powerPerSecond(16),
@@ -426,7 +424,7 @@ public class GastroStacks {
         GastroTheme.ELECTRIC,
         "GN_ELECTRIC_KITCHEN_II",
         Material.FURNACE,
-        "Electric Kitchen &7- &eII  ",
+        "电动厨房 &7- &eII  ",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(1024),
         LoreBuilder.powerPerSecond(64),
@@ -436,7 +434,7 @@ public class GastroStacks {
         GastroTheme.ELECTRIC,
         "GN_ELECTRIC_KITCHEN_III",
         Material.FURNACE,
-        "Electric Kitchen &7- &eIII",
+        "电动厨房 &7- &eIII",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(4096),
         LoreBuilder.powerPerSecond(256),
@@ -449,373 +447,373 @@ public class GastroStacks {
     public static final SlimefunItemStack RICE = ThemedItemStack.ingredient(
         "GN_RICE",
         Material.PUMPKIN_SEEDS,
-        "Rice");
+        "大米");
 
     public static final SlimefunItemStack QUINOA = ThemedItemStack.ingredient(
         "GN_QUINOA",
         Material.PUMPKIN_SEEDS,
-        "Quinoa");
+        "藜麦");
 
     public static final SlimefunItemStack OATS = ThemedItemStack.ingredient(
         "GN_OATS",
         Material.BEETROOT_SEEDS,
-        "Oats");
+        "燕麦");
 
     public static final SlimefunItemStack SOYBEANS = ThemedItemStack.ingredient(
         "GN_SOYBEANS",
         Material.BEETROOT_SEEDS,
-        "Soybeans");
+        "大豆");
 
     public static final SlimefunItemStack BARLEY = ThemedItemStack.ingredient(
         "GN_BARLEY",
         Material.WHEAT,
-        "Barley");
+        "大麦");
 
     public static final SlimefunItemStack BARLEY_SEEDS = ThemedItemStack.ingredient(
         "GN_BARLEY_SEEDS",
         Material.WHEAT_SEEDS,
-        "Barley Seeds");
+        "大麦种子");
 
     public static final SlimefunItemStack RYE = ThemedItemStack.ingredient(
         "GN_RYE",
         Material.WHEAT,
-        "Rye");
+        "黑麦");
 
     public static final SlimefunItemStack RYE_SEEDS = ThemedItemStack.ingredient(
         "GN_RYE_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "Rye Seeds");
+        "黑麦种子");
 
     public static final SlimefunItemStack SORGHUM = ThemedItemStack.ingredient(
         "GN_SORGHUM",
         Material.WHEAT,
-        "Sorghum");
+        "高粱");
 
     public static final SlimefunItemStack SORGHUM_SEEDS = ThemedItemStack.ingredient(
         "GN_SORGHUM_SEEDS",
         Material.BEETROOT_SEEDS,
-        "Sorghum Seeds");
+        "高粱种子");
 
     public static final SlimefunItemStack TURNIP = ThemedItemStack.ingredient(
         "GN_TURNIP",
         Material.BEETROOT,
-        "Turnip");
+        "芜菁");
 
     public static final SlimefunItemStack TURNIP_SEEDS = ThemedItemStack.ingredient(
         "GN_TURNIP_SEEDS",
         Material.MELON_SEEDS,
-        "Turnip Seeds");
+        "芜菁种子");
 
     public static final SlimefunItemStack SQUASH = ThemedItemStack.ingredient(
         "GN_SQUASH",
         Material.MELON,
-        "Squash");
+        "南瓜");
 
     public static final SlimefunItemStack SQUASH_SEEDS = ThemedItemStack.ingredient(
         "GN_SQUASH_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "Squash Seeds");
+        "南瓜种子");
 
     public static final SlimefunItemStack CELERY = ThemedItemStack.ingredient(
         "GN_CELERY",
         Material.SUGAR_CANE,
-        "Celery");
+        "芹菜");
 
     public static final SlimefunItemStack BOK_CHOY = ThemedItemStack.ingredient(
         "GN_BOK_CHOY",
         Material.MANGROVE_PROPAGULE,
-        "Bok Choy");
+        "小白菜");
 
     public static final SlimefunItemStack BROCCOLI = ThemedItemStack.ingredient(
         "GN_BROCCOLI",
         Material.OAK_SAPLING,
-        "Broccoli");
+        "西兰花");
 
     public static final SlimefunItemStack CUCUMBER = ThemedItemStack.ingredient(
         "GN_CUCUMBER",
         Material.SEA_PICKLE,
-        "Cucumber");
+        "黄瓜");
     public static final SlimefunItemStack BASIL = ThemedItemStack.ingredient(
         "GN_BASIL",
         Material.KELP,
-        "Basil");
+        "罗勒");
 
     public static final SlimefunItemStack SPINACH = ThemedItemStack.ingredient(
         "GN_SPINACH",
         Material.BIG_DRIPLEAF,
-        "Spinach");
+        "菠菜");
 
     public static final SlimefunItemStack BRUSSLES_SPROUTS = ThemedItemStack.ingredient(
         "GN_BRUSSLES_SPROUTS",
         Material.SMALL_DRIPLEAF,
-        "Brussles Sprouts");
+        "球子甘蓝");
 
     public static final SlimefunItemStack MINT = ThemedItemStack.ingredient(
         "GN_MINT",
         Material.FERN,
-        "Mint");
+        "薄荷");
 
     public static final SlimefunItemStack CHILI_PEPPER = ThemedItemStack.ingredient(
         "GN_CHILI_PEPPER",
         Material.RED_CANDLE,
-        "Chili Pepper");
+        "辣椒");
 
     public static final SlimefunItemStack PARSLEY = ThemedItemStack.ingredient(
         "GN_PARSLEY",
         Material.SMALL_DRIPLEAF,
-        "Parsley");
+        "欧芹");
 
     public static final SlimefunItemStack CASSAVA = ThemedItemStack.ingredient(
         "GN_CASSAVA",
         Material.CARROT,
-        "Cassava");
+        "木薯");
 
     public static final SlimefunItemStack LENTILS = ThemedItemStack.ingredient(
         "GN_LENTILS",
         Material.PUMPKIN_SEEDS,
-        "Lentils");
+        "小扁豆");
 
     public static final SlimefunItemStack PEANUTS = ThemedItemStack.ingredient(
         "GN_PEANUTS",
         Material.PUMPKIN_SEEDS,
-        "Peanuts");
+        "花生");
 
     public static final SlimefunItemStack BEANS = ThemedItemStack.ingredient(
         "GN_BEANS",
         Material.BEETROOT_SEEDS,
-        "Beans");
+        "豆子");
 
     public static final SlimefunItemStack PEAS = ThemedItemStack.ingredient(
         "GN_PEAS",
         Material.WHEAT_SEEDS,
-        "Peas");
+        "豌豆");
 
     public static final SlimefunItemStack ASPARAGUS = ThemedItemStack.ingredient(
         "GN_ASPARAGUS",
         Material.BAMBOO,
-        "Asparagus");
+        "芦笋");
 
     public static final SlimefunItemStack GREEN_ONION = ThemedItemStack.ingredient(
         "GN_GREEN_ONION",
         Material.MANGROVE_PROPAGULE,
-        "Green Onion");
+        "葱");
 
     public static final SlimefunItemStack CAULIFLOWER = ThemedItemStack.ingredient(
         "GN_CAULIFLOWER",
         Material.BIRCH_SAPLING,
-        "Cauliflower");
+        "花椰菜");
 
     public static final SlimefunItemStack AVOCADO = ThemedItemStack.ingredient(
         "GN_AVOCADO",
         Material.LIME_DYE,
-        "Avocado");
+        "牛油果");
 
     public static final SlimefunItemStack AVOCADO_PIT = ThemedItemStack.ingredient(
         "GN_AVOCADO_PIT",
         Material.DARK_OAK_BUTTON,
-        "Avocado Pit");
+        "牛油果核");
 
     public static final SlimefunItemStack TURMERIC = ThemedItemStack.ingredient(
         "GN_TURMERIC",
         Material.POTATO,
-        "Turmeric");
+        "姜黄");
 
     public static final SlimefunItemStack CUMIN_SEEDS = ThemedItemStack.ingredient(
         "GN_CUMIN_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "Cumin Seeds");
+        "孜然籽");
 
     public static final SlimefunItemStack RED_BEANS = ThemedItemStack.ingredient(
         "GN_RED_BEANS",
         Material.COCOA_BEANS,
-        "Red Beans");
+        "红腰豆");
 
     public static final SlimefunItemStack CANTALOUPE = ThemedItemStack.ingredient(
         "GN_CANTALOUPE",
         Material.MELON,
-        "Cantaloupe");
+        "哈密瓜");
 
     public static final SlimefunItemStack CANTALOUPE_SEEDS = ThemedItemStack.ingredient(
         "GN_CANTALOUPE_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "Cantaloupe Seeds");
+        "哈密瓜种子");
 
     public static final SlimefunItemStack HONEYDEW_MELON = ThemedItemStack.ingredient(
         "GN_HONEYDEW_MELON",
         Material.MELON,
-        "Honeydew Melon");
+        "香瓜");
 
     public static final SlimefunItemStack HONEYDEW_MELON_SEEDS = ThemedItemStack.ingredient(
         "GN_HONEYDEW_MELON_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "Honeydew Melon Seeds");
+        "香瓜种子");
 
     public static final SlimefunItemStack SESAME_SEEDS = ThemedItemStack.ingredient(
         "GN_SESAME_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "Sesame Seeds");
+        "芝麻籽");
 
     // -- Grown from trees --
 
     public static final SlimefunItemStack LYCHEE = ThemedItemStack.ingredient(
         "GN_LYCHEE",
         HeadTextures.LYCHEE,
-        "Lychee");
+        "荔枝");
     public static final SlimefunItemStack LYCHEE_SAPLING = ThemedItemStack.ingredient(
         "GN_LYCHEE_SAPLING",
         Material.OAK_SAPLING,
-        "Lychee Sapling");
+        "荔枝树苗");
     public static final SlimefunItemStack BANANA = ThemedItemStack.ingredient(
         "GN_BANANA",
         HeadTextures.BANANA,
-        "Banana");
+        "香蕉");
     public static final SlimefunItemStack BANANA_SAPLING = ThemedItemStack.ingredient(
         "GN_BANANA_SAPLING",
         Material.OAK_SAPLING,
-        "Banana Sapling");
+        "香蕉树苗");
     public static final SlimefunItemStack VANILLA_BEANS = ThemedItemStack.ingredient(
         "GN_VANILLA_BEANS",
         HeadTextures.VANILLA,
-        "Vanilla Beans");
+        "香子兰");
     public static final SlimefunItemStack VANILLA_SAPLING = ThemedItemStack.ingredient(
         "GN_VANILLA_SAPLING",
         Material.OAK_SAPLING,
-        "Vanilla Sapling");
+        "香子兰树苗");
 
     // -- Harvested --
 
     public static final SlimefunItemStack FIDDLEHEADS = ThemedItemStack.ingredient(
         "GN_FIDDLEHEADS",
         Material.FERN,
-        "Fiddleheads");
+        "蕨菜");
 
     public static final SlimefunItemStack TRUFFLE = ThemedItemStack.ingredient(
         "GN_TRUFFLE",
         Material.BROWN_MUSHROOM,
-        "Truffle");
+        "松露");
 
     public static final SlimefunItemStack ENOKI_MUSHROOMS = ThemedItemStack.ingredient(
         "GN_ENOKI_MUSHROOMS",
         Material.BROWN_MUSHROOM,
-        "Enoki Mushrooms");
+        "金针菇");
 
     public static final SlimefunItemStack KING_OYSTER_MUSHROOM = ThemedItemStack.ingredient(
         "GN_KING_OYSTER_MUSHROOM",
         Material.BROWN_MUSHROOM,
-        "King Oyster Mushroom");
+        "杏鮑菇");
 
     public static final SlimefunItemStack BUTTON_MUSHROOM = ThemedItemStack.ingredient(
         "GN_BUTTON_MUSHROOM",
         Material.BROWN_MUSHROOM,
-        "Button Mushroom");
+        "纽扣蘑菇");
 
     public static final SlimefunItemStack CLAM = ThemedItemStack.ingredient(
         "GN_CLAM",
         Material.NAUTILUS_SHELL,
-        "Clam");
+        "蛤");
 
     // -- Dropped from mobs --
 
     public static final SlimefunItemStack RAW_CHEVON = ThemedItemStack.ingredient(
         "GN_RAW_CHEVON",
         Material.MUTTON,
-        "Raw Chevon");
+        "生山羊肉");
 
     public static final SlimefunItemStack COOKED_CHEVON = ThemedItemStack.ingredient(
         "GN_COOKED_CHEVON",
         Material.COOKED_MUTTON,
-        "Cooked Chevon");
+        "熟山羊肉");
 
     public static final SlimefunItemStack SALMON_ROE = ThemedItemStack.ingredient(
         "GN_SALMON_ROE",
         Material.PUMPKIN_SEEDS,
-        "Salmon Roe");
+        "鲑鱼子");
 
     public static final SlimefunItemStack GUARDIAN_FIN = ThemedItemStack.ingredient(
         "GN_GUARDIAN_FIN",
         Material.PRISMARINE_SHARD,
-        "Guardian Fin");
+        "守护者鳍");
 
     public static final SlimefunItemStack RAW_SQUID = ThemedItemStack.ingredient(
         "GN_RAW_SQUID",
         Material.PORKCHOP,
-        "Raw Squid");
+        "生鱿鱼");
 
     public static final SlimefunItemStack COOKED_SQUID = ThemedItemStack.ingredient(
         "GN_COOKED_SQUID",
         Material.COOKED_PORKCHOP,
-        "Cooked Squid");
+        "熟鱿鱼");
 
     // -- From fishing --
 
     public static final SlimefunItemStack RAW_MACKEREL = ThemedItemStack.ingredient(
         "GN_RAW_MACKEREL",
         Material.COD,
-        "Raw Mackerel");
+        "生鲭鱼");
     public static final SlimefunItemStack COOKED_MACKEREL = ThemedItemStack.ingredient(
         "GN_COOKED_MACKEREL",
         Material.COOKED_COD,
-        "Cooked Mackerel");
+        "熟鲭鱼");
 
     public static final SlimefunItemStack RAW_EEL = ThemedItemStack.ingredient(
         "GN_RAW_EEL",
         Material.SALMON,
-        "Raw Eel");
+        "生鳗鱼");
     public static final SlimefunItemStack COOKED_EEL = ThemedItemStack.ingredient(
         "GN_COOKED_EEL",
         Material.COOKED_SALMON,
-        "Cooked Eel");
+        "熟鳗鱼");
 
     public static final SlimefunItemStack RAW_TROUT = ThemedItemStack.ingredient(
         "GN_RAW_TROUT",
         Material.COD,
-        "Raw Trout");
+        "生鳟鱼");
     public static final SlimefunItemStack COOKED_TROUT = ThemedItemStack.ingredient(
         "GN_COOKED_TROUT",
         Material.COOKED_COD,
-        "Cooked Trout");
+        "熟鳟鱼");
 
     public static final SlimefunItemStack RAW_BASS = ThemedItemStack.ingredient(
         "GN_RAW_BASS",
         Material.COD,
-        "Raw Bass");
+        "生鲈鱼");
     public static final SlimefunItemStack COOKED_BASS = ThemedItemStack.ingredient(
         "GN_COOKED_BASS",
         Material.COOKED_COD,
-        "Cooked Bass");
+        "熟鲈鱼");
 
     public static final SlimefunItemStack RAW_CARP = ThemedItemStack.ingredient(
         "GN_RAW_CARP",
         Material.COD,
-        "Raw Carp");
+        "生鲤鱼");
     public static final SlimefunItemStack COOKED_CARP = ThemedItemStack.ingredient(
         "GN_COOKED_CARP",
         Material.COOKED_COD,
-        "Cooked Carp");
+        "熟鲤鱼");
 
     public static final SlimefunItemStack RAW_PIKE = ThemedItemStack.ingredient(
         "GN_RAW_PIKE",
         Material.COD,
-        "Raw Pike");
+        "生梭鱼");
     public static final SlimefunItemStack COOKED_PIKE = ThemedItemStack.ingredient(
         "GN_COOKED_PIKE",
         Material.COOKED_COD,
-        "Cooked Pike");
+        "熟梭鱼");
 
     public static final SlimefunItemStack RAW_TUNA = ThemedItemStack.ingredient(
         "GN_RAW_TUNA",
         Material.COD,
-        "Raw Tuna");
+        "生金枪鱼");
 
     public static final SlimefunItemStack COOKED_TUNA = ThemedItemStack.ingredient(
         "GN_COOKED_TUNA",
         Material.COOKED_COD,
-        "Cooked Tuna");
+        "熟金枪鱼");
 
     public static final SlimefunItemStack SHRIMP = ThemedItemStack.ingredient(
         "GN_SHRIMP",
         Material.COD,
-        "Shrimp");
+        "虾");
 
     static {
         WildHarvestListener.registerDrops(
@@ -860,16 +858,16 @@ public class GastroStacks {
     public static final SlimefunItemStack CRAB = ThemedItemStack.ingredient(
         "GN_CRAB",
         Material.RED_DYE,
-        "Crab");
+        "螃蟹");
 
     public static final SlimefunItemStack RAW_TURKEY = ThemedItemStack.ingredient(
         "GN_RAW_TURKEY",
         Material.CHICKEN,
-        "Raw Turkey");
+        "生火鸡");
     public static final SlimefunItemStack COOKED_TURKEY = ThemedItemStack.ingredient(
         "GN_COOKED_TURKEY",
         Material.COOKED_CHICKEN,
-        "Cooked Turkey");
+        "熟火鸡");
 
     // ---- Food ----
 
@@ -878,42 +876,42 @@ public class GastroStacks {
     public static final SlimefunItemStack COOKED_RICE = ThemedItemStack.ingredient(
         "GN_COOKED_RICE",
         Material.SUGAR,
-        "Cooked Rice");
+        "米饭");
 
     public static final SlimefunItemStack BARLEY_FLOUR = ThemedItemStack.ingredient(
         "GN_BARLEY_FLOUR",
         Material.SUGAR,
-        "Barley Flour");
+        "大麦粉");
 
     public static final SlimefunItemStack SORGHUM_FLOUR = ThemedItemStack.ingredient(
         "GN_SORGHUM_FLOUR",
         Material.SUGAR,
-        "Sorghum Flour");
+        "高粱粉");
 
     public static final SlimefunItemStack RYE_FLOUR = ThemedItemStack.ingredient(
         "GN_RYE_FLOUR",
         Material.SUGAR,
-        "Rye Flour");
+        "黑麦面粉");
 
     public static final SlimefunItemStack DOUGH = ThemedItemStack.ingredient(
         "GN_DOUGH",
         Material.POTATO,
-        "Dough");
+        "面团");
 
     public static final SlimefunItemStack TOAST = ThemedItemStack.ingredient(
         "GN_TOAST",
         Material.BREAD,
-        "Toast");
+        "吐司");
 
     public static final SlimefunItemStack NAAN_BREAD = ThemedItemStack.ingredient(
         "GN_NAAN_BREAD",
         Material.BREAD,
-        "Naan Bread");
+        "印度烤饼");
 
     public static final SlimefunItemStack PEANUT_BUTTER = ThemedItemStack.ingredient(
         "GN_PEANUT_BUTTER",
         Material.POTION,
-        "Peanut Butter");
+        "花生酱");
     static {
         final PotionMeta meta = (PotionMeta) PEANUT_BUTTER.getItemMeta();
         meta.setBasePotionData(new PotionData(PotionType.THICK));
@@ -925,37 +923,37 @@ public class GastroStacks {
     public static final SlimefunItemStack FRIED_EGG = ThemedItemStack.ingredient(
         "GN_FRIED_EGG",
         Material.EGG,
-        "Fried Egg");
+        "煎蛋");
 
     public static final SlimefunItemStack HARD_BOILED_EGG = ThemedItemStack.ingredient(
         "GN_HARD_BOILED_EGG",
         Material.EGG,
-        "Hard-boiled Egg");
+        "水煮蛋");
 
     public static final SlimefunItemStack SCRAMBLED_EGGS = ThemedItemStack.ingredient(
         "GN_SCRAMBLED_EGGS",
         Material.YELLOW_DYE,
-        "Scrambled Eggs");
+        "炒滑蛋");
 
     public static final SlimefunItemStack CUSTARD = ThemedItemStack.ingredient(
         "GN_CUSTARD",
         Material.YELLOW_DYE,
-        "Custard");
+        "蛋奶冻");
 
     public static final SlimefunItemStack CARAMEL = ThemedItemStack.ingredient(
         "GN_CARAMEL",
         Material.BROWN_DYE,
-        "Caramel");
+        "焦糖");
 
     public static final SlimefunItemStack MARMALADE = ThemedItemStack.ingredient(
         "GN_MARMALADE",
         Material.HONEY_BOTTLE,
-        "Marmalade");
+        "柑橘酱");
 
     public static final SlimefunItemStack KETCHUP = ThemedItemStack.ingredient(
         "GN_KETCHUP",
         Material.POTION,
-        "Ketchup");
+        "蕃茄酱");
     static {
         final PotionMeta meta = (PotionMeta) KETCHUP.getItemMeta();
         meta.setBasePotionData(new PotionData(PotionType.WATER));
@@ -967,32 +965,32 @@ public class GastroStacks {
     public static final SlimefunItemStack PULLED_PORK = ThemedItemStack.ingredient(
         "GN_PULLED_PORK",
         Material.BROWN_DYE,
-        "Pulled Pork");
+        "撕猪肉");
 
     public static final SlimefunItemStack GROUND_BEEF = ThemedItemStack.ingredient(
         "GN_GROUND_BEEF",
         Material.BROWN_DYE,
-        "Ground Beef");
+        "碎牛肉");
 
     public static final SlimefunItemStack BAKED_BEANS = ThemedItemStack.ingredient(
         "GN_BAKED_BEANS",
         Material.BEETROOT_SEEDS,
-        "Baked Beans");
+        "焗豆");
 
     public static final SlimefunItemStack MISO = ThemedItemStack.ingredient(
         "GN_MISO",
         Material.GLOWSTONE_DUST,
-        "Miso");
+        "味噌");
 
     public static final SlimefunItemStack TOFU = ThemedItemStack.ingredient(
         "GN_TOFU",
         Material.BIRCH_BUTTON,
-        "Tofu");
+        "豆腐");
 
     public static final SlimefunItemStack SOY_SAUCE = ThemedItemStack.ingredient(
         "GN_SOY_SAUCE",
         Material.POTION,
-        "Soy Sauce");
+        "酱油");
     static {
         final PotionMeta meta = (PotionMeta) SOY_SAUCE.getItemMeta();
         meta.setBasePotionData(new PotionData(PotionType.MUNDANE));
@@ -1004,22 +1002,22 @@ public class GastroStacks {
     public static final SlimefunItemStack TURMERIC_POWDER = ThemedItemStack.ingredient(
         "GN_TURMERIC_POWDER",
         Material.GLOWSTONE_DUST,
-        "Turmeric Powder");
+        "姜黄粉");
 
     public static final SlimefunItemStack RED_BEAN_PASTE = ThemedItemStack.ingredient(
         "GN_RED_BEAN_PASTE",
         Material.RED_DYE,
-        "Red Bean Paste");
+        "红豆沙");
 
     public static final SlimefunItemStack TAPIOCA_STARCH = ThemedItemStack.ingredient(
         "GN_TAPIOCA_STARCH",
         Material.SUGAR,
-        "Tapioca Starch");
+        "木薯淀粉");
 
     public static final SlimefunItemStack TAPIOCA_PEARLS = ThemedItemStack.ingredient(
         "GN_TAPIOCA_PEARLS",
         Material.PRISMARINE_CRYSTALS,
-        "Tapioca Pearls");
+        "珍珠粉圆");
 
     // -- Cuisine --
 
@@ -1028,7 +1026,7 @@ public class GastroStacks {
     public static final FoodItemStack PBJ_SANDWICH = new FoodItemStackBuilder()
         .id("GN_PBJ_SANDWICH")
         .texture(HeadTextures.SANDWICH_RED_OCHRE)
-        .name("PB&J Sandwich")
+        .name("花生果酱三明治")
         .hunger(8)
         .effects(FoodEffect.chanceOf(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 90), 0.5))
         .build();
@@ -1036,7 +1034,7 @@ public class GastroStacks {
     public static final FoodItemStack MARMALADE_SANDWICH = new FoodItemStackBuilder()
         .id("GN_MARMALADE_SANDWICH")
         .texture(HeadTextures.SANDWICH_ORANGE)
-        .name("Marmalade Sandwich")
+        .name("果酱三明治")
         .hunger(8)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 30))
         .build();
@@ -1044,7 +1042,7 @@ public class GastroStacks {
     public static final FoodItemStack BAKED_BEANS_AND_TOAST = new FoodItemStackBuilder()
         .id("GN_BAKED_BEANS_AND_TOAST")
         .texture(HeadTextures.TOAST_ORANGE)
-        .name("Baked Beans and Toast")
+        .name("烤豆吐司")
         .hunger(8)
         .effects(FoodEffect.chanceOf(FoodEffect.positivePotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 90), 0.5))
         .build();
@@ -1052,7 +1050,7 @@ public class GastroStacks {
     public static final FoodItemStack AVOCADO_TOAST = new FoodItemStackBuilder()
         .id("GN_AVOCADO_TOAST")
         .texture(HeadTextures.TOAST_GREEN)
-        .name("Avocado Toast")
+        .name("牛油果吐司")
         .hunger(8)
         .effects(FoodEffect.chanceOf(FoodEffect.positivePotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 90), 0.5))
         .build();
@@ -1060,7 +1058,7 @@ public class GastroStacks {
     public static final FoodItemStack TUNA_SANDWICH = new FoodItemStackBuilder()
         .id("GN_TUNA_SANDWICH")
         .texture(HeadTextures.SANDWICH_RED_GREEN)
-        .name("Tuna Sandwich")
+        .name("金枪鱼三明治")
         .hunger(8)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 30))
         .build();
@@ -1068,7 +1066,7 @@ public class GastroStacks {
     public static final FoodItemStack BREAKFAST_SANDWICH = new FoodItemStackBuilder()
         .id("GN_BREAKFAST_SANDWICH")
         .texture(HeadTextures.SANDWICH_ORANGE)
-        .name("Breakfast Sandwich")
+        .name("早餐三明治")
         .hunger(8)
         .effects(FoodEffect.chanceOf(FoodEffect.positivePotionEffect(PotionEffectType.REGENERATION, 90), 0.5))
         .build();
@@ -1076,7 +1074,7 @@ public class GastroStacks {
     public static final FoodItemStack HAM_SANDWICH = new FoodItemStackBuilder()
         .id("GN_HAM_SANDWICH")
         .texture(HeadTextures.SANDWICH_ORANGE)
-        .name("Ham Sandwich")
+        .name("火腿三明治")
         .hunger(8)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.REGENERATION, 30))
         .build();
@@ -1084,7 +1082,7 @@ public class GastroStacks {
     public static final FoodItemStack EGG_SALAD_SANDWICH = new FoodItemStackBuilder()
         .id("GN_EGG_SALAD_SANDWICH")
         .texture(HeadTextures.SANDWICH_WHITE_GREEN)
-        .name("Egg Salad Sandwich")
+        .name("鸡蛋沙拉三明治")
         .hunger(8)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.SPEED, 30))
         .build();
@@ -1092,7 +1090,7 @@ public class GastroStacks {
     public static final FoodItemStack ROAST_BEEF_SANDWICH = new FoodItemStackBuilder()
         .id("GN_ROAST_BEEF_SANDWICH")
         .texture(HeadTextures.SANDWICH_RED_GREEN)
-        .name("Roast Beef Sandwich")
+        .name("烤牛肉三明治")
         .hunger(8)
         .effects(FoodEffect.chanceOf(FoodEffect.positivePotionEffect(PotionEffectType.SPEED, 90), 0.5))
         .build();
@@ -1102,7 +1100,7 @@ public class GastroStacks {
     public static final FoodItemStack GREEK_SALAD = new FoodItemStackBuilder()
         .id("GN_GREEK_SALAD")
         .texture(HeadTextures.SALAD)
-        .name("Greek Salad")
+        .name("希腊沙拉")
         .hunger(7)
         .effects(
             FoodEffect.heal(1),
@@ -1112,7 +1110,7 @@ public class GastroStacks {
     public static final FoodItemStack CAESAR_SALAD = new FoodItemStackBuilder()
         .id("GN_CAESAR_SALAD")
         .texture(HeadTextures.SALAD)
-        .name("Caesar Salad")
+        .name("凯撒沙拉")
         .hunger(7)
         .effects(
             FoodEffect.heal(1),
@@ -1122,7 +1120,7 @@ public class GastroStacks {
     public static final FoodItemStack FIDDLEHEAD_SALAD = new FoodItemStackBuilder()
         .id("GN_FIDDLEHEAD_SALAD")
         .texture(HeadTextures.SALAD)
-        .name("Fiddlehead Salad")
+        .name("蕨菜沙拉")
         .hunger(7)
         .effects(
             FoodEffect.heal(1),
@@ -1134,14 +1132,14 @@ public class GastroStacks {
     public static final FoodItemStack PAN_SEARED_SALMON = new FoodItemStackBuilder()
         .id("GN_PAN_SEARED_SALMON")
         .material(Material.COOKED_SALMON)
-        .name("Pan-seared Salmon")
+        .name("奶油香煎鲑鱼")
         .hunger(7)
         .build();
 
     public static final FoodItemStack FRIED_SHRIMP = new FoodItemStackBuilder()
         .id("GN_FRIED_SHRIMP")
         .material(Material.NAUTILUS_SHELL)
-        .name("Fried Shrimp")
+        .name("炸虾")
         .hunger(3)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.ABSORPTION, 30))
         .build();
@@ -1149,7 +1147,7 @@ public class GastroStacks {
     public static final FoodItemStack TEMPURA_SHRIMP = new FoodItemStackBuilder()
         .id("GN_TEMPURA_SHRIMP")
         .material(Material.NAUTILUS_SHELL)
-        .name("Tempura Shrimp")
+        .name("天妇罗虾")
         .hunger(4)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.ABSORPTION, 30))
         .build();
@@ -1157,7 +1155,7 @@ public class GastroStacks {
     public static final FoodItemStack TEMPURA_BROCCOLI = new FoodItemStackBuilder()
         .id("GN_TEMPURA_BROCCOLI")
         .material(Material.BAKED_POTATO)
-        .name("Tempura Broccoli")
+        .name("天妇罗西兰花")
         .hunger(3)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.ABSORPTION, 30))
         .build();
@@ -1165,7 +1163,7 @@ public class GastroStacks {
     public static final FoodItemStack FRIED_CALAMARI = new FoodItemStackBuilder()
         .id("GN_FRIED_CALAMARI")
         .material(Material.COOKED_CHICKEN)
-        .name("Fried Calamari")
+        .name("炸鱿鱼")
         .hunger(5)
         .build();
 
@@ -1174,7 +1172,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_PESTO_PASTA = new FoodItemStackBuilder()
         .id("GN_CHICKEN_PESTO_PASTA")
         .texture(HeadTextures.PASTA_GREEN)
-        .name("Chicken Pesto Pasta")
+        .name("鸡肉香蒜酱意面")
         .hunger(14)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.WEAKNESS))
         .build();
@@ -1182,14 +1180,14 @@ public class GastroStacks {
     public static final FoodItemStack SQUID_INK_PASTA = new FoodItemStackBuilder()
         .id("GN_SQUID_INK_PASTA")
         .texture(HeadTextures.PASTA_BLACK)
-        .name("Squid Ink Pasta")
+        .name("鱿鱼汁意面")
         .hunger(14)
         .build();
 
     public static final FoodItemStack GLOWING_SQUID_INK_PASTA = new FoodItemStackBuilder()
         .id("GN_GLOWING_SQUID_INK_PASTA")
         .texture(HeadTextures.PASTA_BLACK)
-        .name("Glowing Squid Ink Pasta")
+        .name("发光鱿鱼汁意面")
         .hunger(14)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.GLOWING, 120, 0))
         .build();
@@ -1197,7 +1195,7 @@ public class GastroStacks {
     public static final FoodItemStack TUNA_CASSEROLE = new FoodItemStackBuilder()
         .id("GN_TUNA_CASSEROLE")
         .texture(HeadTextures.PASTA_GREEN)
-        .name("Tuna Casserole")
+        .name("金枪鱼砂锅")
         .hunger(14, 1)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 20, 1))
         .build();
@@ -1205,7 +1203,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_RAVIOLI = new FoodItemStackBuilder()
         .id("GN_CHICKEN_RAVIOLI")
         .texture(HeadTextures.PASTA_RED)
-        .name("Chicken Ravioli")
+        .name("鸡肉馅意大利饺子")
         .hunger(12)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.WEAKNESS))
         .build();
@@ -1213,7 +1211,7 @@ public class GastroStacks {
     public static final FoodItemStack MUSHROOM_RAVIOLI = new FoodItemStackBuilder()
         .id("GN_MUSHROOM_RAVIOLI")
         .texture(HeadTextures.PASTA_RED)
-        .name("Mushroom Ravioli")
+        .name("蘑菇馅意大利饺子")
         .hunger(12)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.WEAKNESS))
         .build();
@@ -1223,7 +1221,7 @@ public class GastroStacks {
     public static final FoodItemStack OATMEAL = new FoodItemStackBuilder()
         .id("GN_OATMEAL")
         .texture(HeadTextures.PORRIDGE)
-        .name("Oatmeal")
+        .name("燕麦片")
         .hunger(10, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1233,7 +1231,7 @@ public class GastroStacks {
     public static final FoodItemStack BARLEY_PORRIDGE = new FoodItemStackBuilder()
         .id("GN_BARLEY_PORRIDGE")
         .texture(HeadTextures.PORRIDGE)
-        .name("Barley Porridge")
+        .name("大麦粥")
         .hunger(10, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1243,7 +1241,7 @@ public class GastroStacks {
     public static final FoodItemStack CONGEE = new FoodItemStackBuilder()
         .id("GN_CONGEE")
         .texture(HeadTextures.PORRIDGE)
-        .name("Congee")
+        .name("粥")
         .hunger(10, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1253,7 +1251,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Soup")
+        .name("鸡汤")
         .hunger(12, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1263,7 +1261,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_AND_QUINOA_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_AND_QUINOA_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken And Quinoa Soup")
+        .name("鸡肉和藜麦汤")
         .hunger(14, 1.25)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1273,7 +1271,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_NOODLE_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_NOODLE_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Noodle Soup")
+        .name("鸡肉面汤")
         .hunger(14, 1.75)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1284,7 +1282,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_NOODLE_SOUP_WITH_BOK_HOY = new FoodItemStackBuilder()
         .id("GN_CHICKEN_NOODLE_SOUP_WITH_BOK_CHOY")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Noodle Soup w/ Bok Choy")
+        .name("白菜鸡肉面汤")
         .hunger(16, 1.75)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.POISON),
@@ -1295,7 +1293,7 @@ public class GastroStacks {
     public static final FoodItemStack SPLIT_PEA_SOUP = new FoodItemStackBuilder()
         .id("GN_SPLIT_PEA_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Split Pea Soup")
+        .name("豌豆汤")
         .hunger(10, 1.75)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.CONFUSION))
         .build();
@@ -1303,7 +1301,7 @@ public class GastroStacks {
     public static final FoodItemStack HAM_AND_SPLIT_PEA_SOUP = new FoodItemStackBuilder()
         .id("GN_HAM_AND_SPLIT_PEA_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Ham and Split Pea Soup")
+        .name("火腿豌豆汤")
         .hunger(14, 1.75)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.CONFUSION))
         .build();
@@ -1311,7 +1309,7 @@ public class GastroStacks {
     public static final FoodItemStack LENTIL_SOUP = new FoodItemStackBuilder()
         .id("GN_LENTIL_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Lentil Soup")
+        .name("扁豆汤")
         .hunger(10, 1.75)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.SATURATION, 5))
         .build();
@@ -1319,7 +1317,7 @@ public class GastroStacks {
     public static final FoodItemStack BEEF_AND_LENTIL_SOUP = new FoodItemStackBuilder()
         .id("GN_BEEF_AND_LENTIL_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Beef and Lentil Soup")
+        .name("牛肉扁豆汤")
         .hunger(14, 1.75)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.SATURATION, 10, 1))
         .build();
@@ -1327,7 +1325,7 @@ public class GastroStacks {
     public static final FoodItemStack CARROT_SOUP = new FoodItemStackBuilder()
         .id("GN_CARROT_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Carrot Soup")
+        .name("胡萝卜汤")
         .hunger(12, 1.75)
         .effects(FoodEffect.removePotionEffect(PotionEffectType.BLINDNESS))
         .build();
@@ -1335,7 +1333,7 @@ public class GastroStacks {
     public static final FoodItemStack MUSHROOM_BARLEY_SOUP = new FoodItemStackBuilder()
         .id("GN_MUSHROOM_BARLEY_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Mushroom Barley Soup")
+        .name("蘑菇大麦汤")
         .hunger(12, 2)
         .effects(FoodEffect.warm(70))
         .build();
@@ -1343,7 +1341,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_BARLEY_SOUP = new FoodItemStackBuilder()
         .id("GN_CHICKEN_BARLEY_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Chicken Barley Soup")
+        .name("鸡肉大麦汤")
         .hunger(14, 2)
         .effects(FoodEffect.warm(70))
         .build();
@@ -1351,7 +1349,7 @@ public class GastroStacks {
     public static final FoodItemStack BEEF_BARLEY_SOUP = new FoodItemStackBuilder()
         .id("GN_BEEF_BARLEY_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Beef Barley Soup")
+        .name("牛肉大麦汤")
         .hunger(14, 2)
         .effects(FoodEffect.warm(70))
         .build();
@@ -1359,7 +1357,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_MUSHROOM_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_MUSHROOM_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Mushroom Soup")
+        .name("奶油蘑菇汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1367,7 +1365,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_BROCCOLI_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_BROCCOLI_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Celery Soup")
+        .name("奶油芹菜汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1375,7 +1373,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_ASPARAGUS_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_ASPARAGUS_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Asparagus Soup")
+        .name("奶油芦笋汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1383,7 +1381,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_CAULIFLOWER_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_CAULIFLOWER_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("Cream of Cauliflower Soup")
+        .name("奶油花椰菜汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1391,7 +1389,7 @@ public class GastroStacks {
     public static final FoodItemStack MISO_SOUP = new FoodItemStackBuilder()
         .id("GN_MISO_SOUP")
         .texture(HeadTextures.MISO_SOUP)
-        .name("Miso Soup")
+        .name("味噌汤")
         .hunger(7, 1.75)
         .effects(FoodEffect.warm(50))
         .build();
@@ -1399,7 +1397,7 @@ public class GastroStacks {
     public static final FoodItemStack GUARDIAN_FIN_SOUP = new FoodItemStackBuilder()
         .id("GN_GUARDIAN_FIN_SOUP")
         .texture(HeadTextures.SOUP)
-        .name("Guardian Fin Soup")
+        .name("守护者翅汤")
         .hunger(12, 1.75)
         .effects(FoodEffect.warm(50))
         .build();
@@ -1407,35 +1405,35 @@ public class GastroStacks {
     public static final FoodItemStack BROCCOLI_CHOWDER = new FoodItemStackBuilder()
         .id("GN_BROCCOLI_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Broccoli Chowder")
+        .name("西兰花浓汤")
         .hunger(10, 1.75)
         .build();
 
     public static final FoodItemStack SALMON_CHOWDER = new FoodItemStackBuilder()
         .id("GN_SALMON_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Salmon Chowder")
+        .name("鲑鱼浓汤")
         .hunger(12, 1.75)
         .build();
 
     public static final FoodItemStack POTATO_CHOWDER = new FoodItemStackBuilder()
         .id("GN_POTATO_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Potato Chowder")
+        .name("土豆浓汤")
         .hunger(10, 1.75)
         .build();
 
     public static final FoodItemStack CORN_CHOWDER = new FoodItemStackBuilder()
         .id("GN_CORN_CHOWDER")
         .texture(HeadTextures.CHOWDER)
-        .name("Corn Chowder")
+        .name("玉米浓汤")
         .hunger(10, 1.75)
         .build();
 
     public static final FoodItemStack BEEF_STEW = new FoodItemStackBuilder()
         .id("GN_BEEF_STEW")
         .texture(HeadTextures.STEW)
-        .name("Beef Stew")
+        .name("炖牛肉")
         .hunger(16, 1.75)
         .effects(FoodEffect.warm(140))
         .build();
@@ -1443,7 +1441,7 @@ public class GastroStacks {
     public static final FoodItemStack CLAM_STEW = new FoodItemStackBuilder()
         .id("GN_CLAM_STEW")
         .texture(HeadTextures.STEW)
-        .name("Clam Stew")
+        .name("炖蛤蜊")
         .hunger(14, 1.75)
         .effects(FoodEffect.warm(50))
         .build();
@@ -1451,7 +1449,7 @@ public class GastroStacks {
     public static final FoodItemStack CRAB_HOTPOT = new FoodItemStackBuilder()
         .id("GN_CRAB_HOTPOT")
         .texture(HeadTextures.STEW)
-        .name("Crab Hotpot")
+        .name("蟹肉火锅")
         .hunger(17, 1.75)
         .effects(FoodEffect.warm(140))
         .build();
@@ -1461,35 +1459,35 @@ public class GastroStacks {
     public static final FoodItemStack BBQ_STEAK = new FoodItemStackBuilder()
         .id("GN_BBQ_STEAK")
         .material(Material.COOKED_BEEF)
-        .name("BBQ Steak")
+        .name("烤牛排")
         .hunger(9, 1.5)
         .build();
 
     public static final FoodItemStack BBQ_PORK = new FoodItemStackBuilder()
         .id("GN_BBQ_PORK")
         .material(Material.COOKED_PORKCHOP)
-        .name("BBQ Pork")
+        .name("烤猪排")
         .hunger(9, 1.5)
         .build();
 
     public static final FoodItemStack BBQ_CHICKEN = new FoodItemStackBuilder()
         .id("GN_BBQ_CHICKEN")
         .material(Material.COOKED_CHICKEN)
-        .name("BBQ Chicken")
+        .name("烤鸡排")
         .hunger(7, 1.5)
         .build();
 
     public static final FoodItemStack BBQ_MUTTON = new FoodItemStackBuilder()
         .id("GN_BBQ_MUTTON")
         .material(Material.COOKED_MUTTON)
-        .name("BBQ Mutton")
+        .name("烤羊排")
         .hunger(7, 1.5)
         .build();
 
     public static final FoodItemStack BUTTER_CHICKEN = new FoodItemStackBuilder()
         .id("GN_BUTTER_CHICKEN")
         .texture(HeadTextures.STEW)
-        .name("Butter Chicken")
+        .name("印度牛油鸡")
         .hunger(7)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 30))
         .build();
@@ -1499,7 +1497,7 @@ public class GastroStacks {
     public static final FoodItemStack BUTTER_CHICKEN_WITH_NAAN_BREAD = new FoodItemStackBuilder()
         .id("GN_BUTTER_CHICKEN_WITH_NAAN_BREAD")
         .texture(HeadTextures.STEW)
-        .name("Butter Chicken With Naan Bread")
+        .name("印度牛油鸡配大蒜烤饼")
         .hunger(12)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 30, 1))
         .build();
@@ -1507,14 +1505,14 @@ public class GastroStacks {
     public static final FoodItemStack SHRIMP_FRIED_RICE = new FoodItemStackBuilder()
         .id("GN_SHRIMP_FRIED_RICE")
         .texture(HeadTextures.RICE_PINK)
-        .name("Shrimp Fried Rice")
+        .name("虾炒饭")
         .hunger(10)
         .build();
 
     public static final FoodItemStack CURRY_RICE = new FoodItemStackBuilder()
         .id("GN_CURRY_RICE")
         .texture(HeadTextures.RICE_BROWN)
-        .name("Curry Rice")
+        .name("咖哩饭")
         .hunger(10)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.INCREASE_DAMAGE, 30))
         .build();
@@ -1522,7 +1520,7 @@ public class GastroStacks {
     public static final FoodItemStack RICE_OMELETTE = new FoodItemStackBuilder()
         .id("GN_RICE_OMELETTE")
         .texture(HeadTextures.RICE_YELLOW)
-        .name("Rice Omelette")
+        .name("蛋包饭")
         .hunger(8)
         .effects(FoodEffect.heal(1))
         .build();
@@ -1530,7 +1528,7 @@ public class GastroStacks {
     public static final FoodItemStack RICE_BALL = new FoodItemStackBuilder()
         .id("GN_RICE_BALL")
         .texture(HeadTextures.RICE_BALL)
-        .name("Rice Ball")
+        .name("饭团")
         .hunger(4)
         .build();
 
@@ -1539,7 +1537,7 @@ public class GastroStacks {
     public static final FoodItemStack BEEF_UDON = new FoodItemStackBuilder()
         .id("GN_BEEF_UDON")
         .texture(HeadTextures.UDON)
-        .name("Beef Udon")
+        .name("牛肉乌冬面")
         .hunger(13)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1547,7 +1545,7 @@ public class GastroStacks {
     public static final FoodItemStack CHICKEN_UDON = new FoodItemStackBuilder()
         .id("GN_CHICKEN_UDON")
         .texture(HeadTextures.UDON)
-        .name("Chicken Udon")
+        .name("鸡肉乌冬面")
         .hunger(11)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1555,7 +1553,7 @@ public class GastroStacks {
     public static final FoodItemStack VEGETABLE_UDON = new FoodItemStackBuilder()
         .id("GN_VEGETABLE_UDON")
         .texture(HeadTextures.UDON)
-        .name("Vegetable Udon")
+        .name("蔬菜乌冬面")
         .hunger(11)
         .effects(FoodEffect.heal(2))
         .build();
@@ -1563,63 +1561,63 @@ public class GastroStacks {
     public static final FoodItemStack STIR_FRY_NOODLES = new FoodItemStackBuilder()
         .id("GN_STIR_FRY_NOODLES")
         .texture(HeadTextures.NOODLES)
-        .name("Stir-fry Noodles")
+        .name("炒面")
         .hunger(10)
         .build();
 
     public static final FoodItemStack SHRIMP_DUMPLINGS = new FoodItemStackBuilder()
         .id("GN_SHRIMP_DUMPLINGS")
         .texture(HeadTextures.DUMPLINGS)
-        .name("Shrimp Dumplings")
+        .name("虾饺")
         .hunger(5)
         .build();
 
     public static final FoodItemStack CHICKEN_POTSTICKERS = new FoodItemStackBuilder()
         .id("GN_CHICKEN_POTSTICKERS")
         .material(Material.COOKED_PORKCHOP)
-        .name("Chicken Potstickers")
+        .name("鸡肉锅贴")
         .hunger(9)
         .build();
 
     public static final FoodItemStack BEEF_POTSTICKERS = new FoodItemStackBuilder()
         .id("GN_BEEF_POTSTICKERS")
         .material(Material.COOKED_PORKCHOP)
-        .name("Beef Potstickers")
+        .name("牛肉锅贴")
         .hunger(11)
         .build();
 
     public static final FoodItemStack PIEROGIES = new FoodItemStackBuilder()
         .id("GN_PIEROGIES")
         .material(Material.COOKED_PORKCHOP)
-        .name("Pierogies")
+        .name("波兰饺子")
         .hunger(9)
         .build();
 
     public static final FoodItemStack BACON_PIEROGIES = new FoodItemStackBuilder()
         .id("GN_BACON_PIEROGIES")
         .material(Material.COOKED_PORKCHOP)
-        .name("Bacon Pierogies")
+        .name("培根波兰饺子")
         .hunger(10)
         .build();
 
     public static final FoodItemStack CUSTARD_BUNS = new FoodItemStackBuilder()
         .id("GN_CUSTARD_BUNS")
         .texture(HeadTextures.DUMPLINGS)
-        .name("Custard Buns")
+        .name("奶黄包")
         .hunger(7)
         .build();
 
     public static final FoodItemStack RED_BEAN_BUNS = new FoodItemStackBuilder()
         .id("GN_RED_BEAN_BUNS")
         .texture(HeadTextures.DUMPLINGS)
-        .name("Red Bean Buns")
+        .name("豆沙包")
         .hunger(7)
         .build();
 
     public static final FoodItemStack TAIYAKI = new FoodItemStackBuilder()
         .id("GN_TAIYAKI")
         .material(Material.COD)
-        .name("Taiyaki")
+        .name("鲷鱼烧")
         .hunger(6)
         .build();
 
@@ -1628,56 +1626,56 @@ public class GastroStacks {
     public static final FoodItemStack TEMPURA_SHRIMP_ROLL = new FoodItemStackBuilder()
         .id("GN_TEMPURA_SHRIMP_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("Tempura Shrimp Roll")
+        .name("天妇罗虾卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack DYNAMITE_ROLL = new FoodItemStackBuilder()
         .id("GN_DYNAMITE_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("Dynamite Roll")
+        .name("世纪卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack KAPPA_ROLL = new FoodItemStackBuilder()
         .id("GN_KAPPA_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("Kappa Roll")
+        .name("黄瓜卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack CALIFORNIA_ROLL = new FoodItemStackBuilder()
         .id("GN_CALIFORNIA_ROLL")
         .texture(HeadTextures.SUSHI_ROLL)
-        .name("California Roll")
+        .name("加州卷")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack SALMON_ROE_SUSHI_ROLL = new FoodItemStackBuilder()
         .id("GN_SALMON_ROE_SUSHI_ROLL")
         .texture(HeadTextures.IKURA_ROLL)
-        .name("Salmon Roe Sushi Roll")
+        .name("鲑鱼籽寿司卷")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack RED_BEAN_GLUTINOUS_RICE_BALLS = new FoodItemStackBuilder()
         .id("GN_RED_BEAN_GLUTINOUS_RICE_BALLS")
         .texture(HeadTextures.GLUTINOUS_RICE_BALLS)
-        .name("Red Bean Glutinous Rice Balls")
+        .name("红豆沙汤圆")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack PEANUT_GLUTINOUS_RICE_BALLS = new FoodItemStackBuilder()
         .id("GN_PEANUT_GLUTINOUS_RICE_BALLS")
         .texture(HeadTextures.GLUTINOUS_RICE_BALLS)
-        .name("Peanut Glutinous Rice Balls")
+        .name("花生汤圆")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack SESAME_GLUTINOUS_RICE_BALLS = new FoodItemStackBuilder()
         .id("GN_SESAME_GLUTINOUS_RICE_BALLS")
         .texture(HeadTextures.GLUTINOUS_RICE_BALLS)
-        .name("Sesame Glutinous Rice Balls")
+        .name("黑芝麻汤圆")
         .hunger(7, 0.75)
         .build();
 
@@ -1686,35 +1684,35 @@ public class GastroStacks {
     public static final FoodItemStack MASHED_POTATOES = new FoodItemStackBuilder()
         .id("GN_MASHED_POTATOES")
         .material(Material.BAKED_POTATO)
-        .name("Mashed Potatoes")
+        .name("土豆泥")
         .hunger(5, 1)
         .build();
 
     public static final FoodItemStack MASHED_TURNIPS = new FoodItemStackBuilder()
         .id("GN_MASHED_TURNIPS")
         .material(Material.FERMENTED_SPIDER_EYE)
-        .name("Mashed Turnips")
+        .name("芜菁泥")
         .hunger(5, 1)
         .build();
 
     public static final FoodItemStack FISH_AND_CHIPS = new FoodItemStackBuilder()
         .id("GN_FISH_AND_CHIPS")
         .material(Material.COOKED_COD)
-        .name("Fish and Chips")
+        .name("炸鱼薯条")
         .hunger(10, 0.75)
         .build();
 
     public static final FoodItemStack TURKEY_ROAST = new FoodItemStackBuilder()
         .id("GN_TURKEY_ROAST")
         .material(Material.COOKED_CHICKEN)
-        .name("Turkey Roast")
+        .name("烤火鸡")
         .hunger(12, 0.75)
         .build();
 
     public static final FoodItemStack CHOCOLATE_TRUFFLE = new FoodItemStackBuilder()
         .id("GN_CHOCOLATE_TRUFFLE")
         .material(Material.BROWN_MUSHROOM)
-        .name("Chocolate Truffle")
+        .name("松露巧克力")
         .hunger(5, 0.75)
         .build();
 
@@ -1723,28 +1721,28 @@ public class GastroStacks {
     public static final FoodItemStack DOUBLE_CHOCOLATE_MUFFIN = new FoodItemStackBuilder()
         .id("GN_DOUBLE_CHOCOLATE_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Double Chocolate Muffin")
+        .name("双层巧克力松饼")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack CARROT_MUFFIN = new FoodItemStackBuilder()
         .id("GN_CARROT_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Carrot Muffin")
+        .name("胡萝卜松饼")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack CRANBERRY_MUFFIN = new FoodItemStackBuilder()
         .id("GN_CRANBERRY_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Cranberry Muffin")
+        .name("蔓越莓松饼")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack RAISIN_MUFFIN = new FoodItemStackBuilder()
         .id("GN_RAISIN_MUFFIN")
         .texture(HeadTextures.MUFFIN)
-        .name("Raisin Muffin")
+        .name("葡萄干松饼")
         .hunger(4, 0.75)
         .build();
 
@@ -1753,133 +1751,133 @@ public class GastroStacks {
     public static final FoodItemStack VANILLA_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_VANILLA_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_WHITE)
-        .name("Vanilla Ice Cream")
+        .name("香草冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CHOCOLATE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CHOCOLATE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_BROWN)
-        .name("Chocolate Ice Cream")
+        .name("巧克力冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack MINT_CHOCOLATE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_MINT_CHOCOLATE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_GREEN)
-        .name("Mint Ice Cream")
+        .name("薄荷冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack COOKIE_DOUGH_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_COOKIE_DOUGH_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Cookie Dough Ice Cream")
+        .name("曲奇冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack PEANUT_BUTTER_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_PEANUT_BUTTER_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Peanut Butter Ice Cream")
+        .name("花生酱冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack RED_BEAN_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_RED_BEAN_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Red Bean Ice Cream")
+        .name("红豆冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack GREEN_TEA_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_GREEN_TEA_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_GREEN)
-        .name("Green Tea Ice Cream")
+        .name("绿茶冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Strawberry Ice Cream")
+        .name("草莓冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack BLUEBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_BLUEBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_BLUE)
-        .name("Blueberry Ice Cream")
+        .name("蓝莓冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CRANBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CRANBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Cranberry Ice Cream")
+        .name("蔓越莓冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack COWBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_COWBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_RED)
-        .name("Cowberry Ice Cream")
+        .name("越橘冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack COCONUT_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_COCONUT_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_WHITE)
-        .name("Coconut Ice Cream")
+        .name("椰子冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CHERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CHERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_PINK)
-        .name("Cherry Ice Cream")
+        .name("樱桃冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack RASPBERRY_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_RASPBERRY_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_PINK)
-        .name("Raspberry Ice Cream")
+        .name("覆盆子冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CARAMEL_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CARAMEL_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_BROWN)
-        .name("Caramel Ice Cream")
+        .name("焦糖冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack ORANGE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_ORANGE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Orange Ice Cream")
+        .name("橙子冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack PEACH_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_PEACH_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_ORANGE)
-        .name("Peach Ice Cream")
+        .name("蜜桃冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack PINEAPPLE_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_PINEAPPLE_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_YELLOW)
-        .name("Pineapple Ice Cream")
+        .name("菠萝冰淇淋")
         .hunger(3, 0.75)
         .build();
 
     public static final FoodItemStack CHORUS_ICE_CREAM = new FoodItemStackBuilder()
         .id("GN_CHORUS_ICE_CREAM")
         .texture(HeadTextures.ICE_CREAM_PURPLE)
-        .name("Chorus Ice Cream")
+        .name("紫颂果冰淇淋")
         .hunger(3, 0.75)
         .effects(FoodEffect.teleport(5))
         .build();
@@ -1887,28 +1885,28 @@ public class GastroStacks {
     public static final FoodItemStack SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_SHAVED_ICE")
         .texture(HeadTextures.SHAVED_ICE)
-        .name("Shaved Ice")
+        .name("刨冰")
         .hunger(2, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_SHAVED_ICE")
         .texture(HeadTextures.STRAWBERRY_SHAVED_ICE)
-        .name("Strawberry Shaved Ice")
+        .name("草莓刨冰")
         .hunger(2, 0.75)
         .build();
 
     public static final FoodItemStack BANANA_SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_BANANA_SHAVED_ICE")
         .texture(HeadTextures.LEMON_SHAVED_ICE)
-        .name("Banana Shaved Ice")
+        .name("香蕉刨冰")
         .hunger(2, 0.75)
         .build();
 
     public static final FoodItemStack LEMON_SHAVED_ICE = new FoodItemStackBuilder()
         .id("GN_LEMON_SHAVED_ICE")
         .texture(HeadTextures.LEMON_SHAVED_ICE)
-        .name("Lemon Shaved Ice")
+        .name("柠檬刨冰")
         .hunger(2, 0.75)
         .build();
 
@@ -1917,49 +1915,49 @@ public class GastroStacks {
     public static final FoodItemStack CANDY_APPLE = new FoodItemStackBuilder()
         .id("GN_CANDY_APPLE")
         .texture(HeadTextures.CANDY_APPLE)
-        .name("Candy Apple")
+        .name("苹果糖")
         .hunger(7, 0.75)
         .build();
 
     public static final FoodItemStack DONUT = new FoodItemStackBuilder()
         .id("GN_DONUT")
         .texture(HeadTextures.DONUT_PINK)
-        .name("Donut")
+        .name("甜甜圈")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack HONEY_DIP_DONUT = new FoodItemStackBuilder()
         .id("GN_HONEY_DIP_DONUT")
         .texture(HeadTextures.DONUT_GOLD)
-        .name("Honey Dip Donut")
+        .name("蜂蜜甜甜圈")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack GOLDEN_CHOCOLATE_DONUT = new FoodItemStackBuilder()
         .id("GN_GOLDEN_CHOCOLATE_DONUT")
         .texture(HeadTextures.DONUT_BROWN)
-        .name("Golden Chocolate Donut")
+        .name("黄金巧克力甜甜圈")
         .hunger(6, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_CHEESECAKE = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_CHEESECAKE")
         .texture(HeadTextures.CHEESECAKE)
-        .name("Strawberry Cheesecake")
+        .name("草莓芝士蛋糕")
         .hunger(8, 0.75)
         .build();
 
     public static final FoodItemStack STRAWBERRY_CUPCAKE = new FoodItemStackBuilder()
         .id("GN_STRAWBERRY_CUPCAKE")
         .texture(HeadTextures.CUPCAKE)
-        .name("Strawberry Cupcake")
+        .name("草莓杯蛋糕")
         .hunger(4, 0.75)
         .build();
 
     public static final FoodItemStack LEMON_TART = new FoodItemStackBuilder()
         .id("GN_LEMON_TART")
         .material(Material.PUMPKIN_PIE)
-        .name("Lemon Tart")
+        .name("柠檬蛋挞")
         .hunger(6, 0.5)
         .effects(FoodEffect.positivePotionEffect(PotionEffectType.SPEED, 120))
         .build();
@@ -1967,7 +1965,7 @@ public class GastroStacks {
     public static final FoodItemStack CHORUS_PIE = new FoodItemStackBuilder()
         .id("GN_CHORUS_PIE")
         .material(Material.PUMPKIN_PIE)
-        .name("Chorus Pie")
+        .name("紫颂果派")
         .hunger(8, 0.5)
         .effects(FoodEffect.teleport(5))
         .build();
@@ -1975,14 +1973,14 @@ public class GastroStacks {
     public static final FoodItemStack POPPED_SORGHUM = new FoodItemStackBuilder()
         .id("GN_POPPED_SORGHUM")
         .texture(HeadTextures.POPPED_SORGHUM)
-        .name("Popped Sorghum")
+        .name("爆高粱")
         .hunger(2, 0.5)
         .build();
 
     public static final FoodItemStack ENCHANTED_GOLDEN_CARROT = new FoodItemStackBuilder()
         .id("GN_ENCHANTED_GOLDEN_CARROT")
         .material(Material.GOLDEN_CARROT)
-        .name("Enchanted Golden Carrot")
+        .name("附魔金萝卜")
         .hunger(8, 0.5)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.DARKNESS),
@@ -1997,7 +1995,7 @@ public class GastroStacks {
     public static final FoodItemStack ENCHANTED_GLISTERING_MELON_SLICE = new FoodItemStackBuilder()
         .id("GN_ENCHANTED_GLISTERING_MELON_SLICE")
         .material(Material.GLISTERING_MELON_SLICE)
-        .name("Enchanted Glistering Melon Slice")
+        .name("附魔闪烁的西瓜片")
         .hunger(4, 0.5)
         .effects(
             FoodEffect.removePotionEffect(PotionEffectType.WITHER),
@@ -2014,7 +2012,7 @@ public class GastroStacks {
     public static final FoodItemStack V7 = new FoodItemStackBuilder()
         .id("GN_V7")
         .texture(HeadTexture.FILLED_CAN.getTexture())
-        .name("V7")
+        .name("蔬菜7件套")
         .hunger(6, 0.75)
         .effects(
             FoodEffect.positivePotionEffect(PotionEffectType.REGENERATION, 20, 2))
@@ -2023,7 +2021,7 @@ public class GastroStacks {
     public static final FoodItemStack BUBBLE_MILK_TEA = new FoodItemStackBuilder()
         .id("GN_BUBBLE_MILK_TEA")
         .material(Material.POTION)
-        .name("Bubble Milk Tea")
+        .name("珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2037,7 +2035,7 @@ public class GastroStacks {
     public static final FoodItemStack CANTALOUPE_BUBBLE_TEA = new FoodItemStackBuilder()
         .id("GN_CANTALOUPE_BUBBLE_TEA")
         .material(Material.POTION)
-        .name("Cantaloupe Bubble Tea")
+        .name("哈密瓜珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2051,7 +2049,7 @@ public class GastroStacks {
     public static final FoodItemStack HONEYDEW_MELON_BUBBLE_TEA = new FoodItemStackBuilder()
         .id("GN_HONEYDEW_MELON_BUBBLE_TEA")
         .material(Material.POTION)
-        .name("Honeydew Melon Bubble Tea")
+        .name("蜜瓜珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2065,7 +2063,7 @@ public class GastroStacks {
     public static final FoodItemStack APPLE_BUBBLE_TEA = new FoodItemStackBuilder()
         .id("GN_APPLE_BUBBLE_TEA")
         .material(Material.POTION)
-        .name("Apple Bubble Tea")
+        .name("苹果珍珠奶茶")
         .hunger(4, 0.75)
         .build();
     static {
@@ -2081,7 +2079,7 @@ public class GastroStacks {
     public static final FoodItemStack RED_WINE = new FoodItemStackBuilder()
         .id("GN_RED_WINE")
         .material(Material.POTION)
-        .name("Red Wine")
+        .name("红酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2099,7 +2097,7 @@ public class GastroStacks {
     public static final FoodItemStack BEER = new FoodItemStackBuilder()
         .id("GN_BEER")
         .material(Material.POTION)
-        .name("Beer")
+        .name("啤酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2117,7 +2115,7 @@ public class GastroStacks {
     public static final FoodItemStack APPLE_CIDER = new FoodItemStackBuilder()
         .id("GN_APPLE_CIDER")
         .material(Material.POTION)
-        .name("Apple Cider")
+        .name("苹果酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2135,7 +2133,7 @@ public class GastroStacks {
     public static final FoodItemStack RICE_WINE = new FoodItemStackBuilder()
         .id("GN_RICE_WINE")
         .material(Material.POTION)
-        .name("Rice Wine")
+        .name("米酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 60, 2),
@@ -2153,7 +2151,7 @@ public class GastroStacks {
     public static final FoodItemStack VODKA = new FoodItemStackBuilder()
         .id("GN_VODKA")
         .material(Material.POTION)
-        .name("Vodka")
+        .name("伏特加")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 120, 4),
@@ -2171,7 +2169,7 @@ public class GastroStacks {
     public static final FoodItemStack RUM = new FoodItemStackBuilder()
         .id("GN_RUM")
         .material(Material.POTION)
-        .name("Rum")
+        .name("朗姆酒")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 120, 4),
@@ -2189,7 +2187,7 @@ public class GastroStacks {
     public static final FoodItemStack WHISKEY = new FoodItemStackBuilder()
         .id("GN_WHISKEY")
         .material(Material.POTION)
-        .name("Whiskey")
+        .name("威士忌")
         .hunger(3, 0.5)
         .effects(
             FoodEffect.negativePotionEffect(PotionEffectType.CONFUSION, 120, 4),
