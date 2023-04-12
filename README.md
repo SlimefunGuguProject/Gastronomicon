@@ -1,33 +1,38 @@
-# Gastronomicon
+# Gastronomicon 美食家
 
-A Slimefun addon that adds even more foodstuffs to the game. Best used along with [ExoticGarden](https://github.com/TheBusyBiscuit/ExoticGarden).
+一个粘液科技附属，添加了许多食物。最好和 [异域花园(ExoticGarden)](https://github.com/TheBusyBiscuit/ExoticGarden) 一起使用。
 
-This addon automatically integrates with DynaTech for crop automation. Both DynaTech and ExoticGarden integrations can be manually disabled in `config.yml`
+该附属自动向 动力科技(DynaTech) 添加了作物自动化内容。
 
-## Gameplay
+你可以在 `config.yml` 中关闭插件关联。
 
-For more gameplay details, please see the Wiki at <https://github.com/SchnTgaiSpock/Gastronomicon/wiki>
+<p align="center">
+  <a href="https://builds.guizhanss.net/SlimefunGuguProject/Gastronomicon/master/">
+    <img src="https://builds.guizhanss.net/f/SlimefunGuguProject/Gastronomicon/master/badge.svg" alt="构建站状态"/>
+  </a>
+</p>
 
-## Requirements
+## 玩法
 
-- Paper (or its forks)
-- Slimefun DEV 1040 (RC 33) or higher
+请查阅Wiki <https://github.com/SchnTgaiSpock/Gastronomicon/wiki>
+
+## 需求
+
+- Paper 或衍生服务端
+- Slimefun DEV 1040 (RC 33) 或更新版本
 - Minecraft 1.17+
 - Java 16+
 
-*Exotic Garden is not required but heavily recommended!*
+*ExoticGarden 不是必须的，但强烈建议安装!*
 
 ## API
 
-API documentation can be found on the wiki at <https://github.com/SchnTgaiSpock/Gastronomicon/wiki/Custom-Food>
+API 文档可以在 Wiki 中查询 <https://github.com/SchnTgaiSpock/Gastronomicon/wiki/Custom-Food>
 
-## Changelog
+## 更新日志
 
-### Version 0.1.0
+见原文[https://github.com/SchnTgaiSpock/Gastronomicon#changelog]
 
-- First Beta release
-- First API release
+## 感谢
 
-## Credits
-
-Some head textures were taken and/or modified from [minecraft-heads.com](https://minecraft-heads.com/) and [headdb.org](https://headdb.org/)
+部分头颅材质来自 [minecraft-heads.com](https://minecraft-heads.com/) 与 [headdb.org](https://headdb.org/)
