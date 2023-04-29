@@ -1,9 +1,6 @@
 package io.github.schntgaispock.gastronomicon.core.listeners;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Nonnull;
@@ -23,84 +20,83 @@ import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.schntgaispock.gastronomicon.Gastronomicon;
+import io.github.schntgaispock.gastronomicon.api.loot.LootTable;
+import io.github.schntgaispock.gastronomicon.core.Climate;
 import io.github.schntgaispock.gastronomicon.util.NumberUtil;
 
 public class WildHarvestListener implements Listener {
 
-    private static final Map<Material, List<ItemStack>> dropsByBlock = new HashMap<>();
-    private static final Map<EntityType, List<ItemStack>> dropsByMob = new HashMap<>();
+    private static final Map<Climate, Map<Material, LootTable<ItemStack>>> dropsByClimateByBlock = new HashMap<>();
+    private static final Map<Material, LootTable<ItemStack>> dropsByBlock = new HashMap<>();
+    private static final Map<EntityType, LootTable<ItemStack>> dropsByMob = new HashMap<>();
 
-    private static double BLOCK_BREAK_DROP_CHANCE;
-    private static double MOB_KILL_DROP_CHANCE;
+    private static double BLOCK_BREAK_DROP_CHANCE = 0.15;
+    private static double MOB_KILL_DROP_CHANCE = 0.35;
 
-    @ParametersAreNonnullByDefault
-    public static void registerDrops(Material dropFrom, ItemStack... drops) {
-        for (ItemStack drop : drops) {
-            if (dropsByBlock.containsKey(dropFrom)) {
-                dropsByBlock.get(dropFrom).add(drop);
-            } else {
-                final List<ItemStack> newSet = new ArrayList<>();
-                newSet.add(drop);
-                dropsByBlock.put(dropFrom, newSet);
-            }
+    public static void registerBlockDrops(Material material, LootTable<ItemStack> table, Climate climate) {
+        Map<Material, LootTable<ItemStack>> climateDrops = dropsByClimateByBlock.get(climate);
+        if (climateDrops == null) {
+            climateDrops = new HashMap<>();
         }
+        climateDrops.put(material, table);
+        dropsByClimateByBlock.put(climate, climateDrops);
     }
 
+    public static void registerBlockDrops(Material material, LootTable<ItemStack> table) {
+        dropsByBlock.put(material, table);
+    }
+
+    public static void registerMobDrops(EntityType entityType, LootTable<ItemStack> table) {
+        dropsByMob.put(entityType, table);
+    }
+
+    @Nullable
     @ParametersAreNonnullByDefault
-    public static void registerDrops(EntityType dropFrom, ItemStack... drops) {
-        for (ItemStack drop : drops) {
-            if (dropsByMob.containsKey(dropFrom)) {
-                dropsByMob.get(dropFrom).add(drop);
-            } else {
-                final List<ItemStack> newSet = new ArrayList<>();
-                newSet.add(drop);
-                dropsByMob.put(dropFrom, newSet);
-            }
+    public static LootTable<ItemStack> getDrops(Material dropFrom, Climate climate) {
+        if (dropsByClimateByBlock.containsKey(climate) && dropsByClimateByBlock.get(climate).containsKey(dropFrom)) {
+            return dropsByClimateByBlock.get(climate).get(dropFrom);
+        } else if (dropsByBlock.containsKey(dropFrom)) {
+            return dropsByBlock.get(dropFrom);
+        } else {
+            return null;
         }
     }
 
     @Nullable
-    public static List<ItemStack> getDrops(@Nonnull Material dropFrom) {
-        return dropsByBlock.containsKey(dropFrom) ? Collections.unmodifiableList(dropsByBlock.get(dropFrom)) : null;
-    }
-
-    @Nullable
-    public static List<ItemStack> getDrops(@Nonnull EntityType dropFrom) {
-        return dropsByMob.containsKey(dropFrom) ? Collections.unmodifiableList(dropsByMob.get(dropFrom)) : null;
+    public static LootTable<ItemStack> getDrops(@Nonnull EntityType dropFrom) {
+        return dropsByMob.containsKey(dropFrom) ? dropsByMob.get(dropFrom) : null;
     }
 
     @EventHandler
     public void onBlockBreak(BlockBreakEvent e) {
         final Block b = e.getBlock();
-        if (b == null) return;
+        if (b == null)
+            return;
 
-        final List<ItemStack> drops = getDrops(b.getType());
-        if (drops == null) return;
+        final LootTable<ItemStack> drops = getDrops(b.getType(), Climate.of(b.getBiome()));
+        if (drops == null)
+            return;
 
         final ItemStack weapon = e.getPlayer().getInventory().getItemInMainHand();
-        final int fortune = weapon == null ? 0 : weapon.getEnchantmentLevel(Enchantment.LOOT_BONUS_BLOCKS);
-        if (NumberUtil.flip(BLOCK_BREAK_DROP_CHANCE + fortune)) {
-            final ItemStack drop = drops.get(NumberUtil.getRandom().nextInt(drops.size()));
-            e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), drop);
+        final int fortune = weapon == null ? 0
+            : weapon.getEnchantmentLevel(Enchantment.LOOT_BONUS_BLOCKS);
+        if (NumberUtil.flip(Math.min(drops.size() * 0.03, BLOCK_BREAK_DROP_CHANCE) * (1 + fortune * 0.5))) {
+            // Slightly lower the drop chance in items with few drops
+            e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), drops.generate());
         }
     }
 
     @EventHandler
     public void onMobKill(EntityDeathEvent e) {
-        final List<ItemStack> drops = getDrops(e.getEntityType());
-        if (drops == null) return;
+        final LootTable<ItemStack> drops = getDrops(e.getEntityType());
+        if (drops == null)
+            return;
 
         final Player killer = e.getEntity().getKiller();
-        final int looting;
-        if (killer == null || killer.getInventory().getItemInMainHand() == null) {
-            looting = 0;
-        }
-        else {
-            looting = killer.getInventory().getItemInMainHand().getEnchantmentLevel(Enchantment.LOOT_BONUS_MOBS);
-        }
-        if (NumberUtil.flip(MOB_KILL_DROP_CHANCE + looting)) {
-            final ItemStack drop = drops.get(NumberUtil.getRandom().nextInt(drops.size()));
-            e.getEntity().getWorld().dropItemNaturally(e.getEntity().getLocation(), drop);
+        final int looting = (killer == null || killer.getInventory().getItemInMainHand() == null) ? 0
+            : killer.getInventory().getItemInMainHand().getEnchantmentLevel(Enchantment.LOOT_BONUS_MOBS);
+        if (NumberUtil.flip(MOB_KILL_DROP_CHANCE * (1 + looting * 0.5))) {
+            e.getDrops().add(drops.generate());
         }
     }
 

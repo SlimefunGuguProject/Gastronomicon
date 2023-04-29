@@ -1,4 +1,4 @@
-package io.github.schntgaispock.gastronomicon.core.items.food;
+package io.github.schntgaispock.gastronomicon.api.food;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,12 +9,17 @@ import javax.annotation.Nonnull;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
+import io.github.schntgaispock.gastronomicon.api.recipes.GastroRecipe;
+import io.github.schntgaispock.gastronomicon.api.recipes.MultiStoveRecipe;
+import io.github.schntgaispock.gastronomicon.api.recipes.ShapedGastroRecipe;
+import io.github.schntgaispock.gastronomicon.api.recipes.ShapelessGastroRecipe;
 import io.github.schntgaispock.gastronomicon.api.recipes.GastroRecipe.RecipeShape;
 import io.github.schntgaispock.gastronomicon.api.recipes.components.RecipeComponent;
 import io.github.schntgaispock.gastronomicon.api.recipes.components.SingleRecipeComponent;
-import io.github.schntgaispock.gastronomicon.core.items.workstations.manual.MultiStove.Temperature;
 import io.github.schntgaispock.gastronomicon.core.slimefun.GastroGroups;
 import io.github.schntgaispock.gastronomicon.core.slimefun.GastroResearch;
+import io.github.schntgaispock.gastronomicon.core.slimefun.items.food.SimpleGastroFood;
+import io.github.schntgaispock.gastronomicon.core.slimefun.items.workstations.manual.MultiStove.Temperature;
 import io.github.schntgaispock.gastronomicon.core.slimefun.recipes.GastroRecipeType;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
@@ -39,8 +44,8 @@ public class SimpleGastroFoodBuilder {
     protected RecipeComponent<?> container = RecipeComponent.EMPTY;
     protected Set<ItemStack> tools = Collections.emptySet();
 
-    public SimpleGastroFoodBuilder research(Research reserach) {
-        this.research = reserach;
+    public SimpleGastroFoodBuilder research(Research research) {
+        this.research = research;
         return this;
     }
 
@@ -125,16 +130,31 @@ public class SimpleGastroFoodBuilder {
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public SimpleGastroFood build() {
         Validate.notNull(itemStack, "Must set an ItemStack!");
         Validate.notNull(recipeType, "Must set a recipe type!");
         Validate.notNull(ingredients, "Must set ingredients!");
 
+        final ItemStack[] outputs = new ItemStack[] { itemStack.asQuantity(amount) };
+
+        final ItemStack topRightDisplayItem;
+        final GastroRecipe recipe;
         if (recipeType == GastroRecipeType.MULTI_STOVE) {
-            return new SimpleGastroFood(research, group, itemStack, ingredients, container, tools, temperature, amount);
+            topRightDisplayItem = temperature.getItem().clone();
+            topRightDisplayItem.setLore(Collections.emptyList());
+            recipe = new MultiStoveRecipe(ingredients, container, tools,
+            outputs, Temperature.MEDIUM);
         } else {
-            return new SimpleGastroFood(research, group, itemStack, recipeType, shape, ingredients, container, tools, amount);
+            topRightDisplayItem = new ItemStack(Material.AIR);
+            if (shape == RecipeShape.SHAPED) {
+                recipe = new ShapedGastroRecipe(recipeType, ingredients, container, tools, outputs);
+            } else {
+                recipe = new ShapelessGastroRecipe(recipeType, ingredients, container, tools, outputs);
+            }
         }
+
+        return new SimpleGastroFood(research, group, itemStack, recipe, topRightDisplayItem, outputs[0], true);
     }
 
     public void register(SlimefunAddon addon) {

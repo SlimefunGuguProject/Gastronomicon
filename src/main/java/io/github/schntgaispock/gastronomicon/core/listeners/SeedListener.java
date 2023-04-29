@@ -14,15 +14,17 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockFromToEvent;
 import org.bukkit.event.block.BlockGrowEvent;
+import org.bukkit.event.block.BlockSpreadEvent;
 import org.bukkit.event.entity.EntityChangeBlockEvent;
 import org.bukkit.inventory.ItemStack;
 
 import com.destroystokyo.paper.event.block.BlockDestroyEvent;
 
 import io.github.schntgaispock.gastronomicon.Gastronomicon;
-import io.github.schntgaispock.gastronomicon.core.items.seeds.AbstractSeed;
-import io.github.schntgaispock.gastronomicon.core.items.seeds.DuplicatingSeed;
-import io.github.schntgaispock.gastronomicon.core.items.seeds.FruitingSeed;
+import io.github.schntgaispock.gastronomicon.core.slimefun.items.seeds.AbstractSeed;
+import io.github.schntgaispock.gastronomicon.core.slimefun.items.seeds.DuplicatingSeed;
+import io.github.schntgaispock.gastronomicon.core.slimefun.items.seeds.FruitingSeed;
+import io.github.schntgaispock.gastronomicon.core.slimefun.items.seeds.VineSeed;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
@@ -48,7 +50,7 @@ public class SeedListener implements Listener {
                             continue;
                         }
 
-                        Directional stemData = (Directional) checking.getBlockData();
+                        final Directional stemData = (Directional) checking.getBlockData();
 
                         if (stemData.getFacing().getOppositeFace().equals(face)) {
                             assignGastroSeed(BlockStorage.check(checking), e.getNewState().getLocation());
@@ -59,7 +61,20 @@ public class SeedListener implements Listener {
                 break;
 
             default:
-                return;
+                break;
+        }
+    }
+
+    @EventHandler
+    public void onVineGrow(BlockSpreadEvent e) {
+        switch (e.getNewState().getType()) {
+            case VINE:
+                assignGastroSeed(BlockStorage.check(e.getSource()),
+                    e.getNewState().getLocation());
+                break;
+
+            default:
+                break;
         }
     }
 
@@ -101,7 +116,7 @@ public class SeedListener implements Listener {
         if (item == null)
             return;
 
-        if (item instanceof DuplicatingSeed) {
+        if (item instanceof DuplicatingSeed || item instanceof VineSeed) {
             BlockStorage.addBlockInfo(l, "id", item.getId());
         } else if (item instanceof final FruitingSeed fgs) {
             BlockStorage.addBlockInfo(l, "id", fgs.getFruitingBody().getId());
@@ -112,7 +127,7 @@ public class SeedListener implements Listener {
         if (cropBlock == null)
             return null;
         switch (cropBlock.getType()) {
-            case WHEAT, POTATOES, CARROTS, BEETROOTS, PUMPKIN_STEM, ATTACHED_PUMPKIN_STEM, MELON_STEM, ATTACHED_MELON_STEM, SUGAR_CANE, CACTUS:
+            case WHEAT, POTATOES, CARROTS, BEETROOTS, PUMPKIN_STEM, ATTACHED_PUMPKIN_STEM, MELON_STEM, ATTACHED_MELON_STEM, SUGAR_CANE, CACTUS, VINE:
                 break;
             default:
                 return null;

@@ -17,6 +17,8 @@ import io.github.schntgaispock.gastronomicon.api.items.FoodItemStack;
 import io.github.schntgaispock.gastronomicon.api.items.FoodItemStackBuilder;
 import io.github.schntgaispock.gastronomicon.api.items.GastroTheme;
 import io.github.schntgaispock.gastronomicon.api.items.ThemedItemStack;
+import io.github.schntgaispock.gastronomicon.api.loot.LootTable;
+import io.github.schntgaispock.gastronomicon.core.Climate;
 import io.github.schntgaispock.gastronomicon.core.listeners.WildHarvestListener;
 import io.github.schntgaispock.gastronomicon.util.StringUtil;
 import io.github.schntgaispock.gastronomicon.util.item.HeadTextures;
@@ -70,13 +72,13 @@ public class GastroStacks {
         GastroTheme.PERFECT_FOOD.getColor() + "美食家");
 
     public static final ItemStack GUIDE_RECIPE_BREAK = new CustomItemStack(
-        Material.IRON_HOE,
+        Material.IRON_PICKAXE,
         "&b破坏方块",
         "&7破坏指定的方块",
         "&7以获取该物品");
 
     public static final ItemStack GUIDE_RECIPE_HARVEST = new CustomItemStack(
-        Material.GRASS,
+        Material.IRON_HOE,
         "&b收获作物",
         "&7收获指定的作物",
         "&7以获取该物品");
@@ -85,7 +87,7 @@ public class GastroStacks {
         Material.IRON_SWORD,
         "&b击杀生物",
         "&7击杀指定的生物",
-        "&7以获取该物品");
+        "&7有几率掉落该物品");
 
     public static final ItemStack GUIDE_RECIPE_TRAP = new CustomItemStack(
         Material.COBWEB,
@@ -135,6 +137,14 @@ public class GastroStacks {
     public static final ItemStack GUIDE_CONTAINER_REQUIRED = new CustomItemStack(
         Material.PURPLE_STAINED_GLASS_PANE,
         "&5所需容器");
+
+    public static final ItemStack GUIDE_BIOME_REQUIRED = new CustomItemStack(
+        Material.LIME_STAINED_GLASS_PANE,
+        "&a所需生物群系");
+
+    public static final ItemStack GUIDE_CLIMATE_REQUIRED = new CustomItemStack(
+        Material.LIGHT_BLUE_STAINED_GLASS_PANE,
+        "&b所需环境");
 
     public static final ItemStack GUIDE_NONE = new CustomItemStack(
         Material.BARRIER,
@@ -286,13 +296,19 @@ public class GastroStacks {
         GastroTheme.TRAP,
         "GN_CRAB_TRAP",
         Material.OAK_TRAPDOOR,
-        "捕蟹器");
+        "捕蟹器",
+        "用于捕捉螃蟹.",
+        "将其放置在地上,",
+        "等白色粒子出现时右键点击");
 
     public static final SlimefunItemStack HUNTING_TRAP = ThemedItemStack.of(
         GastroTheme.TRAP,
         "GN_HUNTING_TRAP",
         Material.IRON_TRAPDOOR,
-        "捕猎器");
+        "捕猎器",
+        "用于捕捉指定的动物.",
+        "将其放置在地上,",
+        "等白色粒子出现时右键点击");
 
     // -- Other --
 
@@ -311,19 +327,22 @@ public class GastroStacks {
         GastroTheme.TOOL,
         "GN_WOODEN_SICKLE",
         Material.WOODEN_HOE,
-        "木镰刀");
+        "木镰刀",
+        "增加作物掉落");
 
     public static final SlimefunItemStack STEEL_SICKLE = ThemedItemStack.of(
         GastroTheme.TOOL,
         "GN_STEEL_SICKLE",
         Material.IRON_HOE,
-        "钢镰刀");
+        "钢镰刀",
+        "增加作物掉落");
 
     public static final SlimefunItemStack REINFORCED_SICKLE = ThemedItemStack.of(
         GastroTheme.TOOL,
         "GN_REINFORCED_SICKLE",
         Material.NETHERITE_HOE,
-        "强化合金镰刀");
+        "强化合金镰刀",
+        "增加作物掉落");
 
     // ---- Basic Machines ----
 
@@ -424,7 +443,7 @@ public class GastroStacks {
         GastroTheme.ELECTRIC,
         "GN_ELECTRIC_KITCHEN_II",
         Material.FURNACE,
-        "电动厨房 &7- &eII  ",
+        "电动厨房 &7- &eII",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(1024),
         LoreBuilder.powerPerSecond(64),
@@ -524,24 +543,50 @@ public class GastroStacks {
         Material.MANGROVE_PROPAGULE,
         "小白菜");
 
+    public static final SlimefunItemStack BOK_CHOY_SEEDS = ThemedItemStack.ingredient(
+        "GN_BOK_CHOY_SEEDS",
+        Material.MELON_SEEDS,
+        "Bok Choy Seeds");
+
     public static final SlimefunItemStack BROCCOLI = ThemedItemStack.ingredient(
         "GN_BROCCOLI",
         Material.OAK_SAPLING,
         "西兰花");
 
+    public static final SlimefunItemStack BROCCOLI_SEEDS = ThemedItemStack.ingredient(
+        "GN_BROCCOLI_SEEDS",
+        Material.MELON_SEEDS,
+        "西兰花种子");
+
     public static final SlimefunItemStack CUCUMBER = ThemedItemStack.ingredient(
         "GN_CUCUMBER",
         Material.SEA_PICKLE,
         "黄瓜");
+
+    public static final SlimefunItemStack CUCUMBER_SEEDS = ThemedItemStack.ingredient(
+        "GN_CUCUMBER_SEEDS",
+        Material.PUMPKIN_SEEDS,
+        "黄瓜种子");
+
     public static final SlimefunItemStack BASIL = ThemedItemStack.ingredient(
         "GN_BASIL",
         Material.KELP,
         "罗勒");
 
+    public static final SlimefunItemStack BASIL_SEEDS = ThemedItemStack.ingredient(
+        "GN_BASIL_SEEDS",
+        Material.MELON_SEEDS,
+        "罗勒种子");
+
     public static final SlimefunItemStack SPINACH = ThemedItemStack.ingredient(
         "GN_SPINACH",
         Material.BIG_DRIPLEAF,
         "菠菜");
+
+    public static final SlimefunItemStack SPINACH_SEEDS = ThemedItemStack.ingredient(
+        "GN_SPINACH_SEEDS",
+        Material.BEETROOT_SEEDS,
+        "菠菜种子");
 
     public static final SlimefunItemStack BRUSSLES_SPROUTS = ThemedItemStack.ingredient(
         "GN_BRUSSLES_SPROUTS",
@@ -553,15 +598,30 @@ public class GastroStacks {
         Material.FERN,
         "薄荷");
 
+    public static final SlimefunItemStack MINT_SEEDS = ThemedItemStack.ingredient(
+        "GN_MINT_SEEDS",
+        Material.MELON_SEEDS,
+        "薄荷种子");
+
     public static final SlimefunItemStack CHILI_PEPPER = ThemedItemStack.ingredient(
         "GN_CHILI_PEPPER",
         Material.RED_CANDLE,
         "辣椒");
 
+    public static final SlimefunItemStack CHILI_PEPPER_SEEDS = ThemedItemStack.ingredient(
+        "GN_CHILI_PEPPER_SEEDS",
+        Material.PUMPKIN_SEEDS,
+        "辣椒种子");
+
     public static final SlimefunItemStack PARSLEY = ThemedItemStack.ingredient(
         "GN_PARSLEY",
         Material.SMALL_DRIPLEAF,
         "欧芹");
+
+    public static final SlimefunItemStack PARSLEY_SEEDS = ThemedItemStack.ingredient(
+        "GN_PARSLEY_SEEDS",
+        Material.MELON_SEEDS,
+        "欧芹种子");
 
     public static final SlimefunItemStack CASSAVA = ThemedItemStack.ingredient(
         "GN_CASSAVA",
@@ -593,15 +653,30 @@ public class GastroStacks {
         Material.BAMBOO,
         "芦笋");
 
+    public static final SlimefunItemStack ASPARAGUS_SEEDS = ThemedItemStack.ingredient(
+        "GN_ASPARAGUS_SEEDS",
+        Material.MELON_SEEDS,
+        "芦笋种子");
+
     public static final SlimefunItemStack GREEN_ONION = ThemedItemStack.ingredient(
         "GN_GREEN_ONION",
         Material.MANGROVE_PROPAGULE,
         "葱");
 
+    public static final SlimefunItemStack GREEN_ONION_SEEDS = ThemedItemStack.ingredient(
+        "GN_GREEN_ONION_SEEDS",
+        Material.MELON_SEEDS,
+        "葱种子");
+
     public static final SlimefunItemStack CAULIFLOWER = ThemedItemStack.ingredient(
         "GN_CAULIFLOWER",
         Material.BIRCH_SAPLING,
         "花椰菜");
+
+    public static final SlimefunItemStack CAULIFLOWER_SEEDS = ThemedItemStack.ingredient(
+        "GN_CAULIFLOWER_SEEDS",
+        Material.PUMPKIN_SEEDS,
+        "花椰菜种子");
 
     public static final SlimefunItemStack AVOCADO = ThemedItemStack.ingredient(
         "GN_AVOCADO",
@@ -653,6 +728,16 @@ public class GastroStacks {
         Material.PUMPKIN_SEEDS,
         "芝麻籽");
 
+    public static final SlimefunItemStack VANILLA_BEANS = ThemedItemStack.ingredient(
+        "GN_VANILLA_BEANS",
+        HeadTextures.VANILLA,
+        "香草豆");
+
+    public static final SlimefunItemStack VANILLA_PLANT = ThemedItemStack.ingredient(
+        "GN_VANILLA_PLANT",
+        Material.VINE,
+        "香草种子");
+
     // -- Grown from trees --
 
     public static final SlimefunItemStack LYCHEE = ThemedItemStack.ingredient(
@@ -671,14 +756,6 @@ public class GastroStacks {
         "GN_BANANA_SAPLING",
         Material.OAK_SAPLING,
         "香蕉树苗");
-    public static final SlimefunItemStack VANILLA_BEANS = ThemedItemStack.ingredient(
-        "GN_VANILLA_BEANS",
-        HeadTextures.VANILLA,
-        "香子兰");
-    public static final SlimefunItemStack VANILLA_SAPLING = ThemedItemStack.ingredient(
-        "GN_VANILLA_SAPLING",
-        Material.OAK_SAPLING,
-        "香子兰树苗");
 
     // -- Harvested --
 
@@ -816,41 +893,119 @@ public class GastroStacks {
         "虾");
 
     static {
-        WildHarvestListener.registerDrops(
-            Material.GRASS,
-            RICE, QUINOA, OATS, SOYBEANS, BARLEY_SEEDS, RYE_SEEDS, SORGHUM_SEEDS, TURNIP_SEEDS, SQUASH_SEEDS,
-            CELERY, BOK_CHOY, BROCCOLI, CUCUMBER, BASIL, SPINACH,
-            BRUSSLES_SPROUTS, MINT, CHILI_PEPPER, PARSLEY, CASSAVA, LENTILS, PEANUTS, BEANS, PEAS, ASPARAGUS,
-            GREEN_ONION, CAULIFLOWER, AVOCADO_PIT, TURMERIC, CUMIN_SEEDS, LYCHEE_SAPLING,
-            BANANA_SAPLING, VANILLA_SAPLING, RED_BEANS, CANTALOUPE_SEEDS, HONEYDEW_MELON_SEEDS, SESAME_SEEDS);
+        final LootTable<ItemStack> DRY_CLIMATE_GRASS_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.CASSAVA,
+                GastroStacks.LENTILS,
+                GastroStacks.CUMIN_SEEDS,
+                GastroStacks.HONEYDEW_MELON_SEEDS)
+            .build();
+        final LootTable<ItemStack> TEMPERATE_CLIMATE_GRASS_DROPS = LootTable.builder(ItemStack.class)
+            .add(6,
+                GastroStacks.RICE,
+                GastroStacks.OATS,
+                GastroStacks.SOYBEANS,
+                GastroStacks.BARLEY_SEEDS,
+                GastroStacks.RYE_SEEDS)
+            .add(4,
+                GastroStacks.TURNIP_SEEDS,
+                GastroStacks.RED_BEANS,
+                GastroStacks.CANTALOUPE_SEEDS,
+                GastroStacks.HONEYDEW_MELON_SEEDS,
+                GastroStacks.SESAME_SEEDS,
+                GastroStacks.PEANUTS,
+                GastroStacks.PEAS)
+            .add(3,
+                GastroStacks.BOK_CHOY_SEEDS,
+                GastroStacks.CUCUMBER_SEEDS,
+                GastroStacks.BASIL_SEEDS,
+                GastroStacks.SPINACH_SEEDS,
+                GastroStacks.MINT_SEEDS,
+                GastroStacks.CHILI_PEPPER_SEEDS,
+                GastroStacks.PARSLEY_SEEDS,
+                GastroStacks.CASSAVA,
+                GastroStacks.LENTILS,
+                GastroStacks.ASPARAGUS_SEEDS,
+                GastroStacks.GREEN_ONION_SEEDS,
+                GastroStacks.CAULIFLOWER_SEEDS,
+                GastroStacks.AVOCADO_PIT,
+                GastroStacks.TURMERIC,
+                GastroStacks.CUMIN_SEEDS,
+                GastroStacks.VANILLA_PLANT)
+            .add(2,
+                GastroStacks.LYCHEE_SAPLING,
+                GastroStacks.BANANA_SAPLING)
+            .build();
+        final LootTable<ItemStack> COLD_CLIMATE_GRASS_DROPS = LootTable.builder(ItemStack.class)
+            .add(6,
+                GastroStacks.QUINOA,
+                GastroStacks.OATS,
+                GastroStacks.RYE_SEEDS)
+            .add(4,
+                GastroStacks.TURNIP_SEEDS,
+                GastroStacks.SQUASH_SEEDS,
+                GastroStacks.PEAS)
+            .add(3,
+                GastroStacks.CELERY,
+                GastroStacks.BROCCOLI_SEEDS,
+                GastroStacks.BRUSSLES_SPROUTS)
+            .add(2,
+                GastroStacks.LYCHEE_SAPLING)
+            .build();
+        final LootTable<ItemStack> SNOWY_CLIMATE_GRASS_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.RYE_SEEDS)
+            .build();
+        final LootTable<ItemStack> FERN_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.FIDDLEHEADS)
+            .build();
+        final LootTable<ItemStack> DIRT_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.ENOKI_MUSHROOMS,
+                GastroStacks.KING_OYSTER_MUSHROOM,
+                GastroStacks.BUTTON_MUSHROOM)
+            .build();
+        final LootTable<ItemStack> PODZOL_DROPS = LootTable.builder(ItemStack.class)
+            .add(4,
+                GastroStacks.ENOKI_MUSHROOMS,
+                GastroStacks.KING_OYSTER_MUSHROOM,
+                GastroStacks.BUTTON_MUSHROOM)
+            .add(GastroStacks.TRUFFLE)
+            .build();
+        final LootTable<ItemStack> SEAGRASS_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.CLAM)
+            .build();
 
-        WildHarvestListener.registerDrops(
-            Material.FERN,
-            FIDDLEHEADS, CELERY, BOK_CHOY, BROCCOLI, CUCUMBER, BASIL, SPINACH,
-            BRUSSLES_SPROUTS, MINT, PARSLEY, LENTILS, PEAS, ASPARAGUS, GREEN_ONION, CAULIFLOWER);
+        final LootTable<ItemStack> SQUID_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.RAW_SQUID)
+            .build();
+        final LootTable<ItemStack> GUARDIAN_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.GUARDIAN_FIN)
+            .build();
+        final LootTable<ItemStack> GOAT_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.RAW_CHEVON)
+            .build();
+        final LootTable<ItemStack> SALMON_DROPS = LootTable.builder(ItemStack.class)
+            .add(GastroStacks.SALMON_ROE)
+            .build();
 
-        WildHarvestListener.registerDrops(
-            Material.PODZOL,
-            TRUFFLE, ENOKI_MUSHROOMS, KING_OYSTER_MUSHROOM, BUTTON_MUSHROOM);
-
-        WildHarvestListener.registerDrops(
-            Material.MYCELIUM,
-            TRUFFLE, ENOKI_MUSHROOMS, KING_OYSTER_MUSHROOM, BUTTON_MUSHROOM);
-
-        WildHarvestListener.registerDrops(
-            Material.SEAGRASS, CLAM);
-
-        WildHarvestListener.registerDrops(EntityType.GOAT, RAW_CHEVON);
-        WildHarvestListener.registerDrops(EntityType.SALMON, SALMON_ROE);
-        WildHarvestListener.registerDrops(EntityType.GUARDIAN, GUARDIAN_FIN);
-        WildHarvestListener.registerDrops(EntityType.ELDER_GUARDIAN, GUARDIAN_FIN);
-        WildHarvestListener.registerDrops(EntityType.SQUID, RAW_SQUID);
-        WildHarvestListener.registerDrops(EntityType.GLOW_SQUID, RAW_SQUID);
-
-        // WildHarvestListener.registerFishingDrops(Material.COD, RAW_MACKEREL, RAW_EEL,
-        // RAW_TROUT, SHRIMP);
-        // WildHarvestListener.registerFishingDrops(Material.SALMON, RAW_BASS, RAW_CARP,
-        // RAW_PIKE, RAW_TUNA);
+        WildHarvestListener.registerBlockDrops(Material.GRASS, DRY_CLIMATE_GRASS_DROPS, Climate.DRY);
+        WildHarvestListener.registerBlockDrops(Material.TALL_GRASS, DRY_CLIMATE_GRASS_DROPS, Climate.DRY);
+        WildHarvestListener.registerBlockDrops(Material.GRASS, TEMPERATE_CLIMATE_GRASS_DROPS, Climate.TEMPERATE);
+        WildHarvestListener.registerBlockDrops(Material.TALL_GRASS, TEMPERATE_CLIMATE_GRASS_DROPS, Climate.TEMPERATE);
+        WildHarvestListener.registerBlockDrops(Material.GRASS, COLD_CLIMATE_GRASS_DROPS, Climate.COLD);
+        WildHarvestListener.registerBlockDrops(Material.TALL_GRASS, COLD_CLIMATE_GRASS_DROPS, Climate.COLD);
+        WildHarvestListener.registerBlockDrops(Material.GRASS, SNOWY_CLIMATE_GRASS_DROPS, Climate.SNOWY);
+        WildHarvestListener.registerBlockDrops(Material.TALL_GRASS, SNOWY_CLIMATE_GRASS_DROPS, Climate.SNOWY);
+        WildHarvestListener.registerBlockDrops(Material.FERN, FERN_DROPS);
+        WildHarvestListener.registerBlockDrops(Material.LARGE_FERN, FERN_DROPS);
+        WildHarvestListener.registerBlockDrops(Material.PODZOL, PODZOL_DROPS);
+        WildHarvestListener.registerBlockDrops(Material.DIRT, DIRT_DROPS);
+        WildHarvestListener.registerBlockDrops(Material.GRASS_BLOCK, DIRT_DROPS);
+        WildHarvestListener.registerBlockDrops(Material.ROOTED_DIRT, DIRT_DROPS);
+        WildHarvestListener.registerBlockDrops(Material.MYCELIUM, DIRT_DROPS);
+        WildHarvestListener.registerBlockDrops(Material.SEAGRASS, SEAGRASS_DROPS);
+        WildHarvestListener.registerMobDrops(EntityType.SQUID, SQUID_DROPS);
+        WildHarvestListener.registerMobDrops(EntityType.GUARDIAN, GUARDIAN_DROPS);
+        WildHarvestListener.registerMobDrops(EntityType.GOAT, GOAT_DROPS);
+        WildHarvestListener.registerMobDrops(EntityType.SALMON, SALMON_DROPS);
     }
 
     // -- From traps --
@@ -1365,7 +1520,7 @@ public class GastroStacks {
     public static final FoodItemStack CREAM_OF_BROCCOLI_SOUP = new FoodItemStackBuilder()
         .id("GN_CREAM_OF_BROCCOLI_SOUP")
         .texture(HeadTextures.CREAM_SOUP)
-        .name("奶油芹菜汤")
+        .name("奶油西兰花汤")
         .hunger(9, 1.75)
         .effects(FoodEffect.heal(2))
         .build();
@@ -2015,7 +2170,7 @@ public class GastroStacks {
         .name("蔬菜7件套")
         .hunger(6, 0.75)
         .effects(
-            FoodEffect.positivePotionEffect(PotionEffectType.REGENERATION, 20, 2))
+            FoodEffect.positivePotionEffect(PotionEffectType.REGENERATION, 20, 0))
         .build();
 
     public static final FoodItemStack BUBBLE_MILK_TEA = new FoodItemStackBuilder()

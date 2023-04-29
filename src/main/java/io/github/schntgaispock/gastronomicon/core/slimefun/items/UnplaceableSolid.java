@@ -1,4 +1,4 @@
-package io.github.schntgaispock.gastronomicon.core.items;
+package io.github.schntgaispock.gastronomicon.core.slimefun.items;
 
 import javax.annotation.Nonnull;
 
@@ -9,14 +9,17 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
 import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
-public class UnplaceableItem extends SlimefunItem implements NotPlaceable {
+public class UnplaceableSolid extends SlimefunItem {
 
-    public UnplaceableItem(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    public UnplaceableSolid(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
+    }
+
+    public UnplaceableSolid(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, ItemStack recipeDisplayOutput) {
+        super(itemGroup, item, recipeType, recipe, recipeDisplayOutput);
     }
     
     @Override
@@ -30,7 +33,7 @@ public class UnplaceableItem extends SlimefunItem implements NotPlaceable {
         });
     }
 
-    public UnplaceableItem hide() {
+    public UnplaceableSolid hide() {
         setHidden(true);
         return this;
     }

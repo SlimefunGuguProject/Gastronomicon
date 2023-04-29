@@ -33,6 +33,8 @@ API 文档可以在 Wiki 中查询 <https://github.com/SchnTgaiSpock/Gastronomic
 
 见原文[https://github.com/SchnTgaiSpock/Gastronomicon#changelog]
 
-## 感谢
+## Credits
 
-部分头颅材质来自 [minecraft-heads.com](https://minecraft-heads.com/) 与 [headdb.org](https://headdb.org/)
+Some head textures were taken and/or modified from [minecraft-heads.com](https://minecraft-heads.com/)
+
+[![minecraft-heads banner](https://minecraft-heads.com/images/banners/minecraft-heads_fullbanner_468x60.png)](https://minecraft-heads.com/)

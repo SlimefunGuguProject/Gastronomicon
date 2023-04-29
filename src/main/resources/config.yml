@@ -16,9 +16,9 @@ proficiency-threshold: 256
 
 drops:
   # 方块掉落美食家(Gastronomicon)种子的几率 (0-1)
-  block-break-chance: 0.25
+  block-break-chance: 0.15
   # 击杀生物掉落美食家(Gastronomicon)物品的几率 (0-1)
-  mob-kill-chance: 0.25
+  mob-kill-chance: 0.35
 
 profile:
   # 玩家档案的头衔
