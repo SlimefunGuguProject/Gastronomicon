@@ -14,7 +14,7 @@ public class GastroResearch {
     public static final Research CULINARY_WORKBENCH = new Research(Gastronomicon.key("culinary_workbench"), startKey + 2, "第一步", 10);
     public static final Research MULTI_STOVE = new Research(Gastronomicon.key("multi_stove"), startKey + 3, "多用炉", 15);
     public static final Research GRAIN_MILL = new Research(Gastronomicon.key("grain_mill"), startKey + 4, "谷物磨坊", 10);
-    public static final Research REFRIDGERATOR = new Research(Gastronomicon.key("refridgerator"), startKey + 5, "冰箱", 17);
+    public static final Research REFRIGERATOR = new Research(Gastronomicon.key("refridgerator"), startKey + 5, "冰箱", 17);
     public static final Research FERMENTER = new Research(Gastronomicon.key("fermenter"), startKey + 6, "发酵罐", 25);
     public static final Research TRAPS = new Research(Gastronomicon.key("traps"), startKey + 7, "陷阱", 18);
     public static final Research FISHING_NETS = new Research(Gastronomicon.key("fishing_nets"), startKey + 8, "捕鱼网", 10);

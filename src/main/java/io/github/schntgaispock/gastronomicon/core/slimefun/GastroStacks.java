@@ -109,7 +109,7 @@ public class GastroStacks {
         "&7放入指定的工具与容器",
         "&7来制作该物品");
 
-    public static final ItemStack GUIDE_RECIPE_REFRIDGERATOR = new CustomItemStack(
+    public static final ItemStack GUIDE_RECIPE_REFRIGERATOR = new CustomItemStack(
         Material.IRON_BLOCK,
         "&b冰箱",
         "&7在冰箱中",
@@ -360,7 +360,7 @@ public class GastroStacks {
         LoreBuilder.powerBuffer(1024),
         LoreBuilder.power(64, " 每次合成"));
 
-    public static final SlimefunItemStack REFRIDGERATOR = ThemedItemStack.of(
+    public static final SlimefunItemStack REFRIGERATOR = ThemedItemStack.of(
         GastroTheme.MECHANICAL,
         "GN_REFRIDGERATOR",
         Material.IRON_BLOCK,
