@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -21,7 +22,6 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.common.CommonPatterns;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 
@@ -106,7 +106,7 @@ public class MultiStove extends GastroWorkstation implements EnergyNetComponent 
         super.onNewInstance(menu, b);
 
         menu.addMenuOpeningHandler(player -> {
-            final String temp = BlockStorage.getLocationInfo(menu.getLocation(), TEMPERATURE_KEY);
+            final String temp = StorageCacheUtils.getData(menu.getLocation(), TEMPERATURE_KEY);
             menu.replaceExistingItem(TEMPERATURE_BUTTON_SLOT,
                 temp == null ? TEMPERATURE_BUTTON_LOW : Temperature.valueOf(temp).getItem(), false);
         });
@@ -124,7 +124,7 @@ public class MultiStove extends GastroWorkstation implements EnergyNetComponent 
             return;
         }
         menu.replaceExistingItem(TEMPERATURE_BUTTON_SLOT, t.getItem());
-        BlockStorage.addBlockInfo(menu.getLocation(), TEMPERATURE_KEY, t.name());
+        StorageCacheUtils.setData(menu.getLocation(), TEMPERATURE_KEY, t.name());
     }
 
     @Override

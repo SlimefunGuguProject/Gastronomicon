@@ -1,5 +1,6 @@
 package io.github.schntgaispock.gastronomicon.core.listeners;
 
+import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -19,7 +20,6 @@ import io.github.schntgaispock.gastronomicon.util.item.GastroKeys;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 public class FermenterRefillListener implements Listener {
 
@@ -36,7 +36,7 @@ public class FermenterRefillListener implements Listener {
         if (!Slimefun.getProtectionManager().hasPermission(e.getPlayer(), b, Interaction.INTERACT_BLOCK))
             return;
 
-        final SlimefunItem sfItem = BlockStorage.check(b);
+        final SlimefunItem sfItem = StorageCacheUtils.getSfItem(b.getLocation());
         if (sfItem == null || !(sfItem instanceof final Fermenter fermenter))
             return;
 

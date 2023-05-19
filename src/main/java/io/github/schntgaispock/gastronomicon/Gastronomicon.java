@@ -51,7 +51,7 @@ public class Gastronomicon extends AbstractAddon {
             return;
         }
 
-        if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Build")) {
+        if (getConfig().getBoolean("options.auto-update") && getPluginVersion().startsWith("Build")) {
             GuizhanUpdater.start(this, getFile(), "SlimegunGuguProject", "Gastronomicon", "master");
         }
 

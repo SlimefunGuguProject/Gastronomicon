@@ -1,5 +1,7 @@
 package io.github.schntgaispock.gastronomicon.core.slimefun.items.workstations.automatic;
 
+import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+import io.github.schntgaispock.gastronomicon.Gastronomicon;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Waterlogged;
@@ -22,7 +24,6 @@ import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecipe;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.interfaces.InventoryBlock;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 
@@ -90,7 +91,7 @@ public class FishingNet extends SlimefunItem implements InventoryBlock, MachineP
         addItemHandler(new SimpleBlockBreakHandler() {
             @Override
             public void onBlockBreak(Block b) {
-                final BlockMenu inv = BlockStorage.getInventory(b);
+                final BlockMenu inv = StorageCacheUtils.getMenu(b.getLocation());
                 if (inv != null)
                     inv.dropItems(b.getLocation(), getOutputSlots());
                 machineProcessor.endOperation(b);
@@ -115,11 +116,11 @@ public class FishingNet extends SlimefunItem implements InventoryBlock, MachineP
     }
 
     protected void tick(Block b) {
-        final BlockMenu inv = BlockStorage.getInventory(b);
+        final BlockMenu inv = StorageCacheUtils.getMenu(b.getLocation());
         CraftingOperation currentOperation = getMachineProcessor().getOperation(b);
 
         if (currentOperation != null) {
-            if (inv.getBlock().getBlockData() instanceof final Waterlogged waterlogged && waterlogged.isWaterlogged()) {
+            if (isWaterLogged(b)) {
 
                 if (!currentOperation.isFinished()) {
                     getMachineProcessor().updateProgressBar(inv, STATUS_SLOT, currentOperation);
@@ -132,7 +133,7 @@ public class FishingNet extends SlimefunItem implements InventoryBlock, MachineP
                     getMachineProcessor().endOperation(b);
                 }
             }
-        } else if (b.getBlockData() instanceof final Waterlogged bar && bar.isWaterlogged()) {
+        } else if (isWaterLogged(b)) {
             final MachineRecipe next = findNextRecipe(inv);
 
             if (next != null) {
@@ -141,5 +142,24 @@ public class FishingNet extends SlimefunItem implements InventoryBlock, MachineP
                 getMachineProcessor().updateProgressBar(inv, STATUS_SLOT, currentOperation);
             }
         }
+    }
+
+    private boolean isWaterLogged(Block b) {
+        if (Gastronomicon.slimefunTickCount() % 20 == 0) {
+            return getWaterLogged(b);
+        } else {
+            String waterLogged = StorageCacheUtils.getData(b.getLocation(), "water_logged");
+            if (waterLogged == null) {
+                return getWaterLogged(b);
+            } else {
+                return Boolean.parseBoolean(waterLogged);
+            }
+        }
+    }
+
+    private boolean getWaterLogged(Block b) {
+        boolean isWaterLogged = b.getBlockData() instanceof Waterlogged waterlogged && waterlogged.isWaterlogged();
+        StorageCacheUtils.setData(b.getLocation(), "water_logged", String.valueOf(isWaterLogged));
+        return isWaterLogged;
     }
 }
