@@ -14,7 +14,7 @@
 
 ## 玩法
 
-请查阅Wiki <https://github.com/SchnTgaiSpock/Gastronomicon/wiki>
+请查阅Wiki <https://schn.pages.dev/gastronomicon>
 
 ## 需求
 
@@ -27,7 +27,7 @@
 
 ## API
 
-API 文档可以在 Wiki 中查询 <https://github.com/SchnTgaiSpock/Gastronomicon/wiki/Custom-Food>
+API 文档可以在 Wiki 中查询 <https://schn.pages.dev/gastronomicon/custom-food>
 
 ## 更新日志
 
