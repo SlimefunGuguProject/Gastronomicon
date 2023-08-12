@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
+import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
@@ -26,7 +28,6 @@ import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunIte
 import lombok.Getter;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 @Getter
 @SuppressWarnings("deprecation")
@@ -59,7 +60,7 @@ public abstract class HuntingTrap extends SimpleSlimefunItem<BlockUseHandler> {
         addItemHandler(new SimpleBlockBreakHandler() {
             @Override
             public void onBlockBreak(Block b) {
-                BlockStorage.clearBlockInfo(b);
+                Slimefun.getDatabaseManager().getBlockDataController().removeBlock(b.getLocation());
                 if (triggeredTraps.containsKey(b.getLocation()) && triggeredTraps.get(b.getLocation()))
                     dropCatch(b.getLocation());
                 triggeredTraps.remove(b.getLocation());
@@ -123,7 +124,7 @@ public abstract class HuntingTrap extends SimpleSlimefunItem<BlockUseHandler> {
             return false;
 
         Gastronomicon.scheduleSyncDelayedTask(() -> {
-            final String id = BlockStorage.checkID(l);
+            final String id = StorageCacheUtils.getData(l, "id");
             if (id != null && id.equals(getId())) {
                 l.getWorld().playSound(l, Sound.ENTITY_EVOKER_FANGS_ATTACK, SoundCategory.BLOCKS, 1f, 1.5f);
                 triggeredTraps.put(l, true);

@@ -8,6 +8,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
+import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -26,7 +27,6 @@ import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
 import lombok.Getter;
-import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 /**
  * A SimpleGastroSeed only drops itself when harvested.
@@ -59,24 +59,26 @@ public class SimpleSeed extends AbstractSeed {
             addItemHandler(new BlockPlaceHandler(true) {
                 @Override
                 public void onBlockPlacerPlace(BlockPlacerPlaceEvent e) {
-                    if (e.getBlock().getState().getLightLevel() <= 7) {
+                    final Block b = e.getBlock();
+                    if (b.getState().getLightLevel() <= 7) {
                         e.setCancelled(true);
-                        BlockStorage.clearBlockInfo(e.getBlock(), true);
+                        Slimefun.getDatabaseManager().getBlockDataController().removeBlock(b.getLocation());
                         return;
                     }
-                    e.getBlock().setType(displayBlock);
+                    b.setType(displayBlock);
                 }
 
                 @Override
                 public void onPlayerPlace(BlockPlaceEvent e) {
+                    final Block b = e.getBlock();
                     if (e.getBlock().getState().getLightLevel() <= 7 ||
                         !e.canBuild()) {
                         e.setCancelled(true);
-                        BlockStorage.clearBlockInfo(e.getBlock(), true);
+                        Slimefun.getDatabaseManager().getBlockDataController().removeBlock(b.getLocation());
                         return;
                     }
 
-                    e.getBlock().setType(displayBlock);
+                    b.setType(displayBlock);
                 }
             });
         } else {
@@ -84,7 +86,7 @@ public class SimpleSeed extends AbstractSeed {
                 @Override
                 public void onPlayerPlace(@Nonnull BlockPlaceEvent e) {
                     e.setCancelled(true);
-                    BlockStorage.clearBlockInfo(e.getBlock(), true);
+                    Slimefun.getDatabaseManager().getBlockDataController().removeBlock(e.getBlock().getLocation());
                 }
             });
 
@@ -107,12 +109,12 @@ public class SimpleSeed extends AbstractSeed {
 
                 if (above.getState().getLightLevel() <= 7) {
                     event.cancel();
-                    BlockStorage.clearBlockInfo(above, true);
+                    Slimefun.getDatabaseManager().getBlockDataController().removeBlock(above.getLocation());
                     return;
                 }
 
                 above.setType(getDisplayBlock());
-                BlockStorage.addBlockInfo(above, "id", getId());
+                StorageCacheUtils.setData(above.getLocation(), "id", getId());
                 event.getItem().subtract();
 
             });
