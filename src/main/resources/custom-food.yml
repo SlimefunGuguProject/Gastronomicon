@@ -41,7 +41,7 @@
 #   extinguish: 灭火
 # 
 # 无法通过文件定义其他的食物效果类型。如果你需要添加其他类型，你需要编写插件自己实现。
-# 可查看Wiki了解更多 https://github.com/SchnTgaiSpock/Gastronomicon/wiki/CustomFood
+# 可查看Wiki了解更多 https://schn.pages.dev/gastronomicon/custom-food
 #
 # 配方格式:
 # - shape: SHAPED 有序 / SHAPELESS 无序
