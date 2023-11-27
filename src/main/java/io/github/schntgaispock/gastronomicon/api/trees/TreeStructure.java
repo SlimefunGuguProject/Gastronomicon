@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import net.guizhanss.guizhanlib.slimefun.utils.BlockStorageUtil;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -90,13 +91,13 @@ public final class TreeStructure {
                             Block b = l.getWorld().getBlockAt(newX, newY, newZ);
                             b.setType(Material.PLAYER_HEAD);
                             if (fruitTexture != null) PlayerHead.setSkin(b, PlayerSkin.fromBase64(fruitTexture), false);
-                            Slimefun.getDatabaseManager().getBlockDataController().createBlock(l, getFruit());
+                            BlockStorageUtil.createBlock(b, getFruit());
                             break;
                         default:
                             final String palette = getPalette()[id - 2];
                             Block b2 = l.getWorld().getBlockAt(newX, newY, newZ);
                             if (palette.endsWith("LEAVES") && NumberUtil.flip(0.1))
-                                Slimefun.getDatabaseManager().getBlockDataController().createBlock(b2.getLocation(), sapling);
+                                BlockStorageUtil.createBlock(b2, sapling);
                             b2.setType(Material.valueOf(palette));
                     }
                 }

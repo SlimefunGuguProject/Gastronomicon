@@ -5,6 +5,7 @@ import java.util.logging.Level;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import net.guizhanss.guizhanlib.slimefun.addon.Scheduler;
 import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bstats.charts.SimplePie;
@@ -33,6 +34,8 @@ public class Gastronomicon extends AbstractAddon {
 
     private static @Getter Gastronomicon instance;
 
+    @Getter
+    private Scheduler scheduler;
     private AddonConfig playerData;
     private AddonConfig customFood;
 
@@ -43,6 +46,7 @@ public class Gastronomicon extends AbstractAddon {
     @Override
     public void enable() {
         instance = this;
+        scheduler = new Scheduler(this);
 
         if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
             getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
