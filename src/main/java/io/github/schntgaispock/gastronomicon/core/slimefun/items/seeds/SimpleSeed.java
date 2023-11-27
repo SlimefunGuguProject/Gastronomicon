@@ -27,7 +27,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * A SimpleGastroSeed only drops itself when harvested.
+ * A SimpleSeed only drops itself when harvested.
  */
 public class SimpleSeed extends AbstractSeed {
 
