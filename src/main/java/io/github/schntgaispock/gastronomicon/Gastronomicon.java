@@ -1,7 +1,5 @@
 package io.github.schntgaispock.gastronomicon;
 
-import java.util.logging.Level;
-
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
@@ -44,6 +42,7 @@ public class Gastronomicon extends AbstractAddon {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public void enable() {
         instance = this;
         scheduler = new Scheduler(this);
@@ -76,12 +75,12 @@ public class Gastronomicon extends AbstractAddon {
 
         if (isPluginEnabled("SlimeHUD")) {
             try {
-                log(Level.INFO, "检测到服务器已安装 SlimeHUD!");
-                log(Level.INFO, "接入相关功能...");
+                info("检测到服务器已安装 SlimeHUD!");
+                info("接入相关功能...");
                 SlimeHUDSetup.setup();
             } catch (NoClassDefFoundError e) {
-                log(Level.WARNING, "该服务器安装的 SlimeHUD 版本不兼容");
-                log(Level.WARNING, "请更新 SlimeHUD 至最新版本!");
+                warn("该服务器安装的 SlimeHUD 版本不兼容");
+                warn("请更新 SlimeHUD 至最新版本!");
             }
         }
 
@@ -89,18 +88,18 @@ public class Gastronomicon extends AbstractAddon {
         // If disable-exotic-garden-recipes is false "!" will change it to true and the rest of the code will run checking for ExoticGarden.
 
         if (!getConfig().getBoolean("disable-exotic-garden-recipes") && !isPluginEnabled("ExoticGarden")) {
-            log(Level.WARNING, "检测到服务器未安装 异域花园(ExoticGarden)!");
-            log(Level.WARNING, "需要异域花园物品的配方将被隐藏。");
+            warn("检测到服务器未安装 异域花园(ExoticGarden)!");
+            warn("需要异域花园物品的配方将被隐藏。");
         }
 
         if (isPluginEnabled("DynaTech") && !getConfig().getBoolean("disable-dynatech-integration")) {
             try {
-                log(Level.INFO, "检测到服务器已安装 动力科技(DynaTech)!");
-                log(Level.INFO, "正在向动力科技添加相关作物...");
+                info("检测到服务器已安装 动力科技(DynaTech)!");
+                info("正在向动力科技添加相关作物...");
                 DynaTechSetup.setup();
             } catch (NoClassDefFoundError e) {
-                log(Level.WARNING, "该服务器安装的 DynaTech 版本不兼容");
-                log(Level.WARNING, "请更新 DynaTech 至最新版本!");
+                warn("该服务器安装的 DynaTech 版本不兼容");
+                warn("请更新 DynaTech 至最新版本!");
             }
         }
 

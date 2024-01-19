@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.schntgaispock.gastronomicon</groupId>
     <artifactId>Gastronomicon</artifactId>
-    <version>1.0.6</version>
+    <version>1.1.0</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -123,6 +123,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -163,7 +164,7 @@
         <dependency>
             <groupId>net.guizhanss</groupId>
             <artifactId>GuizhanLibPlugin</artifactId>
-            <version>1.5.0</version>
+            <version>1.7.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
