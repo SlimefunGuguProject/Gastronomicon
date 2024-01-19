@@ -164,7 +164,7 @@ public class MultiStove extends GastroWorkstation implements EnergyNetComponent 
     protected boolean canCraft(BlockMenu menu, Block b, Player p, boolean sendMessage) {
         final int charge = getCharge(b.getLocation());
         if (charge < getEnergyPerUse()) {
-            Gastronomicon.sendMessage(p, "&eNot enough energy!");
+            Gastronomicon.sendMessage(p, "&e电力不足！");
             return false;
         }
 

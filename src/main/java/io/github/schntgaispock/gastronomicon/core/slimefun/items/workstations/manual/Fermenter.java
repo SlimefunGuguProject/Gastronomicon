@@ -55,7 +55,7 @@ public class Fermenter extends GastroWorkstation {
     protected boolean canCraft(BlockMenu menu, Block b, Player p, boolean sendMessage) {
         final int water = ChunkPDC.getOrCreateDefault(b, GastroKeys.FERMENTER_WATER, 0);
         if (water < getMbPerCraft()) {
-            Gastronomicon.sendMessage(p, "&eNot enough water!");
+            Gastronomicon.sendMessage(p, "&e水量不足！");
             return false;
         }
 
