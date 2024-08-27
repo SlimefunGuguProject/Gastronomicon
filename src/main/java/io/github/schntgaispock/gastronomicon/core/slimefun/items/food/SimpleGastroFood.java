@@ -45,7 +45,7 @@ public class SimpleGastroFood extends UnplaceableSolid implements RecipeDisplayI
     @Override
     @Nonnull
     public String getRecipeSectionLabel(@Nonnull Player p) {
-        return StringUtil.formatColors("&7Tools/Container Required:");
+        return StringUtil.formatColors("&7所需的工具/容器:");
     }
 
     @Override

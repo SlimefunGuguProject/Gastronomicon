@@ -524,12 +524,12 @@ public class GastroStacks {
     public static final SlimefunItemStack SQUASH = ThemedItemStack.ingredient(
         "GN_SQUASH",
         Material.MELON,
-        "南瓜");
+        "倭瓜");
 
     public static final SlimefunItemStack SQUASH_SEEDS = ThemedItemStack.ingredient(
         "GN_SQUASH_SEEDS",
         Material.PUMPKIN_SEEDS,
-        "南瓜种子");
+        "倭瓜种子");
 
     public static final SlimefunItemStack CELERY = ThemedItemStack.ingredient(
         "GN_CELERY",
@@ -544,7 +544,7 @@ public class GastroStacks {
     public static final SlimefunItemStack BOK_CHOY_SEEDS = ThemedItemStack.ingredient(
         "GN_BOK_CHOY_SEEDS",
         Material.MELON_SEEDS,
-        "Bok Choy Seeds");
+        "白菜种子");
 
     public static final SlimefunItemStack BROCCOLI = ThemedItemStack.ingredient(
         "GN_BROCCOLI",
