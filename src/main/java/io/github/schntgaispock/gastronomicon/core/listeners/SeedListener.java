@@ -4,7 +4,7 @@ import javax.annotation.Nonnull;
 
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import net.guizhanss.guizhanlib.slimefun.utils.BlockStorageUtil;
+import net.guizhanss.guizhanlib.slimefun.utils.NewBlockStorageUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -120,9 +120,9 @@ public class SeedListener implements Listener {
             return;
 
         if (item instanceof DuplicatingSeed || item instanceof VineSeed) {
-            BlockStorageUtil.createBlock(l, item.getId());
+            NewBlockStorageUtil.createBlock(l, item.getId());
         } else if (item instanceof final FruitingSeed fgs) {
-            BlockStorageUtil.createBlock(l, fgs.getFruitingBody().getId());
+            NewBlockStorageUtil.createBlock(l, fgs.getFruitingBody().getId());
         }
     }
 

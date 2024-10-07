@@ -2,7 +2,7 @@ package io.github.schntgaispock.gastronomicon.core.listeners;
 
 import io.github.schntgaispock.gastronomicon.Gastronomicon;
 import io.github.schntgaispock.gastronomicon.api.trees.TreeStructure;
-import net.guizhanss.guizhanlib.slimefun.utils.BlockStorageUtil;
+import net.guizhanss.guizhanlib.slimefun.utils.NewBlockStorageUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.event.EventHandler;
@@ -18,10 +18,10 @@ public class TreeGrowthListener implements Listener {
     @EventHandler
     public void onTreeGrow(StructureGrowEvent e) {
         Location l = e.getLocation();
-        if (!BlockStorageUtil.hasBlock(l)) {
+        if (!NewBlockStorageUtil.hasBlock(l)) {
             return;
         }
-        var blockData = BlockStorageUtil.getBlock(l);
+        var blockData = NewBlockStorageUtil.getBlock(l);
         final String sapling = blockData.getSfId();
         final TreeStructure tree = TreeStructure.getLoadedTrees().get(sapling);
         if (tree == null) {
@@ -29,7 +29,7 @@ public class TreeGrowthListener implements Listener {
         }
 
         e.setCancelled(true);
-        BlockStorageUtil.removeBlock(l);
+        NewBlockStorageUtil.removeBlock(l);
 
         Gastronomicon.getInstance().getScheduler().run(() -> {
             try {

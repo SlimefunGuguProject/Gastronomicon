@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import net.guizhanss.guizhanlib.slimefun.utils.BlockStorageUtil;
+import net.guizhanss.guizhanlib.slimefun.utils.NewBlockStorageUtil;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.Sound;
@@ -125,7 +125,7 @@ public abstract class HuntingTrap extends SimpleSlimefunItem<BlockUseHandler> {
             return false;
 
         Gastronomicon.scheduleSyncDelayedTask(() -> {
-            if (!BlockStorageUtil.hasBlock(l)) {
+            if (!NewBlockStorageUtil.hasBlock(l)) {
                 return;
             }
             final String id = StorageCacheUtils.getBlock(l).getSfId();
