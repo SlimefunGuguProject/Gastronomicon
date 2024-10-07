@@ -25,23 +25,23 @@ public class SlimeHUDSetup {
             final BlockMenu menu = StorageCacheUtils.getMenu(request.getLocation());
             if (menu == null) return "";
             final ItemStack item = menu.getItemInSlot(15);
-            if (item == null) return "&7| 没有机器人";
+            if (item == null) return "&7没有机器人";
             final SlimefunItem sfItem = SlimefunItem.getByItem(item);
-            if (sfItem == null || !sfItem.getId().equals("GN_CHEF_ANDROID")) return "&7| 没有机器人";
+            if (sfItem == null || !sfItem.getId().equals("GN_CHEF_ANDROID")) return "&7没有机器人";
             final List<String> lore = item.getLore();
             if (lore == null || lore.size() < 1) return "";
-            return "&7| " + lore.get(0);
+            return "&7" + lore.get(0);
         });
 
         // Fishing Net
         SlimeHUD.getHudController().registerCustomHandler(FishingNet.class, request -> {
-            return ((FishingNet) request.getSlimefunItem()).getMachineProcessor().getOperation(request.getLocation()) == null ? "&7| 不在水中" : "";
+            return ((FishingNet) request.getSlimefunItem()).getMachineProcessor().getOperation(request.getLocation()) == null ? "&7不在水中" : "";
         });
 
         // Fermenter
         SlimeHUD.getHudController().registerCustomHandler(Fermenter.class, request -> {
             final Fermenter fermenter = (Fermenter) request.getSlimefunItem();
-            return "&7| &9🪣 &7" + ChunkPDC.getOrCreateDefault(request.getLocation().getBlock(), GastroKeys.FERMENTER_WATER, 0) + "/" + fermenter.getCapacity() + " mB";
+            return "&7&9🪣 &7" + ChunkPDC.getOrCreateDefault(request.getLocation().getBlock(), GastroKeys.FERMENTER_WATER, 0) + "/" + fermenter.getCapacity() + " mB";
         });
     }
 
